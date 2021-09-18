@@ -1,0 +1,200 @@
+*{
+    font-family: 'Montserrat',sans-serif;
+    box-sizing: border-box;
+}
+
+.nav_header{
+    background-color: #e42121;
+    color: whitesmoke;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.ul_header{
+    list-style-type: none;
+    text-align: center;
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.a_header{
+    color: whitesmoke;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+a:hover{
+    color:#c7ced1;
+    transform: scale(1.5,1.5);
+}
+
+.container-logo{
+    display: flex;
+    width: 100%;
+    background-color: white;
+}
+
+.logo{
+    width: 20rem;
+    margin:auto;
+}
+
+h1{
+    background-image: url(../multimedia/bandera_estadosunidos.svg);
+    background-size: cover;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 1rem;
+    background-repeat: no-repeat;
+}
+span{
+    font-family: 'Londrina Shadow', cursive;
+    font-size: 3rem;
+    color: black;
+    vertical-align: middle;
+}
+
+body{
+    background-color: whitesmoke;
+}
+
+.ciudad{
+    border: 0.1rem solid black;
+}
+
+.titulo-ciudad{
+    background-image: linear-gradient(to right,rgb(1, 19, 132), whitesmoke,rgb(150, 0, 0));
+    display: flex;
+    justify-content: center;
+}
+
+.titulo-ciudad h2{
+    font-family: 'Londrina Shadow', cursive;
+    font-size: 2rem;
+    margin: 0.2rem;
+}
+
+.titulo_atraccion{
+    text-align: center;
+    font-size: 1rem;
+    background-image: linear-gradient(rgb(1,19,132), rgb(150,0,0));
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+    color: whitesmoke;
+}
+
+.container-centralpark{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.imagen{
+    padding: 0.2rem;
+    max-width: 100%;
+    min-height: 100%; 
+}
+
+.cp-parrafo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cp-texto{
+    text-align: center;
+    font-family: 'Londrina Shadow',cursive;
+    font-size: 5rem;
+}
+
+.container-video{  
+    display: flex;
+    padding: 0.2rem;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.cp_video{
+    width: 65rem;
+    height: 35rem;
+}
+
+.container-descripcion{
+    text-align: left;
+    padding-left: 1rem;
+    margin: 0.2rem;
+    font-size: 1rem;
+}
+
+.container-descripcion-la{
+    text-align: center;
+    margin: 0.2rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.container-estatua{
+    display: flex;
+    padding: 0.2rem;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.container-times{
+    display:grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 50% 50%;
+}
+
+.caja-times{
+    grid-column-start: 2;
+    grid-column-end: span 2;
+    grid-row-start: 1;
+    grid-row-end: span 2;
+    padding: 0.4rem;
+}
+
+.container-imagen{
+    margin:0.2rem;
+}
+
+.container-miami_beach{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.container-hollywood{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 10% 90%;
+    position: relative;
+}
+
+.container-hollywood-titulo{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(1, 19, 132);
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+.container-hollywood-2{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: 1fr 0.2fr;
+}
+
+footer{
+    background-color: #709995;
+    font-family: 'Montserrat',sans-serif;
+    font-weight: bold;
+    color: whitesmoke;
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: center;
+}

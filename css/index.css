@@ -1,0 +1,162 @@
+.nav_header{
+    background-color: #e42121;
+    color: whitesmoke;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.ul_header{
+    list-style-type: none;
+    text-align: center;
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.a_header{
+    color: whitesmoke;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+a:hover{
+    color:#c7ced1;
+    transform: scale(1.5,1.5);
+}
+
+.logo{
+    width: 20rem;
+    display: block;
+    margin:auto;
+    background-color: #ffffff;
+}
+
+.img_main{
+    display: block;
+    width: 50rem;
+    margin: auto;
+}
+
+h1{
+    background-color: #ffffff;
+    color: #e42121;
+    font-family: 'Montserrat',sans-serif;
+    text-align: center;
+    font-size: 3rem;
+    font-style: oblique;
+}
+
+h2{
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Montserrat',sans-serif;
+}
+
+h3{
+    font-size: 1rem;
+    text-align: center;
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 300;
+}
+
+main{
+    background-color: #e8e8e8;
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.container-promociones{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: 30% 40% 30%;
+    justify-items: center;
+    border: 0.1rem solid black;
+    border-radius: 1rem;
+    align-items: center;
+    background-color: whitesmoke;
+    margin: 0.5rem;
+}
+
+.container-promociones h4{
+    grid-column-start: 1;
+    grid-column-end: span 6;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.promo-tarjeta{
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    height: 70%;
+}
+
+.tarjeta{
+    width: 57.50%;
+    height: 100%;
+}
+
+.promo-texto{
+    font-size: 0.7rem;
+    font-weight: 600;
+}
+
+.reserva{
+    font-size: 1rem;
+    padding: 20px;
+    text-align: center;
+    background-color: #c7ced1;
+}
+
+.index_pais{
+    margin-left: 5px;
+    background-color: #e8e8e8;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 1rem;
+}
+
+.index_ciudad{
+    margin-left: 5px;
+    background-color: #e8e8e8;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 1rem;
+}
+
+.index_fecha{
+    margin-left: 5px;
+    background-color: #e8e8e8;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 1rem;
+}
+
+.acepta_cancela{
+    font-size: 1rem;
+    font-family: 'Montserrat',sans-serif;
+}
+
+.table_index{
+    font-size: 1rem;
+    text-align: center;
+}
+
+.linea_selec{
+    background-color: #e42121;
+    color: whitesmoke;
+    font-weight: bold;
+}
+.tabla{
+    padding-bottom: 20px;
+}
+
+footer{
+    background-color: #709995;
+    font-family: 'Montserrat',sans-serif;
+    font-weight: bold;
+    color: whitesmoke;
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: center;
+}

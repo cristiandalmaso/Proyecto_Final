@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../css/contacto.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<header>
+    <nav class="nav_header">
+        <ul class="ul_header">
+            <a href="../index.html" class= "a_header"><i class="fas fa-home"></i><li>Home</li></a>
+            <a href ="./España.html"  class= "a_header"><i class="fas fa-place-of-worship"></i><li> España</li></a>
+            <a href ="./Italia.html"  class= "a_header"><i class="fas fa-pizza-slice"></i><li> Italia</li></a>
+            <a href ="./EstadosUnidos.html" class= "a_header"><i class="fas fa-flag-usa"></i><li> Estados Unidos</li></a>
+            <a href ="./Contacto.html"  class= "a_header"><i class="fab fa-wpforms"></i><li> Contacto</li></a>
+        </ul>
+    </nav>
+    <div class="container-logo">
+        <img src="../multimedia/logo-v2.JPG" alt="Copenhagen logo" class="logo">
+    </div>
+</header>
+
+<main>
+<h1 class="header_contacto">Contacto</h1>
+<body class="body_contacto">
+    <form action="Enviar.php" method="GET">
+        <fieldset>
+        <label for="Nombre">Nombre</label>
+        <input type="text" id="Nombre" class="opcion_elegida">
+        <br>
+        <br>
+        <label for="Apellido">Apellido</label>
+        <input type="text" id="Apellido" class="opcion_elegida">
+        <br>
+        <br>
+        <label for="email">E-mail</label>
+        <input type="email" id="email" required class="opcion_elegida">
+        <br>
+        <br>
+        <label for="DNI">DNI</label>
+        <input type="number" name="DNI" id="DNI" required class="opcion_elegida">
+        <br>
+        <br>
+        <input type="radio" name="Sexo">Hombre
+        <input type="radio" name="Sexo">Mujer
+        <br>
+        <br>
+        <label for="Nacionalidad"></label>
+        <select name="Nacionalidad" id="Nacionalidad" class="opcion_elegida">
+            <option value="Disabled" selected>Seleccionar</option>
+            <option value="Argentina" class="body_contacto">Argentina</option>
+            <option value="Chile" class="body_contacto">Chile</option>
+            <option value="Colombia" class="body_contacto">Colombia</option>
+            <option value="Perú" class="body_contacto">Perú</option>
+            <option value="Uruguay" class="body_contacto">Uruguay</option>
+            <option value="Paraguay" class="body_contacto">Paraguay</option>
+        </select>
+        <br>
+        <br>
+        <input type="checkbox" name="Acepta">Soy mayor de edad
+        <br>
+        <br>
+        <p>Reclamos/Sugerencias</p>
+        <textarea name="Reclamos/Sugerencias" id="" cols="50" rows="10" class="opcion_elegida"></textarea>
+        <br>
+        <br>
+        <input type="submit" value="Enviar formulario" class="opcion_elegida">
+        <input type="reset" value="Limpiar" class="opcion_elegida">
+    </fieldset>
+    </form>   
+</body>
+
+<footer>
+    <ul class="ul_header">
+        <a href="" class= "a_header"><i class="fas fa-envelope"></i></i><li>Mail</li></a>
+        <a href="" class= "a_header"><i class="fab fa-facebook-f"></i><li></i>Facebook</li></a>
+        <a href="" class= "a_header"><i class="fab fa-instagram"></i><li>Instagram</li></a>
+        <a href="" class= "a_header"><i class="fab fa-twitter"></i><li>Twitter</li></a>
+        <a href="" class= "a_header"><i class="fab fa-tiktok"></i></i><li>Tik Tok</li></a>
+    </ul>
+</footer>
+</main>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copenhagen Airlines</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>     
+        <nav class="nav_header">
+            <ul class="ul_header">
+                <a href="./index.html" class= "a_header"><i class="fas fa-home"></i><li>Home</li></a>
+                <a href ="./html/España.html"  class= "a_header"><i class="fas fa-place-of-worship"></i><li> España</li></a>
+                <a href ="./html/Italia.html"  class= "a_header"><i class="fas fa-pizza-slice"></i><li> Italia</li></a>
+                <a href ="./html/EstadosUnidos.html" class= "a_header"><i class="fas fa-flag-usa"></i><li> Estados Unidos</li></a>
+                <a href ="./html/Contacto.html"  class= "a_header"><i class="fab fa-wpforms"></i><li> Contacto</li></a>
+            </ul>
+        </nav>
+                <img src="./multimedia/logo-v2.JPG" alt="Copenhagen logo" class="logo">
+    </header>
+    <main>
+            <img src="./multimedia/pngwing.com.png" alt="Copenhagen imagen" class="img_main">  
+        <h1>
+            Bievenido/a a Copenhagen Airlines
+        </h1> 
+        <h2>
+            ¡ Gracias por elegirnos !
+        </h2>
+        <div>
+            <h3>
+                Visita los mejores destinos del mundo con Copenhagen Airlines. </h3>
+                <div class="container-promociones">
+                    <h4> Promociones bancarias vigentes</h4>
+                    <div class="promo-tarjeta"><img src="./multimedia/Visa-Logo.png" alt="Tarjeta Visa" class="tarjeta"></div>
+                    <div class="promo-tarjeta"><img src="./multimedia/Mastercard-Logo.png" alt="Tarjeta Visa" class="tarjeta"></div>
+                    <div class="promo-tarjeta"><img src="./multimedia/Supervielle-Logo.png" alt="Tarjeta Visa" class="tarjeta"></div>
+                    <div class="promo-tarjeta"><img src="./multimedia/ICBC_logo.png" alt="Tarjeta Visa" class="tarjeta"></div>
+                    <div class="promo-tarjeta"><img src="./multimedia/Logo-Galicia.png" alt="Tarjeta Visa" class="tarjeta"></div>
+                    <div class="promo-tarjeta"><img src="./multimedia/Santander-Logo.png" alt="Tarjeta Visa" class="tarjeta"></div>
+                    <div class="promo-texto">6 cuotas sin interés</div>
+                    <div class="promo-texto">6 cuotas sin interés</div>
+                    <div class="promo-texto">18 cuotas sin interés</div>
+                    <div class="promo-texto">12 cuotas sin interés</div>
+                    <div class="promo-texto">12 cuotas sin interés</div>
+                    <div class="promo-texto">12 cuotas sin interés</div>
+                </div>
+        </div>
+        
+        <section class="reserva">
+            <form action="Reserva.php" method="GET" >
+                <label for="País">País</label >
+                <select name="País" id="País" class="index_pais">
+                    <option value="España">España</option>
+                    <option value="Italia">Italia</option>
+                    <option value="Estados Unidos">Estados Unidos</option>
+                </select>
+                    
+                <label for="Ciudad">Ciudad</label>
+                <select name="Ciudad" id="Ciudad" class=index_ciudad>
+                        <option value="Madrid">Madrid</option>
+                        <option value="Barcelona">Barcelona</option>
+                   
+                        <option value="Roma">Roma</option>
+                        <option value="Milán">Milán</option>
+                        <option value="New York">New York</option>
+                        <option value="Miami">Miami</option>
+                        <option value="Los Ángeles">Los Ángeles</option>
+                    </select>    
+                           
+                <label for="Fecha">Seleccionar fecha</label>
+                <input type="date" name="Fecha" id="Fecha" min="2022-01-01" max="2023-12-31" class="index_fecha">
+                <br>
+                <br>
+                <input type="submit" value="Buscar vuelos" class="acepta_cancela">
+                <input type="reset" value="Cancelar" class="acepta_cancela">
+            </form>
+        </section>
+        <br>
+        <section class="tabla">
+            <table border="1" align="center" class="table_index">
+                <tr class="formato_tabla">
+                    <th>Aerolinea</th>
+                    <th>Barcelona</th>
+                    <th>Madrid</th>
+                    <th>Roma</th>
+                    <th>Milán</th>
+                    <th>New York</th>
+                    <th>Miami</th>
+                    <th>Los Ángeles</th>
+                </tr>
+                <tr>
+                    <td>Aerolineas Argentinas</td>
+                    <td>900 USD</td>
+                    <td>850 USD</td>
+                    <td>1100 USD</td>
+                    <td>1200 USD</td>
+                    <td>850 USD</td>
+                    <td>600 USD</td>
+                    <td>750 USD</td>
+                </tr>
+                <tr>
+                    <td>Qatar Airways</td>
+                    <td>850 USD</td>
+                    <td>800 USD</td>
+                    <td>900 USD</td>
+                    <td>1000 USD</td>
+                    <td>750 USD</td>
+                    <td>600 USD</td>
+                    <td>650 USD</td>
+                </tr>
+                <tr class="linea_selec">
+                    <td>Copenhagen Airlines</td>
+                    <td>750 USD</td>
+                    <td>700 USD</td>
+                    <td>800 USD</td>
+                    <td>800 USD</td>
+                    <td>650 USD</td>
+                    <td>500 USD</td>
+                    <td>550 USD</td>
+                </tr>
+            </table>
+        </section>
+    </main>  
+<footer>
+    <ul class="ul_header">
+        <a href="" class= "a_header"><i class="fas fa-envelope"></i></i><li>Mail</li></a>
+        <a href="" class= "a_header"><i class="fab fa-facebook-f"></i><li></i>Facebook</li></a>
+        <a href="" class= "a_header"><i class="fab fa-instagram"></i><li>Instagram</li></a>
+        <a href="" class= "a_header"><i class="fab fa-twitter"></i><li>Twitter</li></a>
+        <a href="" class= "a_header"><i class="fab fa-tiktok"></i></i><li>Tik Tok</li></a>
+    </ul>
+</footer>
+</body>
+</html>
