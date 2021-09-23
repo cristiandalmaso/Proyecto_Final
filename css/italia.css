@@ -31,6 +31,17 @@ a:hover{
     transform: scale(1.5,1.5);
 }
 
+.navbar-alinear{
+    justify-content: space-between;
+    width: 100%;
+    text-align: center;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    align-items: center;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
 .container-logo{
     display: flex;
     width: 100%;
