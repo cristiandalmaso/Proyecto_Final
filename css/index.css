@@ -1,29 +1,13 @@
-.nav_header{
+*{
+    font-family: 'Montserrat',sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.header-color{
     background-color: #e42121;
-    color: whitesmoke;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-}
-
-.ul_header{
-    list-style-type: none;
-    text-align: center;
-    width: 75%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.a_header{
-    color: whitesmoke;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 0.9rem;
-    font-weight: 600;
-    text-decoration: none;
-}
-a:hover{
-    color:#c7ced1;
-    transform: scale(1.5,1.5);
+    padding-top: 0.5rem;
+    margin: 0.1rem;
 }
 
 .navbar-alinear{
@@ -37,11 +21,20 @@ a:hover{
     text-decoration: none;
 }
 
+a:hover{
+    color:#c7ced1;
+    transform: scale(1.5,1.5);
+}
+
+.container-logo{
+    display: flex;
+    width: 100%;
+    background-color: white;
+}
+
 .logo{
     width: 20rem;
-    display: block;
     margin:auto;
-    background-color: #ffffff;
 }
 
 .img_main{
@@ -59,13 +52,13 @@ h1{
     font-style: oblique;
 }
 
-h2{
+.h2-subtitulo{
     text-align: center;
     font-size: 1.5rem;
     font-family: 'Montserrat',sans-serif;
 }
 
-h3{
+.h3-v2{
     font-size: 1rem;
     text-align: center;
     font-family: 'Montserrat',sans-serif;
@@ -76,7 +69,7 @@ main{
     background-color: #e8e8e8;
     font-family: 'Montserrat',sans-serif;
     font-weight: 300;
-    font-size: 1rem;
+    font-size: 0.9rem;
 }
 
 .container-promociones{
@@ -84,11 +77,13 @@ main{
     grid-template-columns: repeat(6,1fr);
     grid-template-rows: 30% 40% 30%;
     justify-items: center;
-    border: 0.1rem solid black;
+    border: 0.05rem solid black;
     border-radius: 1rem;
     align-items: center;
     background-color: whitesmoke;
-    margin: 0.5rem;
+    margin: 1rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
 }
 
 .container-promociones h4{
@@ -96,18 +91,22 @@ main{
     grid-column-end: span 6;
     text-align: center;
     font-size: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
 }
 
 .promo-tarjeta{
     display: flex;
     justify-content: center;
-    width: 70%;
-    height: 70%;
+    width: 100%;
+    height: 2.5rem;
 }
 
 .tarjeta{
-    width: 57.50%;
+    width: 100%;
     height: 100%;
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
 
 .promo-texto{
@@ -117,30 +116,51 @@ main{
 
 .reserva{
     font-size: 1rem;
-    padding: 20px;
     text-align: center;
     background-color: #c7ced1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    padding: 0.5rem;
+}
+
+.container-reserva{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.5rem;
+    margin-bottom: 0rem;
 }
 
 .index_pais{
-    margin-left: 5px;
+    margin-left: 0.5rem;
     background-color: #e8e8e8;
     font-family: 'Montserrat',sans-serif;
-    font-size: 1rem;
+    font-size: 0.9rem;
+    width: 100%;
+    height: 100%;
 }
 
 .index_ciudad{
-    margin-left: 5px;
+    margin-left: 1rem;
+    margin-right: 1rem;
     background-color: #e8e8e8;
     font-family: 'Montserrat',sans-serif;
-    font-size: 1rem;
+    font-size: 0.9rem;
 }
 
 .index_fecha{
-    margin-left: 5px;
+    margin-left: 1.5rem;
     background-color: #e8e8e8;
     font-family: 'Montserrat',sans-serif;
-    font-size: 1rem;
+    font-size: 0.9rem;
+    width: 100%;
+    height: 100%;
+    padding-left: 1rem;
 }
 
 .acepta_cancela{
@@ -159,15 +179,39 @@ main{
     font-weight: bold;
 }
 .tabla{
-    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-left: 5rem;
+    margin-right: 5rem;
 }
 
-footer{
+.footer-container{
     background-color: #709995;
     font-family: 'Montserrat',sans-serif;
     font-weight: bold;
     color: whitesmoke;
     font-size: 0.9rem;
+    display: flex;  
+}
+
+.ul_footer{
+    list-style-type: none;
+    text-align: center;
+    width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 4.5rem;
+    margin-right: 4.5rem;
+    height: 3rem;
+    margin-bottom: 0rem;
+}
+
+.a_footer{
+    color: whitesmoke;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none;
 }
