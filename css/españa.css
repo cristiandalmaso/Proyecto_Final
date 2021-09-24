@@ -1,31 +1,9 @@
 *{
     font-family: 'Montserrat',sans-serif;
     box-sizing: border-box;
+    margin: 0;
 }
 
-.nav_header{
-    background-color: #e42121;
-    color: whitesmoke;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-}
-
-.ul_header{
-    list-style-type: none;
-    text-align: center;
-    width: 75%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.a_header{
-    color: whitesmoke;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 0.9rem;
-    font-weight: 600;
-    text-decoration: none;
-}
 a:hover{
     color:#c7ced1;
     transform: scale(1.5,1.5);
@@ -66,11 +44,14 @@ h1{
     padding: 1rem;
     margin-top: 0.5rem;
 }
-span{
+.titulo{
+    display: flex;
     font-family: 'Permanent Marker', cursive;
-    font-size: 3rem;
+    font-size: 2rem;
     color: black;
     vertical-align: middle;
+    justify-content: center;
+    margin-bottom: 0rem;
 }
 
 body{
@@ -78,64 +59,120 @@ body{
     background-color: whitesmoke;
 }
 
-.madrid{
+.container-madrid{
+    display: flex;
+    margin-top: 0rem;
+}
+
+.titulo-madrid{
     font-weight: bold;
     text-align: center;
     background-color: #580042;
     color: whitesmoke;
-}
-
-.barcelona{
-    font-weight: bold;
-    text-align: center;
-    background: linear-gradient(to bottom, rgb(0, 0, 114) 0%,rgb(0, 0, 114) 50%, rgb(211, 0, 0) 50%, rgb(211, 0, 0) 100%);
-    color: rgb(250, 175, 14);
+    margin-bottom: 0rem;
+    margin-left: 0.1rem;
+    margin-right: 0.1rem;
+    margin-top: 0rem;
 }
 
 h2{
     font-family: 'Permanent Marker', cursive;
-    font-size: 2rem; 
+    font-size: 1rem; 
     margin: 0.5rem; 
 }
 
 .españa_div{
-    font-size: 1.5rem;
+    font-size: 0.9rem;
     font-family: 'Montserrat',sans-serif;
     text-align: center;
     color: black;
-    border: solid 0.5rem black;
-    font-style: italic;
+    border: solid 0.1rem black;
+    margin: 0.1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 0rem;
 }
+
+.españa_div h3{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0rem;
+    margin-top: 0rem;
+}
+
 .españa_parrafo{
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-style: normal;
-    margin: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
 .atracciones{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row: 1fr;   
+    margin-top: 0rem;
+}
+
+.container-individual{
     display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 0.2rem;
 }
 
 .container{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 30% 60%;
     height: auto;
     width: 100%;
     margin: 1rem;
+    padding: 1rem;
     border: solid 1px black;
     text-align: center;
     background-color: whitesmoke;
     border-radius: 1rem;
 }
 .españa_atracciones{
-    height: 14rem;
-    width: 22rem;
+    height: 100%;
+    width: 100%;
     margin-bottom: 0rem;
 }
 
 .españa_atracciones_titulos{
-    font-size: 1rem;
-    margin-top: 1rem;
-    margin-bottom: 0rem;
     font-style: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modifica-h5{
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.modifica-parrafo{
+    font-size: 0.7rem;
+}
+
+.modifica-li-titulo{
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+
+.modifica-li-descripcion{
+    font-size: 0.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-imagen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
 }
 
 .iframe_madrid{
@@ -144,6 +181,15 @@ h2{
     height: 480px;
     margin: auto;
     border: solid 0.5rem #580042;
+}
+
+.barcelona{
+    font-weight: bold;
+    text-align: center;
+    background: linear-gradient(to bottom, rgb(0, 0, 114) 0%,rgb(0, 0, 114) 50%, rgb(211, 0, 0) 50%, rgb(211, 0, 0) 100%);
+    color: rgb(250, 175, 14);
+    margin-left: 0.1rem;
+    margin-right: 0.1rem;
 }
 
 .container_playlist{

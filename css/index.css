@@ -84,6 +84,7 @@ main{
     margin: 1rem;
     margin-left: 5rem;
     margin-right: 5rem;
+    margin-top: 0rem;
 }
 
 .container-promociones h4{
@@ -91,7 +92,7 @@ main{
     grid-column-end: span 6;
     text-align: center;
     font-size: 1rem;
-    padding-top: 0.5rem;
+    padding-top: 1rem;
     padding-bottom: 0.5rem;
 }
 
