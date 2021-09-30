@@ -300,7 +300,137 @@ a:hover{
     }
 }
 
-/* RESPONSIVE PARA MAS DE 376PX HASTA 425PX */
+/* RESPONSIVE PARA MAS DE 768PX HASTA 1025PX */
+
+@media (min-width: 769px) and (max-width: 1025px){
+    *{
+        font-family: 'Montserrat',sans-serif;
+        box-sizing: border-box;
+        margin: 0;
+    }
+
+    img.logo{
+        width: 20rem;
+    }
+
+    ul.navbar-nav.navbar-alinear{
+        margin: 0px;
+        display: flex;
+        justify-content: space-around;
+    }
+    li.nav-item{
+        margin: 0px;
+        padding: 16px;
+    }
+
+    a.navbar-alinear{
+        margin:0px;
+    }
+
+    .navbar-alinear{
+        font-size: 20px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    form.formulario{
+        margin: 0px;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    fieldset{
+        font-size: 20px;
+        padding: 0px;
+        margin:0px;
+    }
+
+    div.col{
+        display: flex;
+        justify-content: center;
+    }
+
+    input.form-control{
+        padding: 5px;
+        font-size: 20px;
+        padding-bottom: 0px;
+        padding-top: 0px;
+        margin-left: 64px;
+        margin-right: 64px;
+    }
+
+    input.form-control.dni{
+        margin-right: 0px 16px;
+        width: 882.8px;
+    }
+
+    div.mb-3.e-mail{
+        font-size: 20px;
+        display: flex;
+        margin-top:16px;
+    }
+
+    div.form-check{
+        margin: 0px;
+        padding-left: 32px;
+    }
+
+    input#flexRadioDefault1.form-check-input{
+        margin-left: 32px;
+        margin-right: 5px;
+        margin-top: 0px;
+    }
+
+    input#flexRadioDefault2.form-check-input{
+        margin-left: 32px;
+        margin-right: 5px;
+        margin-top: 0px;
+    }
+
+    input#flexCheckDefault.form-check-input{
+        margin-left: 32px;
+        margin-right: 5px;
+    }
+
+    select.form-select{
+        font-size: 20px;
+        padding: 5px;
+        display: flex;
+        margin-left: 64px;
+        margin-right: 64px;
+        width: 626.8px;
+    }
+
+    div.mb-3.reclamos{
+        margin-left: 64px;
+        margin-right: 64px;
+    }
+
+    textarea.form-control{
+        font-size: 20px;
+    }
+   
+    button.btn.btn{
+        font-size: 20px;
+        margin-right: 0px;
+        margin-left: 64px;
+    }
+
+    ul.ul_footer{
+        margin:0px;
+        padding: 0px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    ul.ul_footer li{
+        font-size: 20px;
+        padding: 5px;
+    }
+}
 
 @media (min-width: 426px) and (max-width: 769px){
     *{
