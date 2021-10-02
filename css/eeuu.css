@@ -62,6 +62,8 @@ body{
 
 .ciudad{
     border: 0.1rem solid black;
+    margin-left: 0.1rem;
+    margin-right: 0.1rem;
 }
 
 .titulo-ciudad{

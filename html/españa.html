@@ -18,359 +18,383 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 </head>
 
+<!-- Header con menú hamburguesa de Bootstrap -->
 <header class="header-color">
-    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-        <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav navbar-alinear">
-                <li class="nav-item">
-                <a class="navbar-alinear" aria-current="page" href="../index.html"><i class="fas fa-home"></i> Home</a>
-                </li>
-                <li class="nav-item">
-                <a class="navbar-alinear" aria-current="page" href ="./españa.html"><i class="fas fa-place-of-worship"></i> España</a>
-                </li>
-                <li class="nav-item">
-                <a class="navbar-alinear" aria-current="page" href ="./italia.html"><i class="fas fa-pizza-slice"></i> Italia</a>
-                </li>
-                <li class="nav-item">
-                <a class="navbar-alinear" aria-current="page" href ="./estadosunidos.html"><i class="fas fa-flag-usa"></i> Estados Unidos</a>
-                </li>
-                <li class="nav-item">
-                <a class="navbar-alinear" aria-current="page" href ="./contacto.html"><i class="fab fa-wpforms"></i> Contacto</a>                 
-                </li> 
-            </ul>      
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav navbar-alinear">
+          <li class="nav-item">
+            <a class="navbar-alinear" aria-current="page" href="../index.html"><i class="fas fa-home"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="navbar-alinear" aria-current="page" href ="./españa.html"><i class="fas fa-place-of-worship"></i> España</a>
+          </li>
+          <li class="nav-item">
+            <a class="navbar-alinear" aria-current="page" href ="./italia.html"><i class="fas fa-pizza-slice"></i> Italia</a>
+          </li>
+          <li class="nav-item">
+            <a class="navbar-alinear" aria-current="page" href ="./estadosunidos.html"><i class="fas fa-flag-usa"></i> Estados Unidos</a>
+          </li>
+          <li class="nav-item">
+            <a class="navbar-alinear" aria-current="page" href ="./contacto.html"><i class="fab fa-wpforms"></i> Contacto</a>                 
+          </li> 
+        </ul>      
+      </div>
+    </div>
+  </nav>
+  
+  <div class="container-logo">
+    <img src="../multimedia/logo-v2.JPG" alt="Copenhagen logo" class="logo">
+  </div>
+  <h1><div class="titulo">España</div></h1>
+</header>
+<main>
+
+<body>
+  <hr>
+  <div class="titulo-madrid">
+    <!-- Titulo Madrid -->
+    <h2>Madrid</h2>
+  </div>
+    
+  <!-- Seccion Madrid -->
+  <section class="container-madrid">
+    <!-- Subtitulo Madrid -->
+    <div class="españa_div">
+      <h3>¡Viaja a Madrid!</h3>
+      <!-- Introducción Madrid -->
+      <p class="españa_parrafo">
+        Madrid es un municipio y una ciudad de España. ´
+        La localidad, con categoría histórica de villa,
+        es la capital del Estado y de la Comunidad de Madrid. 
+        En su término municipal, el más poblado de España, viven 
+        3.334.730 personas empadronadas, según el INE de 2020. 
+        <br>
+        <br>
+        El área metropolitana asociada tiene una población de 6.779.888 habitantes,
+        la segunda de la Unión Europea, según la fuente, tras la de París, 
+        y en otras fuentes detrás también de la Región del Ruhr, 
+        así como la segunda ciudad más poblada de la Unión Europea, 
+        por detrás de Berlín.
+      </p>
+      
+      <!-- Subtitulo atracciones -->
+      <br>
+      <h3>MUSEOS</h3>
+      <!--Madrid_Atracciones -->
+      <!-- Grid con 3 columnas y una fila -->
+      <div class="atracciones">
+        <!-- Container individual de cada grid -->
+        <div class="container-individual">    
+          <!-- Estilo tarjeta con Bootstrap -->
+          <div class="card" style="width: 100%;">
+            <!-- Imagen -->
+            <img src="../multimedia/Museo_del_Prado.jpg" class="card-img-top" alt="Museo Nacional del Prado">
+            <div class="card-body">
+              <!-- Titulo atracción -->
+              <h5 class="card-title modifica-h5">MUSEO NACIONAL DEL PRADO</h5>
+              <!-- Párrafo -->
+              <p class="card-text modifica-parrafo">
+                <br>
+                El Museo Nacional del Prado es uno de los más importantes del mundo,
+                así como uno de los más visitados (el decimoctavo en 2013 entre los 
+                museos de arte),​ y está considerada la institución cultural más 
+                importante de España, según el Observatorio de la Cultura de 2020.
+                <br>
+                <br>
+                Singularmente rico en cuadros de maestros españoles y del resto de Europa de los 
+                siglos XV al XVIII, y españoles del XIX, según el historiador del arte e 
+                hispanista Jonathan Brown "pocos se atreverían a poner en duda que es el 
+                museo más importante del mundo en pintura europea".
+              </p>
+            </div>
+
+              <!-- Lista con detalles -->
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item modifica-li-titulo">Horarios</li>
+                <li class="list-group-item modifica-li-descripcion">Lunes a Sábados: de 10:00 a 20:00</li>
+                <li class="list-group-item modifica-li-descripcion">Domingos: de 10:00 a 19:00</li>
+                <li class="list-group-item"></li>
+                <li class="list-group-item modifica-li-titulo">Entrada general</li>
+                <li class="list-group-item modifica-li-descripcion">20 euros</li>
+              </ul>
+          </div>
+        </div>
+
+        <div class="container-individual">     
+          <div class="card" style="width: 100%;">
+            <img src="../multimedia/Museo_Nacional_Centro_de_Arte.jfif" class="card-img-top" alt="Museo Nacional Centro de Arte Reina Sofía">
+            <div class="card-body">
+              <h5 class="card-title modifica-h5">MUSEO NACIONAL CENTRO DE ARTE REINA SOFÍA</h5>
+              <p class="card-text modifica-parrafo">
+                El Museo Nacional Centro de Arte Reina Sofía (MNCARS), 
+                conocido comúnmente como Museo Reina Sofía, es un museo 
+                español de arte del siglo XX y contemporáneo, con sede 
+                en la ciudad de Madrid.
+                <br>
+                <br>
+                El Reina Sofía es el vértice sur del conocido como 
+                Triángulo del Arte de Madrid, que incluye a otros dos 
+                célebres museos: el Prado y el Thyssen-Bornemisza.
+                <br>
+                <br>
+                En la colección permanente del museo destaca un núcleo 
+                de obras de grandes artistas españoles del siglo XX, 
+                especialmente Pablo Picasso, Salvador Dalí y Joan Miró.
+              </p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item modifica-li-titulo">Horarios</li>
+              <li class="list-group-item modifica-li-descripcion">Lunes a Sábados: de 10:00 a 20:00</li>
+              <li class="list-group-item modifica-li-descripcion">Domingos: de 10:00 a 14:30</li>
+              <li class="list-group-item modifica-li-descripcion"></li>
+              <li class="list-group-item modifica-li-titulo">Entrada general</li>
+              <li class="list-group-item modifica-li-descripcion">10 euros</li>
+            </ul>
+          </div>    
+        </div>  
+        
+        <div class="container-individual">
+          <div class="card" style="width: 98%">
+            <img src="../multimedia/Museo-Thyssen-Bornemisza.jpg" class="card-img-top" alt="Museo Thyssen-Bornemisza">
+            <div class="card-body">
+              <h5 class="card-title modifica-h5">MUSEO THYSSEN BORNEMISZA</h5>
+              <p class="card-text modifica-parrafo">
+                <br>
+                El Museo Nacional Thyssen-Bornemisza es una pinacoteca 
+                de maestros antiguos y modernos. 
+                Su existencia se debe al acuerdo de arrendamiento (1988) 
+                y a la posterior adquisición, por parte del Gobierno 
+                español (1993), del núcleo más valioso de la colección 
+                privada reunida a lo largo de siete décadas por la familia
+                Thyssen-Bornemisza.
+                <br>
+                <br>
+                Este fondo artístico vino a complementar el repertorio
+                expuesto en los dos principales centros estatales, el 
+                Museo del Prado y el Reina Sofía, al aportar numerosos 
+                ejemplos de pintores extranjeros primitivos italianos y 
+                flamencos de los siglos XIV y XV.
+              </p>
+            </div>
+            
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item modifica-li-titulo">Horarios</li>
+              <li class="list-group-item modifica-li-descripcion">Lunes: de 12:00 a 16:00</li>
+              <li class="list-group-item modifica-li-descripcion">Martes a Domingos: de 10:00 a 19:00</li>
+              <li class="list-group-item"></li>
+              <li class="list-group-item modifica-li-titulo">Entrada general</li>
+              <li class="list-group-item modifica-li-descripcion">13 euros</li>
+            </ul>
+          </div>  
+        </div>
+      </div>
+      
+      <br>
+      <h3>PLAZAS</h3>
+      <div class="atracciones">
+        <div class="container-individual">
+          <div class="card mb-3">
+            <img src="../multimedia/Plaza_Mayor_de_Madrid.jpg" class="card-img-top" alt="Plaza Mayor de Madrid">
+            <div class="card-body">
+              <h5 class="card-title modifica-h5">PLAZA MAYOR DE MADRID</h5>
+              <p class="card-text modifica-li-descripcion">La plaza Mayor está situada en el centro de Madrid, en el barrio de Sol, junto a la calle Mayor y a 300 metros de la Puerta del Sol.
+                <br>
+                <br>
+                Fue construida entre 1580 y 1619, y, fue reconstruida en 1631, 1670 y 1790 tras sucesivos incendios. Es considerada Patrimonio Histórico de España.
+              </p>
+              <p class="card-text modifica-li-descripcion"><small class="text-muted">Inauguración: año 1619</small></p>
             </div>
           </div>
         </div>
-      </nav>
-    <div class="container-logo">
-        <img src="../multimedia/logo-v2.JPG" alt="Copenhagen logo" class="logo">
-    </div>
-    <h1><div class="titulo">España</div></h1>
-</header>
-
-<body>
-    <hr>
-    <div class="titulo-madrid">
-        <!-- Titulo Madrid -->
-        <h2>Madrid</h2>
-    </div>
-    <!-- Seccion Madrid -->
-    <section class="container-madrid">
-        <!-- Subtitulo Madrid -->
-        <div class="españa_div">
-            <h3>¡Viaja a Madrid!</h3>
-            <!-- Introducción Madrid -->
-            <p class="españa_parrafo">
-                Madrid es un municipio y una ciudad de España. 
-                La localidad, con categoría histórica de villa,
-                 es la capital del Estado y de la Comunidad de Madrid. 
-                 En su término municipal, el más poblado de España, viven 
-                 3.334.730 personas empadronadas, según el INE de 2020. 
+               
+        <div class="container-individual">
+          <div class="card mb-3">
+            <img src="../multimedia/Plaza_de_la_Independencia_(Madrid).jpg" class="card-img-top" alt="Plaza de la Independencia">
+            <div class="card-body">
+              <h5 class="card-title modifica-h5">PLAZA DE LA INDEPENDENCIA</h5>
+               <p class="card-text modifica-li-descripcion">La plaza de la Independencia se encuentra atravesada, de este a oeste, por la calle de Alcalá y confluyen las calles de Serrano, por el norte, y Alfonso XII, por el sur.
                  <br>
                  <br>
-                 El área metropolitana asociada tiene una población de 6.779.888 habitantes,
-                 la segunda de la Unión Europea, según la fuente, tras la de París, 
-                 y en otras fuentes detrás también de la Región del Ruhr, 
-                 así como la segunda ciudad más poblada de la Unión Europea, 
-                 por detrás de Berlín.
-            </p>
-            <!-- Subtitulo atracciones -->
-            <br>
-            <h3>MUSEOS</h3>
-            <!-- Sección Madrid_Atracciones -->
-            <div class="atracciones">
-            <div class="container-individual">    
-                <div class="card" style="width: 100%;">
-                    <img src="../multimedia/Museo_del_Prado.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title modifica-h5">MUSEO NACIONAL DEL PRADO</h5>
-                      <p class="card-text modifica-parrafo">
-                        <br>
-                        El Museo Nacional del Prado es uno de los más importantes del mundo,
-                        así como uno de los más visitados (el decimoctavo en 2013 entre los 
-                        museos de arte),​ y está considerada la institución cultural más 
-                        importante de España, según el Observatorio de la Cultura de 2020.
-                        <br>
-                        <br>
-                        Singularmente rico en cuadros de maestros españoles y del resto de Europa de los 
-                        siglos XV al XVIII, y españoles del XIX, según el historiador del arte e 
-                        hispanista Jonathan Brown "pocos se atreverían a poner en duda que es el 
-                        museo más importante del mundo en pintura europea".
-                    </p>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                      <li class="list-group-item modifica-li-titulo">Horarios</li>
-                      <li class="list-group-item modifica-li-descripcion">Lunes a Sábados: de 10:00 a 20:00</li>
-                      <li class="list-group-item modifica-li-descripcion">Domingos: de 10:00 a 19:00</li>
-                      <li class="list-group-item"></li>
-                      <li class="list-group-item modifica-li-titulo">Entrada general</li>
-                      <li class="list-group-item modifica-li-descripcion">20 euros</li>
-                    </ul>
-                  </div>
-                </div>
-
-                <div class="container-individual">     
-                  <div class="card" style="width: 100%;">
-                    <img src="../multimedia/Museo_Nacional_Centro_de_Arte.jfif" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title modifica-h5">MUSEO NACIONAL CENTRO DE ARTE REINA SOFÍA</h5>
-                      <p class="card-text modifica-parrafo">
-                        El Museo Nacional Centro de Arte Reina Sofía (MNCARS), 
-                        conocido comúnmente como Museo Reina Sofía, es un museo 
-                        español de arte del siglo XX y contemporáneo, con sede 
-                        en la ciudad de Madrid.
-                        <br>
-                        <br>
-                        El Reina Sofía es el vértice sur del conocido como 
-                        Triángulo del Arte de Madrid, que incluye a otros dos 
-                        célebres museos: el Prado y el Thyssen-Bornemisza.
-                        <br>
-                        <br>
-                        En la colección permanente del museo destaca un núcleo 
-                        de obras de grandes artistas españoles del siglo XX, 
-                        especialmente Pablo Picasso, Salvador Dalí y Joan Miró.
-                      </p>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                      <li class="list-group-item modifica-li-titulo">Horarios</li>
-                      <li class="list-group-item modifica-li-descripcion">Lunes a Sábados: de 10:00 a 20:00</li>
-                      <li class="list-group-item modifica-li-descripcion">Domingos: de 10:00 a 14:30</li>
-                      <li class="list-group-item modifica-li-descripcion"></li>
-                      <li class="list-group-item modifica-li-titulo">Entrada general</li>
-                      <li class="list-group-item modifica-li-descripcion">10 euros</li>
-                    </ul>
-                  </div>    
-                </div>  
-
-                <div class="container-individual">
-                  <div class="card" style="width: 98%">
-                    <img src="../multimedia/Museo-Thyssen-Bornemisza.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title modifica-h5">MUSEO THYSSEN BORNEMISZA</h5>
-                      <p class="card-text modifica-parrafo">
-                        <br>
-                        El Museo Nacional Thyssen-Bornemisza es una pinacoteca 
-                        de maestros antiguos y modernos. 
-                        Su existencia se debe al acuerdo de arrendamiento (1988) 
-                        y a la posterior adquisición, por parte del Gobierno 
-                        español (1993), del núcleo más valioso de la colección 
-                        privada reunida a lo largo de siete décadas por la familia
-                        Thyssen-Bornemisza.
-                        <br>
-                        <br>
-                        Este fondo artístico vino a complementar el repertorio
-                        expuesto en los dos principales centros estatales, el 
-                        Museo del Prado y el Reina Sofía, al aportar numerosos 
-                        ejemplos de pintores extranjeros primitivos italianos y 
-                        flamencos de los siglos XIV y XV.
-                      </p>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                      <li class="list-group-item modifica-li-titulo">Horarios</li>
-                      <li class="list-group-item modifica-li-descripcion">Lunes: de 12:00 a 16:00</li>
-                      <li class="list-group-item modifica-li-descripcion">Martes a Domingos: de 10:00 a 19:00</li>
-                      <li class="list-group-item"></li>
-                      <li class="list-group-item modifica-li-titulo">Entrada general</li>
-                      <li class="list-group-item modifica-li-descripcion">13 euros</li>
-                    </ul>
-                  </div>  
-                </div>
+                 En su extremo noroeste, se sitúa la calle de Salustiano Olózaga y, en el sureste, arranca la Avenida de Méjico, que discurre íntegramente por el Parque de El Retiro.
+                </p>
+                <p class="card-text modifica-li-descripcion"><small class="text-muted">Inauguración: año 1778</small></p>
+              </div>
             </div>
-            <br>
-            <h3>PLAZAS</h3>
-            <div class="atracciones">
-                <div class="container-individual">
-                <div class="card mb-3">
-                    <img src="../multimedia/Plaza_Mayor_de_Madrid.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title modifica-h5">PLAZA MAYOR DE MADRID</h5>
-                      <p class="card-text modifica-li-descripcion">La plaza Mayor está situada en el centro de Madrid, en el barrio de Sol, junto a la calle Mayor y a 300 metros de la Puerta del Sol.
-                        <br>
-                        <br>
-                        Fue construida entre 1580 y 1619, y, fue reconstruida en 1631, 1670 y 1790 tras sucesivos incendios. Es considerada Patrimonio Histórico de España.
-                      </p>
-                      <p class="card-text modifica-li-descripcion"><small class="text-muted">Inauguración: año 1619</small></p>
-                    </div>
-                  </div>
-                </div>
-                <div class="container-individual">
-                  <div class="card mb-3">
-                    <img src="../multimedia/Plaza_de_la_Independencia_(Madrid).jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title modifica-h5">PLAZA DE LA INDEPENDENCIA</h5>
-                      <p class="card-text modifica-li-descripcion">La plaza de la Independencia se encuentra atravesada, de este a oeste, por la calle de Alcalá y confluyen las calles de Serrano, por el norte, y Alfonso XII, por el sur.
-                        <br>
-                        <br>
-                        En su extremo noroeste, se sitúa la calle de Salustiano Olózaga y, en el sureste, arranca la Avenida de Méjico, que discurre íntegramente por el Parque de El Retiro.
-                      </p>
-                      <p class="card-text modifica-li-descripcion"><small class="text-muted">Inauguración: año 1778</small></p>
-                    </div>
-                  </div>
-                </div>
-                <div class="container-individual"> 
-                <div class="card mb-3">
-                    <img src="../multimedia/Plaza de Isabel II.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title modifica-h5">PLAZA DE ISABEL II</h5>
-                      <p class="card-text modifica-li-descripcion">La plaza de Isabel II (más conocida como plaza de Ópera) es un espacio abierto entre los barrios de Sol y Palacio, del distrito centro de Madrid.
-                        <br>
-                        <br>
-                        Confluyen en ella la calle del Arenal procedente de la Puerta del Sol, y las vías menores dedicadas a Arrieta, Campomanes, Caños del Peral, Escalinata y Vergara. 
-                      </p>
-                      <p class="card-text modifica-li-descripcion"><small class="text-muted">Inauguración: año 1850</small></p>
-                    </div>
-                  </div>
-                </div>
-            </div> 
+          </div>
+                
+          <div class="container-individual"> 
+            <div class="card mb-3">
+              <img src="../multimedia/Plaza de Isabel II.jpg" class="card-img-top" alt="Plaza de Isabel II">
+              <div class="card-body">
+                <h5 class="card-title modifica-h5">PLAZA DE ISABEL II</h5>
+                <p class="card-text modifica-li-descripcion">La plaza de Isabel II (más conocida como plaza de Ópera) es un espacio abierto entre los barrios de Sol y Palacio, del distrito centro de Madrid.
+                  <br>
+                  <br>
+                  Confluyen en ella la calle del Arenal procedente de la Puerta del Sol, y las vías menores dedicadas a Arrieta, Campomanes, Caños del Peral, Escalinata y Vergara. 
+                </p>
+                <p class="card-text modifica-li-descripcion"><small class="text-muted">Inauguración: año 1850</small></p>
+              </div>
+            </div>
+          </div>
+        </div> 
         <h6>
-            <iframe src="https://www.youtube.com/embed/TH4h0sGkjkc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="iframe_madrid"></iframe>
+          <iframe src="https://www.youtube.com/embed/TH4h0sGkjkc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="iframe_madrid"></iframe>
         </h6>
-    </section>
-    </section>
+  </section>
     
     <hr>
 
 
     <!-- Seccion Barcelona -->
     <section>
-        <div class="barcelona">
-            <!-- Titulo Barcelona -->
-            <h2>Barcelona</h2>
-        </div>
-        <!-- Subtitulo Barcelona -->
-        <div class="españa_div">¡Descubre Barcelona!
-            <!-- Introducción Barcelona -->
-            <p class="españa_parrafo">
-                Barcelona es una ciudad española, capital de la comunidad 
-                autónoma de Cataluña, de la provincia homónima y de la comarca 
-                del Barcelonés.
-                 <br>
-                 <br>
-                 Se ubica a la orilla del mar Mediterráneo, a unos 120 km al sur de la 
-                 cadena montañosa de los Pirineos y de la frontera con Francia, en un 
-                 pequeño llano litoral limitado por el mar al este, la sierra de Collserola 
-                 al oeste, el río Llobregat al sur y el río Besós al norte.
-            </p>
-            <!-- Subtitulo atracciones -->
-            <h3>Principales atracciones</h3>
-            <!-- Sección Barcelona_Atracciones -->
-            <section class="atracciones">
+      <div class="barcelona">
+        <!-- Titulo Barcelona -->
+        <h2>Barcelona</h2>
+      </div>
+      
+      <!-- Subtitulo Barcelona -->
+        <div class="españa_div">
+          <h3>¡Descubre Barcelona!</h3>
+          <!-- Introducción Barcelona -->
+          <p class="españa_parrafo">
+            Barcelona es una ciudad española, capital de la comunidad 
+            autónoma de Cataluña, de la provincia homónima y de la comarca 
+            del Barcelonés.
+            <br>
+            <br>
+            Se ubica a la orilla del mar Mediterráneo, a unos 120 km al sur de la 
+            cadena montañosa de los Pirineos y de la frontera con Francia, en un 
+            pequeño llano litoral limitado por el mar al este, la sierra de Collserola 
+            al oeste, el río Llobregat al sur y el río Besós al norte.
+          </p>
+          <br>
+           
+          <!-- Subtitulo atracciones -->
+          <h3>ATRACCIONES</h3>
+          <!-- Sección Barcelona_Atracciones -->
+            <div class="atracciones">
              <!-- Container -->   
              <div class="container-individual">    
-                <div class="card" style="width: 100%;">
-                    <img src="../multimedia/Basilica_Sagrada_Familia.jfif" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title modifica-h5">BASÍLICA DE LA SAGRADA FAMILIA</h5>
-                      <p class="card-text modifica-parrafo">
-                        <br>
-                        El Templo Expiatorio de la Sagrada Familia. es una basílica católica de Barcelona (España), diseñada por el arquitecto Antoni Gaudí. Iniciada en 1882, todavía está en construcción.
-                        Es la obra maestra de Gaudí, y el máximo exponente de la arquitectura 
-                        modernista catalana. Es uno de los monumentos más visitados de España, 
-                        junto al Museo del Prado y la Alhambra de Granada, y es la iglesia más 
-                        visitada de Europa tras la basílica de San Pedro del Vaticano.
-                        <br>
-                        <br>
-                        La Sagrada Familia es un reflejo de la plenitud artística de Gaudí: trabajó 
-                        en ella durante la mayor parte de su carrera profesional, pero especialmente
-                        en los últimos años de su carrera, donde llegó a la culminación de su estilo 
-                        naturalista, haciendo una síntesis de todas las soluciones y estilos probados 
-                        hasta aquel entonces. Gaudí logró una perfecta armonía en la interrelación 
-                        entre los elementos estructurales y los ornamentales, entre plástica y 
-                        estética, entre función y forma, entre contenido y continente, logrando 
-                        la integración de todas las artes en un todo estructurado y lógico.
-                    </p>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                      <li class="list-group-item modifica-li-titulo">Horarios</li>
-                      <li class="list-group-item modifica-li-descripcion">Todos los días: de 09:00 a 20:00</li>
-                      <li class="list-group-item modifica-li-descripcion">Fechas especiales: de 09:00 a 14:00</li>
-                      <li class="list-group-item"></li>
-                      <li class="list-group-item modifica-li-titulo">Entrada general</li>
-                      <li class="list-group-item modifica-li-descripcion">26 euros</li>
-                    </ul>
-                  </div>
+               <div class="card" style="width: 100%;">
+                <img src="../multimedia/Basilica_Sagrada_Familia.jfif" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title modifica-h5">BASÍLICA DE LA SAGRADA FAMILIA</h5>
+                  <p class="card-text modifica-parrafo">
+                    <br>
+                    El Templo Expiatorio de la Sagrada Familia. es una basílica católica de Barcelona (España), diseñada por el arquitecto Antoni Gaudí. Iniciada en 1882, todavía está en construcción.
+                    Es la obra maestra de Gaudí, y el máximo exponente de la arquitectura 
+                    modernista catalana. Es uno de los monumentos más visitados de España, 
+                    junto al Museo del Prado y la Alhambra de Granada, y es la iglesia más 
+                    visitada de Europa tras la basílica de San Pedro del Vaticano.
+                    <br>
+                    <br>
+                    La Sagrada Familia es un reflejo de la plenitud artística de Gaudí: trabajó 
+                    en ella durante la mayor parte de su carrera profesional, pero especialmente
+                    en los últimos años de su carrera, donde llegó a la culminación de su estilo 
+                    naturalista, haciendo una síntesis de todas las soluciones y estilos probados 
+                    hasta aquel entonces. Gaudí logró una perfecta armonía en la interrelación 
+                    entre los elementos estructurales y los ornamentales, entre plástica y 
+                    estética, entre función y forma, entre contenido y continente, logrando 
+                    la integración de todas las artes en un todo estructurado y lógico.
+                  </p>
+                
                 </div>
-
-                <div class="container-individual">    
-                    <div class="card" style="width: 100%">
-                        <img src="../multimedia/camp_nou.jfif" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title modifica-h5">CAMP NOU</h5>
-                          <p class="card-text modifica-parrafo">
-                            <br>
-                            El Camp Nou es un recinto deportivo propiedad del 
-                            Fútbol Club Barcelona, ubicado en el distrito de 
-                            Les Corts. Se inauguró el 24 de 
-                            septiembre de 1957 y su aforo actualmente es de 99 354 espectadores, 
-                            siendo el estadio con mayor capacidad de Europa y el tercero a nivel 
-                            mundial. Su aforo actual está por debajo de los 100.000 
-                            espectadores, tras implantar las localidades de asiento para todo el 
-                            estadio y ser catalogado por la UEFA como "estadio de élite".
-                            <br>
-                            <br>
-                            El estadio fue inaugurado el 24 de septiembre de 1957 
-                            (Día de la Merced, patrona de Barcelona). Se organizaron una serie de actos conmemorativos y un partido de fútbol amistoso entre el Barcelona y un combinado de jugadores de Varsovia, 
-                            que concluyó con victoria del conjunto local por 4-2.
-
-                            El primer partido oficial que acogió el estadio tuvo lugar el 6 de octubre de 
-                            1957 y enfrentó al Barcelona y al Jaén, en partido correspondiente a la 
-                            cuarta jornada del Campeonato Nacional de Liga 1957/58. El resultado fue de 
-                            6–1 a favor de los locales.
-                        </p>
-                        </div>
-                        <ul class="list-group list-group-flush">
-                          <li class="list-group-item modifica-li-titulo">Horarios</li>
-                          <li class="list-group-item modifica-li-descripcion">Lunes a Sábados: de 10:00 a 20:00</li>
-                          <li class="list-group-item modifica-li-descripcion">Domingos y feriados: de 10:00 a 14:30</li>
-                          <li class="list-group-item"></li>
-                          <li class="list-group-item modifica-li-titulo">Entrada general</li>
-                          <li class="list-group-item modifica-li-descripcion">26 euros</li>
-                        </ul>
-                      </div>
-                    </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item modifica-li-titulo">Horarios</li>
+                  <li class="list-group-item modifica-li-descripcion">Todos los días: de 09:00 a 20:00</li>
+                  <li class="list-group-item modifica-li-descripcion">Fechas especiales: de 09:00 a 14:00</li>
+                  <li class="list-group-item"></li>
+                  <li class="list-group-item modifica-li-titulo">Entrada general</li>
+                  <li class="list-group-item modifica-li-descripcion">26 euros</li>
+                </ul>
+              </div>
+            </div>
+            
+            <div class="container-individual">    
+              <div class="card" style="width: 100%">
+                <img src="../multimedia/camp_nou.jfif" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title modifica-h5">CAMP NOU</h5>
+                  <p class="card-text modifica-parrafo">
+                    <br>
+                    El Camp Nou es un recinto deportivo propiedad del 
+                    Fútbol Club Barcelona, ubicado en el distrito de 
+                    Les Corts. Se inauguró el 24 de 
+                    septiembre de 1957 y su aforo actualmente es de 99 354 espectadores, 
+                    siendo el estadio con mayor capacidad de Europa y el tercero a nivel 
+                    mundial. Su aforo actual está por debajo de los 100.000 
+                    espectadores, tras implantar las localidades de asiento para todo el 
+                    estadio y ser catalogado por la UEFA como "estadio de élite".
+                    <br>
+                    <br>
+                    El estadio fue inaugurado el 24 de septiembre de 1957 
+                    (Día de la Merced, patrona de Barcelona). Se organizaron una serie de actos conmemorativos y un partido de fútbol amistoso entre el Barcelona y un combinado de jugadores de Varsovia, 
+                    que concluyó con victoria del conjunto local por 4-2.
+                    
+                    El primer partido oficial que acogió el estadio tuvo lugar el 6 de octubre de 
+                    1957 y enfrentó al Barcelona y al Jaén, en partido correspondiente a la 
+                    cuarta jornada del Campeonato Nacional de Liga 1957/58. El resultado fue de 
+                    6–1 a favor de los locales.
+                  </p>
+                </div>
+                
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item modifica-li-titulo">Horarios</li>
+                  <li class="list-group-item modifica-li-descripcion">Lunes a Sábados: de 10:00 a 20:00</li>
+                  <li class="list-group-item modifica-li-descripcion">Domingos y feriados: de 10:00 a 14:30</li>
+                  <li class="list-group-item"></li>
+                  <li class="list-group-item modifica-li-titulo">Entrada general</li>
+                  <li class="list-group-item modifica-li-descripcion">26 euros</li>
+                </ul>
+              </div>
+            </div>
 
             <!-- Container -->   
-            <div class="container-individual">    
-                <div class="card" style="width: 100%">
-                    <img src="../multimedia/mercado_de_la_boqueria.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title modifica-h5">MERCADO DE LA BOQUERÍA</h5>
-                      <p class="card-text modifica-parrafo">
-                        <br>
-                        El Mercado de San José (en catalán Mercat de Sant Josep), popularmente 
-                        conocido como La Boquería (en catalán La Boqueria), es un mercado municipal 
-                        que se encuentra en la Rambla de Barcelona (España). Además de ser un lugar 
-                        donde se puede comprar todo tipo de productos frescos, es también una 
-                        atracción turística. Es el mercado más grande de Cataluña, el más variado en oferta alimentaria y también el más visitado por los turistas
-                        <br>
-                        <br>
-                        El mercado fue inaugurado en 1840, pero sus orígenes están al aire 
-                        libre, ante las puertas de la antigua ciudad, en la explanada del 
-                        Pla de la Boqueria, donde vendedores ambulantes y labradores de los 
-                        pueblos y masías próximas se instalaban con el fin de vender sus 
-                        productos. 
-                        Este mercado se hacía fuera de las murallas de la ciudad por ahorrar el 
-                        impuesto de entrada de mercancías. Cada vez hay más establecimientos del mercado regentados por inmigrantes, en los que se encuentran especialidades de Japón, Italia, Grecia o los países árabes.
-                    </p>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                      <li class="list-group-item modifica-li-titulo">Horarios</li>
-                      <li class="list-group-item modifica-li-descripcion">Lunes a Sábados: de 08:00 a 20:30</li>
-                      <li class="list-group-item modifica-li-descripcion">Domingos: Cerrado</li>
-                      <li class="list-group-item"></li>
-                      <li class="list-group-item modifica-li-titulo">Entrada general</li>
-                      <li class="list-group-item modifica-li-descripcion">Libre y gratuita</li>
-                    </ul>
-                  </div>
+            <div class="container-individual">   
+              <div class="card" style="width: 100%">
+                <img src="../multimedia/mercado_de_la_boqueria.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title modifica-h5">MERCADO DE LA BOQUERÍA</h5>
+                  <p class="card-text modifica-parrafo">
+                    <br>
+                    El Mercado de San José (en catalán Mercat de Sant Josep), popularmente 
+                    conocido como La Boquería (en catalán La Boqueria), es un mercado municipal 
+                    que se encuentra en la Rambla de Barcelona (España). Además de ser un lugar 
+                    donde se puede comprar todo tipo de productos frescos, es también una 
+                    atracción turística. Es el mercado más grande de Cataluña, el más variado en oferta alimentaria y también el más visitado por los turistas
+                    <br>
+                    <br>
+                    El mercado fue inaugurado en 1840, pero sus orígenes están al aire 
+                    libre, ante las puertas de la antigua ciudad, en la explanada del 
+                    Pla de la Boqueria, donde vendedores ambulantes y labradores de los 
+                    pueblos y masías próximas se instalaban con el fin de vender sus productos. 
+                    Este mercado se hacía fuera de las murallas de la ciudad por ahorrar el 
+                    impuesto de entrada de mercancías. Cada vez hay más establecimientos del mercado regentados por inmigrantes, en los que se encuentran especialidades de Japón, Italia, Grecia o los países árabes.
+                  </p>
                 </div>
+                    
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item modifica-li-titulo">Horarios</li>
+                  <li class="list-group-item modifica-li-descripcion">Lunes a Sábados: de 08:00 a 20:30</li>
+                  <li class="list-group-item modifica-li-descripcion">Domingos: Cerrado</li>
+                  <li class="list-group-item"></li>
+                  <li class="list-group-item modifica-li-titulo">Entrada general</li>
+                  <li class="list-group-item modifica-li-descripcion">Libre y gratuita</li>
+                </ul>
+              </div>
+             </div>
         </div>
+        
+        <!-- Container playlist -->
         <div class="container_playlist">
-        <p class="playlist_barcelona">Escucha Barcelona</p>
-        <div class="grid-container">
+          <p class="playlist_barcelona">Escucha Barcelona</p>
+          <div class="grid-container">
             <div>
                 <iframe src="https://open.spotify.com/embed/track/3LXFi1Xk9qJsYXYEjDcuVH" width="100%" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media" class="barcelona_spotify"></iframe>
             </div>
@@ -387,7 +411,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>   
 </body>
-
+</main>
 <footer class="footer-container">
     <ul class="ul_footer">
         <a href="" class= "a_footer"><li><i class="fas fa-envelope"></i> E-mail</li></a>
