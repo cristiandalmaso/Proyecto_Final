@@ -60,7 +60,7 @@ body{
     background-color: whitesmoke;
 }
 
-.container-madrid{
+.container-ciudad{
     display: flex;
     margin-top: 0rem;
 }
@@ -248,5 +248,193 @@ h2{
     font-size: 0.9rem;
     font-weight: 600;
     text-decoration: none;
+}
+
+@media (max-width: 376px){
+    *{
+        font-family: 'Montserrat',sans-serif;
+        box-sizing: border-box;
+        margin: 0;
+    }
+
+    .logo{
+        width: 100%
+    }
+
+    ul.navbar-nav.navbar-alinear{
+        margin: 0px;
+    }
+    li.nav-item{
+        margin: 0px;
+    }
+
+    a.navbar-alinear{
+        margin:0px;
+    }
+
+    div.españa_div{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+   .atracciones{
+       display: grid;
+       grid-template-columns: 100%;
+   }
+   .container-video{
+       display: flex;
+       align-items: center;
+       margin-bottom: 0.1rem;
+   }
+
+   .container-video iframe{
+       height: 100%;
+   }
+
+   .container_playlist{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       border: 0.2rem solid rgb(211, 0, 0);
+   }
+
+   p.playlist_barcelona{
+       font-size: 1rem;
+       display: flex;
+       justify-content: center;
+       margin-bottom: 0.5rem;
+       margin-top: 0.5rem;
+   }
+
+div.container_playlist{
+    margin-bottom: 0.1rem;
+}
+
+   div.grid-container{
+       margin-bottom: 0.2rem;
+       display: flex;
+       flex-direction: column;
+   }
+
+   div.grid-container div{
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: column;
+}
+    .barcelona_spotify{
+        border: 0.1rem solid rgb(250, 175, 14);
+    }
+
+    .footer-container{
+        margin-top: 0.6rem;}
+
+    ul.ul_footer{
+        margin-left: 0.5rem;
+        margin:0rem;
+        padding: 0rem;}
+        
+    ul.ul_footer li{
+        font-size: 0.6rem;
+        padding: 0.3rem;
+        }
+}
+
+/* RESPONSIVE PARA MAS DE 376PX HASTA 425PX */
+@media (min-width: 376px) and (max-width: 426px){
+    *{
+        font-family: 'Montserrat',sans-serif;
+        box-sizing: border-box;
+        margin: 0;
+    }
+
+    img.logo{
+        width: 100%;
+    }
+
+    ul.navbar-nav.navbar-alinear{
+        margin: 0rem;
+    }
+    li.nav-item{
+        margin: 0rem;
+    }
+
+    a.navbar-alinear{
+        margin:0rem;
+    }
+
+    .navbar-alinear{
+        font-size: 1rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    div.españa_div{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+   .atracciones{
+       display: grid;
+       grid-template-columns: 100%;
+   }
+   .container-video{
+       display: flex;
+       align-items: center;
+       margin-bottom: 0.1rem;
+   }
+
+   .container-video iframe{
+       height: 100%;
+   }
+
+   .container_playlist{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       border: 0.2rem solid rgb(211, 0, 0);
+   }
+
+   p.playlist_barcelona{
+       font-size: 1rem;
+       display: flex;
+       justify-content: center;
+       margin-bottom: 0.5rem;
+       margin-top: 0.5rem;
+   }
+
+div.container_playlist{
+    margin-bottom: 0.1rem;
+}
+
+   div.grid-container{
+       margin-bottom: 0.2rem;
+       display: flex;
+       flex-direction: column;
+   }
+
+   div.grid-container div{
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: column;
+}
+    .barcelona_spotify{
+        border: 0.1rem solid rgb(250, 175, 14);
+    }
+
+    .footer-container {
+        margin-top: 0.6rem;} 
+
+        ul.ul_footer {
+            margin: 0rem;
+            padding: 0rem;
+          }
+
+          ul.ul_footer li {
+            font-size: 0.75rem;
+            padding: 0.3rem;
+          }  
 }
 
