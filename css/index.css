@@ -221,7 +221,7 @@ main{
     text-decoration: none;
 }
 
-@media (max-width: 376px){
+@media (max-width: 321px){
     *{
         font-family: 'Montserrat',sans-serif;
         box-sizing: border-box;
@@ -259,6 +259,11 @@ main{
 
     .h3-v2{
         font-size: 1rem;
+    }
+
+    .container-general-promociones{
+        margin-left: 0.2rem;
+        margin-right: 0.2rem;
     }
 
     div.container-promociones{
@@ -378,7 +383,359 @@ main{
         height: 2.5rem;
     }
 
-    @media (max-width: 376px){
+        .footer-container{
+            margin-top: 0.6rem;
+        }
+            ul.ul_footer{
+                margin-left: 0.5rem;
+                margin:0rem;
+                padding: 0rem;
+            }
+    
+            ul.ul_footer li{
+                font-size: 0.6rem;
+                padding: 0.3rem;
+            }   
+}
+
+@media (min-width: 320px) and (max-width: 376px){
+    *{
+        font-family: 'Montserrat',sans-serif;
+        box-sizing: border-box;
+        margin: 0;
+    }
+
+    img.logo{
+        width: 100%;
+    }
+
+    .img_main{
+        width: 100%;
+    }
+
+    ul.navbar-nav.navbar-alinear{
+        margin: 0px;
+    }
+    li.nav-item{
+        margin: 0px;
+    }
+
+    a.navbar-alinear{
+        margin:0px;
+    }
+    .navbar-alinear{
+        font-size: 1rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    h2.h2-subtitulo{
+        font-size: 1.5rem;
+    }
+
+    .h3-v2{
+        font-size: 1rem;
+    }
+
+    .container-general-promociones{
+        margin-left: 0.2rem;
+        margin-right: 0.2rem;
+    }
+
+    div.container-promociones{
+        width: 100%;
+        margin-left: 0rem;
+        margin-right: 0rem;
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows: 0.5fr 1fr 1fr;
+        padding: 0rem;
+    }
+
+    .container-promociones h4{
+        grid-column-start: 1;
+        grid-column-end: span 3;
+        padding: 0rem;
+        margin:0rem;
+    }
+
+    .promo-tarjeta{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 0.5rem;
+    }
+   
+    img.tarjeta{
+        margin:0rem;
+        width: 100%;
+        height: 60%;
+    }
+    div.promo-texto{
+        font-size: 0.5rem;
+        display: flex;
+        text-align: center;
+        padding: 0rem;
+    }
+
+    .reserva{
+        width: 100%;
+        margin-left: 0.1rem;
+        margin-right: 0.1rem;
+    }
+
+    .container-reserva{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+    }
+
+    .index_pais{
+        margin: 0rem;
+    }
+
+    .index_ciudad{
+        margin-left: 0.1rem;
+        margin-right: 0.1rem;
+    }
+    
+    .index_fecha{
+        margin: 0rem;
+        margin-top: 1rem;
+        grid-column-start: 1;
+        grid-column-end: span 2;
+    }
+    
+    .tabla{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-left: 0.1rem;
+        margin-right: 0.1rem;
+        font-size: 0.5rem;
+        
+    }
+
+    table.table{
+        width: 100%;
+        margin-left: 0.1rem;
+        margin-right: 0.1rem;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 0.5rem;
+    }
+
+    .table tbody{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .table-dark{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .table-dark th{
+        width: 100%;
+        
+    }
+
+    .table-light{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .table-light td{
+        width: 100%;
+        
+    }
+
+    .linea_selec{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .linea_selec td{
+        width: 100%;
+    }
+
+        .footer-container{
+            margin-top: 0.6rem;
+        }
+            ul.ul_footer{
+                margin-left: 0.5rem;
+                margin:0rem;
+                padding: 0rem;
+            }
+    
+            ul.ul_footer li{
+                font-size: 0.6rem;
+                padding: 0.3rem;
+            }   
+}
+
+@media (min-width: 376px) and (max-width: 426px){
+    *{
+        font-family: 'Montserrat',sans-serif;
+        box-sizing: border-box;
+        margin: 0;
+    }
+
+    img.logo{
+        width: 100%;
+    }
+
+    .img_main{
+        width: 100%;
+    }
+
+    ul.navbar-nav.navbar-alinear{
+        margin: 0rem;
+    }
+    li.nav-item{
+        margin: 0rem;
+    }
+
+    a.navbar-alinear{
+        margin:0rem;
+    }
+
+    .navbar-alinear{
+        font-size: 1rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .container-general-promociones{
+        margin-left: 0.2rem;
+        margin-right: 0.2rem;
+    }
+
+    div.container-promociones{
+        width: 100%;
+        margin-left: 0rem;
+        margin-right: 0rem;
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows: 0.5fr 1fr 1fr;
+        padding: 0rem;
+    }
+
+    .container-promociones h4{
+        grid-column-start: 1;
+        grid-column-end: span 3;
+        padding: 0rem;
+        margin:0rem;
+    }
+
+    .promo-tarjeta{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 0.5rem;
+    }
+   
+    img.tarjeta{
+        margin:0rem;
+        width: 100%;
+        height: 60%;
+    }
+    div.promo-texto{
+        font-size: 0.5rem;
+        display: flex;
+        text-align: center;
+        padding: 0rem;
+    }
+
+    .reserva{
+        width: 100%;
+        margin-left: 0.1rem;
+        margin-right: 0.1rem;
+    }
+
+    .container-reserva{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+    }
+
+    .index_pais{
+        margin: 0rem;
+    }
+
+    .index_ciudad{
+        margin-left: 0.1rem;
+        margin-right: 0.1rem;
+    }
+    
+    .index_fecha{
+        margin: 0rem;
+        margin-top: 1rem;
+        grid-column-start: 1;
+        grid-column-end: span 2;
+    }
+    
+    .tabla{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-left: 0.1rem;
+        margin-right: 0.1rem;
+        font-size: 0.5rem;
+        
+    }
+
+    table.table{
+        width: 100%;
+        margin-left: 0.1rem;
+        margin-right: 0.1rem;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 0.5rem;
+    }
+
+    .table tbody{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .table-dark{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .table-dark th{
+        width: 100%;
+        
+    }
+
+    .table-light{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .table-light td{
+        width: 100%;
+        
+    }
+
+    .linea_selec{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .linea_selec td{
+        width: 100%;
+    }
+
         .footer-container{
             margin-top: 0.6rem;
         }
@@ -392,5 +749,4 @@ main{
                 font-size: 0.6rem;
                 padding: 0.3rem;
             }
-        }   
 }
