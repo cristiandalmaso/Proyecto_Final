@@ -230,3 +230,74 @@ body{
     font-weight: 600;
     text-decoration: none;
 }
+
+@media (max-width: 376px){
+    *{
+        font-family: 'Montserrat',sans-serif;
+        box-sizing: border-box;
+        margin: 0;
+    }
+
+    .logo{
+        width: 100%
+    }
+
+    ul.navbar-nav.navbar-alinear{
+        margin: 0px;
+    }
+    li.nav-item{
+        margin: 0px;
+    }
+
+    a.navbar-alinear{
+        margin:0px;
+    }
+
+    .container-centralpark{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .container-estatua{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-times{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .container-miami_beach{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-hollywood{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-hollywood-2{
+        display: flex;
+        flex-direction: column;
+    }
+
+    div.imagen iframe{
+        width: 100%;
+        height: 5rem;
+    }
+
+    .caja-times iframe{
+        width: 100%;
+        height: 5rem;
+    }
+
+    .container-imagen iframe{
+        width: 100%;
+        height: 5rem;
+    }
+    
+}

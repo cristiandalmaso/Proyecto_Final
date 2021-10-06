@@ -681,6 +681,11 @@ main{
         grid-column-start: 1;
         grid-column-end: span 2;
     }
+
+    input#Fecha.index_fecha{
+        margin: 0rem;
+        padding: 0rem;
+    }
     
     .tabla{
         width: 100%;
