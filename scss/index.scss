@@ -1,0 +1,139 @@
+*{
+    font-family: 'Montserrat',sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+}
+@import "header";
+@import "footer";
+@import "main";
+
+.img_main{
+    display: block;
+    width: 50rem;
+    margin: auto; 
+}
+
+.h1-titulo{
+    background-color: rgb(34, 33, 33);
+    color: whitesmoke;
+    font-family: "Bauhaus 93";
+    text-align: center;
+    font-size: 2rem;
+}
+
+.h2-subtitulo{
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+.h3-v2{
+    font-size: 1rem;
+    text-align: center;
+}
+
+.container-promociones{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-items: center;
+    border: 0.05rem solid black;
+    border-radius: 1rem;
+    background-color: whitesmoke;
+    margin-bottom: 1rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-top: 0rem;
+    padding: 1rem;
+    
+    h4{
+        grid-column-start: 1;
+        grid-column-end: span 6;
+        text-align: center;
+        font-size: 1rem;
+        padding-bottom: 1rem;
+        font-weight: bold;
+        }
+        
+    .promo-tarjeta{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        
+        .tarjeta{
+            width: 100%;
+            height: 100%;
+        }    
+        
+        .promo-texto{
+            font-size: 0.6rem;
+            font-weight: 600;
+            text-align: center;
+            padding-top:1rem;
+            }
+        }
+}
+
+.reserva{
+    text-align: center;
+    background-color: #c7ced1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    padding: 0.5rem;
+    
+    .container-reserva{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 100%;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0.5rem;
+
+        .index_pais{
+            margin-left: 0.5rem;
+            background-color: #e8e8e8;      
+        }
+
+        .index_ciudad{
+            margin-left: 1rem;
+            margin-right: 1rem;
+            background-color: #e8e8e8;
+        }
+        .index_fecha{
+            margin-left: 1.5rem;
+            background-color: #e8e8e8;
+            width: 100%;
+            height: 100%;
+            padding-left: 1rem;
+        }
+    }
+}
+
+.tabla{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-left: 5rem;
+    margin-right: 5rem;
+
+    .linea_selec{
+        background-color: #e42121;
+        color: whitesmoke;
+        font-weight: bold;
+    }
+}
+
+
+
+
+
+
+

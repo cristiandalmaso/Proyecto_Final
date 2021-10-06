@@ -87,6 +87,10 @@ a:hover {
   text-decoration: none;
 }
 
+.footer-container .ul_footer a:hover {
+  color: #0a58ca;
+}
+
 @media (max-width: 376px) {
   .footer-container {
     margin-top: 0.6rem;
