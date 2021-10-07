@@ -4,7 +4,6 @@
     margin: 0;
 }
 @import "header";
-@import "footer";
 @import "main";
 
 .img_main{
@@ -33,7 +32,7 @@
 
 .container-promociones{
     display: grid;
-    grid-template-columns: repeat(6,1fr);
+    grid-template-columns: 16.66% 16.66% 16.66% 16.66% 16.66% 16.66%;
     grid-template-rows: 1fr;
     justify-items: center;
     align-items: center;
@@ -130,6 +129,499 @@
         font-weight: bold;
     }
 }
+
+@import "footer";
+
+/* Responsive para 320px */
+
+@media (max-width: 321px){
+    *{
+        font-size: 1rem;
+        margin:0;
+        box-sizing: border-box;
+    }
+    .img_main{
+        width: 20rem;
+        height: auto;
+    }
+    
+    .container-promociones{
+        width: auto;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        margin-bottom: 1rem;
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        
+        h4{
+            grid-column-start: 1;
+            grid-column-end: span 3;
+            padding: 0rem;
+            font-size: 0.9rem;
+        }
+    
+        .promo-tarjeta{
+            padding: 0.5rem;  
+        }
+    }
+    
+    .reserva{
+        width: auto;
+        display: flex;
+        justify-content: center;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    
+        .container-reserva{
+            display: flex;
+            flex-direction: column;
+    
+            .index_pais{
+                margin: 0rem;
+                margin-bottom: 1rem;
+            }
+    
+            .index_ciudad{
+                margin: 0rem;
+                margin-bottom: 1rem;
+            }
+            .index_fecha{
+                margin: 0rem;
+            }
+        }  
+    }
+
+    .tabla{
+        display: flex;
+        justify-content: center;
+        margin-left: 0.1rem;
+        margin-right: 0.1rem;
+
+        .table{ 
+            margin-left: 0rem;
+            margin-right: 0rem;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+           
+            
+            tbody{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                width: 19rem;
+                margin-top: 0.1rem;
+                margin-left: 0rem;
+                margin-right: 0rem;
+                .table-dark{
+                    display: flex;
+                    flex-direction: column;
+                    
+                    th{
+                        width: 5rem;
+                        font-size: 0.6rem;
+                        height: 3rem;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    
+            }
+            .table-light{
+                    display: flex;
+                    flex-direction: column;
+                    
+                    td{ 
+                        width: 4.2rem;
+                        font-size: 0.6rem;
+                        height: 3rem;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+            } 
+            .linea_selec{
+                display: flex;
+                flex-direction: column;
+                
+                td{
+                    width: 4.2rem;
+                    font-size: 0.6rem;
+                    height: 3rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }      
+            }
+            
+        }
+    }
+    .footer-container{
+        margin-top: 0.6rem;
+
+        ul.ul_footer{
+            margin-left: 0.5rem;
+            margin:0rem;
+            padding: 0rem;
+        }
+
+        ul.ul_footer li{
+            font-size: 0.5rem;
+            padding: 0.3rem;
+        }
+    }   
+}
+
+@media (min-width:321px) and (max-width: 376px){
+    *{
+        font-size: 1rem;
+        margin:0;
+        box-sizing: border-box;
+    }
+    .img_main{
+        width: 20rem;
+        height: auto;
+    }
+    .container-promociones{
+        width: auto;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        margin-bottom: 1rem;
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        
+        h4{
+            grid-column-start: 1;
+            grid-column-end: span 3;
+            padding: 0rem;
+            font-size: 0.9rem;
+        }
+    
+        .promo-tarjeta{
+            padding: 0.5rem;  
+        }
+    }
+    
+    .reserva{
+        width: auto;
+        display: flex;
+        justify-content: center;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    
+        .container-reserva{
+            display: flex;
+            flex-direction: column;
+    
+            .index_pais{
+                margin: 0rem;
+                margin-bottom: 1rem;
+            }
+    
+            .index_ciudad{
+                margin: 0rem;
+                margin-bottom: 1rem;
+            }
+            .index_fecha{
+                margin: 0rem;
+            }
+        }  
+    }
+
+    .tabla{
+        display: flex;
+        justify-content: center;
+        margin-left: 0.1rem;
+        margin-right: 0.1rem;
+        .table{ 
+            margin-left: 0rem;
+            margin-right: 0rem;
+            width: auto;
+            display: flex;
+            justify-content: center;
+           
+            
+            tbody{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                width: auto;
+                margin-top: 0.1rem;
+                margin-left: 0rem;
+                margin-right: 0rem;
+                .table-dark{
+                    display: flex;
+                    flex-direction: column;
+                    
+                    th{
+                        width: 7rem;
+                        font-size: 0.7rem;
+                        height: 3rem;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    
+            }
+            .table-light{
+                    display: flex;
+                    flex-direction: column;
+                    
+                    td{ 
+                        width: 5rem;
+                        font-size: 0.7rem;
+                        height: 3rem;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+            } 
+            .linea_selec{
+                display: flex;
+                flex-direction: column;
+                
+                td{
+                    width: 5rem;
+                    font-size: 0.7rem;
+                    height: 3rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }      
+            }
+            
+        }
+    }
+}
+@media (min-width: 376px) and (max-width: 426px){
+    *{
+        font-size: 1rem;
+        margin:0;
+        box-sizing: border-box;
+    }
+    .img_main{
+        width: 30rem;
+        height: auto;
+    }
+    .container-promociones{
+        width: auto;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        margin-bottom: 1rem;
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        
+        h4{
+            grid-column-start: 1;
+            grid-column-end: span 3;
+            padding: 0rem;
+            font-size: 0.9rem;
+        }
+    
+        .promo-tarjeta{
+            padding: 0.5rem;  
+        }
+    }
+    
+    .reserva{
+        width: auto;
+        display: flex;
+        justify-content: center;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    
+        .container-reserva{
+            display: flex;
+            flex-direction: column;
+    
+            .index_pais{
+                margin: 0rem;
+                margin-bottom: 1rem;
+            }
+    
+            .index_ciudad{
+                margin: 0rem;
+                margin-bottom: 1rem;
+            }
+            .index_fecha{
+                margin: 0rem;
+            }
+        }  
+    }
+
+    .tabla{
+        display: flex;
+        justify-content: center;
+        margin-left: 0.1rem;
+        margin-right: 0.1rem;
+        .table{ 
+            margin-left: 0rem;
+            margin-right: 0rem;
+            width: auto;
+            display: flex;
+            justify-content: center;
+           
+            
+            tbody{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                width: auto;
+                margin-top: 0.1rem;
+                margin-left: 0rem;
+                margin-right: 0rem;
+                .table-dark{
+                    display: flex;
+                    flex-direction: column;
+                    
+                    th{
+                        width: 7rem;
+                        font-size: 0.8rem;
+                        height: 3rem;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    
+            }
+            .table-light{
+                    display: flex;
+                    flex-direction: column;
+                    
+                    td{ 
+                        width: 6rem;
+                        font-size: 0.8rem;
+                        height: 3rem;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+            } 
+            .linea_selec{
+                display: flex;
+                flex-direction: column;
+                
+                td{
+                    width: 6rem;
+                    font-size: 0.8rem;
+                    height: 3rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }      
+            }
+            
+        }
+    }
+}
+
+@media (min-width: 426px) and (max-width: 769px){
+    *{
+        font-size: 1rem;
+        margin:0;
+        box-sizing: border-box;
+    }
+    .img_main{
+        width: 30rem;
+        height: auto;
+    }
+    .container-promociones{
+        width: auto;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        margin-bottom: 1rem;
+        display: grid;
+        grid-template-columns: 16.66% 16.66% 16.66% 16.66% 16.66% 16.66%;
+        
+        h4{
+            grid-column-start: 1;
+            grid-column-end: span 6;
+            padding: 0rem;
+            font-size: 0.9rem;
+        }
+    
+        .promo-tarjeta{
+            padding: 0.5rem;  
+        }
+    }
+    
+    .reserva{
+        width: auto;
+        display: flex;
+        justify-content: center;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    
+        .container-reserva{
+            display: flex;
+            flex-direction: row;
+        
+            .index_pais{
+                margin: 0rem;
+                margin-right: 1rem;
+            }
+    
+            .index_ciudad{
+                margin: 0rem;
+                margin-right: 1rem;
+            }
+            .index_fecha{
+                margin: 0rem;
+                height: 2.2rem;
+            }
+        }  
+    }
+
+    .tabla{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        
+    }
+    
+    
+    
+}
+   
+
+
+    
+
+    
+
+  
+    
+
+    
+
+    
+
+
+   
+
+    
+
+    
+
+  
+
+   
+
+   
+    
+
+
+
+
+
+
+
+
 
 
 

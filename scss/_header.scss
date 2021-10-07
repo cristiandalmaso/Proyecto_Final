@@ -30,3 +30,157 @@ a:hover{
     width: 20rem;
     margin:auto;
 }
+
+@media (max-width: 376px){
+    *{
+        font-family: 'Montserrat',sans-serif;
+        box-sizing: border-box;
+        margin: 0;
+    }
+
+    img.logo{
+        width: 100%;
+    }
+
+    ul.navbar-nav.navbar-alinear{
+        margin: 0px;
+    }
+    li.nav-item{
+        margin: 0px;
+    }
+
+    a.navbar-alinear{
+        margin:0px;
+    }
+    .navbar-alinear{
+        font-size: 1rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 376px) and (max-width: 426px){
+    *{
+        font-family: 'Montserrat',sans-serif;
+        box-sizing: border-box;
+        margin: 0;
+    }
+
+    img.logo{
+        width: 100%;
+    }
+
+    ul.navbar-nav.navbar-alinear{
+        margin: 0rem;
+    }
+    li.nav-item{
+        margin: 0rem;
+    }
+
+    a.navbar-alinear{
+        margin:0rem;
+    }
+
+    .navbar-alinear{
+        font-size: 1rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+@media (min-width: 426px) and (max-width: 769px){
+    *{
+        font-family: 'Montserrat',sans-serif;
+        box-sizing: border-box;
+        margin: 0;
+    }
+
+    img.logo{
+        width: 20rem;
+    }
+
+    ul.navbar-nav.navbar-alinear{
+        margin: 0rem;
+        
+    }
+    li.nav-item{
+        margin: 0rem;
+    }
+
+    a.navbar-alinear{
+        margin:0rem;
+    }
+
+    .navbar-alinear{
+        font-size: 1rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1025px){
+    *{
+        font-family: 'Montserrat',sans-serif;
+        box-sizing: border-box;
+        margin: 0;
+    }
+
+    img.logo{
+        width: 20rem;
+    }
+
+    ul.navbar-nav.navbar-alinear{
+        margin: 0rem;
+        display: flex;
+        justify-content: space-around;
+    }
+    li.nav-item{
+        margin: 0rem;
+    }
+
+    a.navbar-alinear{
+        margin: 0rem;
+    }
+
+    .navbar-alinear{
+        font-size: 1.25rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 1439px) and (max-width: 2560px){
+    *{
+        font-family: 'Montserrat',sans-serif;
+        box-sizing: border-box;
+        margin: 0;
+    }
+
+    img.logo{
+        width: 20rem;
+    }
+
+    ul.navbar-nav.navbar-alinear{
+        margin: 0rem;
+    }
+    li.nav-item{
+        margin: 0rem;
+    }
+
+    a.navbar-alinear{
+        margin:0rem;
+    }
+
+    .navbar-alinear{
+        font-size: 1.5rem;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 4rem;
+        padding-right: 2rem;
+    }
+}
+

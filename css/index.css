@@ -45,6 +45,332 @@ a:hover {
   margin: auto;
 }
 
+@media (max-width: 376px) {
+  * {
+    font-family: 'Montserrat',sans-serif;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin: 0;
+  }
+  img.logo {
+    width: 100%;
+  }
+  ul.navbar-nav.navbar-alinear {
+    margin: 0px;
+  }
+  li.nav-item {
+    margin: 0px;
+  }
+  a.navbar-alinear {
+    margin: 0px;
+  }
+  .navbar-alinear {
+    font-size: 1rem;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (min-width: 376px) and (max-width: 426px) {
+  * {
+    font-family: 'Montserrat',sans-serif;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin: 0;
+  }
+  img.logo {
+    width: 100%;
+  }
+  ul.navbar-nav.navbar-alinear {
+    margin: 0rem;
+  }
+  li.nav-item {
+    margin: 0rem;
+  }
+  a.navbar-alinear {
+    margin: 0rem;
+  }
+  .navbar-alinear {
+    font-size: 1rem;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 769px) {
+  * {
+    font-family: 'Montserrat',sans-serif;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin: 0;
+  }
+  img.logo {
+    width: 20rem;
+  }
+  ul.navbar-nav.navbar-alinear {
+    margin: 0rem;
+  }
+  li.nav-item {
+    margin: 0rem;
+  }
+  a.navbar-alinear {
+    margin: 0rem;
+  }
+  .navbar-alinear {
+    font-size: 1rem;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1025px) {
+  * {
+    font-family: 'Montserrat',sans-serif;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin: 0;
+  }
+  img.logo {
+    width: 20rem;
+  }
+  ul.navbar-nav.navbar-alinear {
+    margin: 0rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  li.nav-item {
+    margin: 0rem;
+  }
+  a.navbar-alinear {
+    margin: 0rem;
+  }
+  .navbar-alinear {
+    font-size: 1.25rem;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (min-width: 1439px) and (max-width: 2560px) {
+  * {
+    font-family: 'Montserrat',sans-serif;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin: 0;
+  }
+  img.logo {
+    width: 20rem;
+  }
+  ul.navbar-nav.navbar-alinear {
+    margin: 0rem;
+  }
+  li.nav-item {
+    margin: 0rem;
+  }
+  a.navbar-alinear {
+    margin: 0rem;
+  }
+  .navbar-alinear {
+    font-size: 1.5rem;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-left: 4rem;
+    padding-right: 2rem;
+  }
+}
+
+main {
+  background-color: #e8e8e8;
+  font-family: 'Montserrat',sans-serif;
+  font-size: 1rem;
+}
+
+.img_main {
+  display: block;
+  width: 50rem;
+  margin: auto;
+}
+
+.h1-titulo {
+  background-color: #222121;
+  color: whitesmoke;
+  font-family: "Bauhaus 93";
+  text-align: center;
+  font-size: 2rem;
+}
+
+.h2-subtitulo {
+  text-align: center;
+  font-size: 1.25rem;
+}
+
+.h3-v2 {
+  font-size: 1rem;
+  text-align: center;
+}
+
+.container-promociones {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 16.66% 16.66% 16.66% 16.66% 16.66% 16.66%;
+      grid-template-columns: 16.66% 16.66% 16.66% 16.66% 16.66% 16.66%;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 0.05rem solid black;
+  border-radius: 1rem;
+  background-color: whitesmoke;
+  margin-bottom: 1rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  margin-top: 0rem;
+  padding: 1rem;
+}
+
+.container-promociones h4 {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  -ms-grid-column-span: 6;
+      grid-column-end: span 6;
+  text-align: center;
+  font-size: 1rem;
+  padding-bottom: 1rem;
+  font-weight: bold;
+}
+
+.container-promociones .promo-tarjeta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.container-promociones .promo-tarjeta .tarjeta {
+  width: 100%;
+  height: 100%;
+}
+
+.container-promociones .promo-tarjeta .promo-texto {
+  font-size: 0.6rem;
+  font-weight: 600;
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.reserva {
+  text-align: center;
+  background-color: #c7ced1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  padding: 0.5rem;
+}
+
+.reserva .container-reserva {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 100%;
+      grid-template-rows: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 0.5rem;
+}
+
+.reserva .container-reserva .index_pais {
+  margin-left: 0.5rem;
+  background-color: #e8e8e8;
+}
+
+.reserva .container-reserva .index_ciudad {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  background-color: #e8e8e8;
+}
+
+.reserva .container-reserva .index_fecha {
+  margin-left: 1.5rem;
+  background-color: #e8e8e8;
+  width: 100%;
+  height: 100%;
+  padding-left: 1rem;
+}
+
+.tabla {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
+.tabla .linea_selec {
+  background-color: #e42121;
+  color: whitesmoke;
+  font-weight: bold;
+}
+
 * {
   margin: 0;
 }
@@ -180,166 +506,606 @@ a:hover {
   }
 }
 
-main {
-  background-color: #e8e8e8;
-  font-family: 'Montserrat',sans-serif;
-  font-size: 1rem;
+/* Responsive para 320px */
+@media (max-width: 321px) {
+  * {
+    font-size: 1rem;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .img_main {
+    width: 20rem;
+    height: auto;
+  }
+  .container-promociones {
+    width: auto;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 1rem;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 33% 33% 33%;
+        grid-template-columns: 33% 33% 33%;
+  }
+  .container-promociones h4 {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    -ms-grid-column-span: 3;
+        grid-column-end: span 3;
+    padding: 0rem;
+    font-size: 0.9rem;
+  }
+  .container-promociones .promo-tarjeta {
+    padding: 0.5rem;
+  }
+  .reserva {
+    width: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .reserva .container-reserva {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .reserva .container-reserva .index_pais {
+    margin: 0rem;
+    margin-bottom: 1rem;
+  }
+  .reserva .container-reserva .index_ciudad {
+    margin: 0rem;
+    margin-bottom: 1rem;
+  }
+  .reserva .container-reserva .index_fecha {
+    margin: 0rem;
+  }
+  .tabla {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: 0.1rem;
+    margin-right: 0.1rem;
+  }
+  .tabla .table {
+    margin-left: 0rem;
+    margin-right: 0rem;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .tabla .table tbody {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 19rem;
+    margin-top: 0.1rem;
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
+  .tabla .table tbody .table-dark {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .tabla .table tbody .table-dark th {
+    width: 5rem;
+    font-size: 0.6rem;
+    height: 3rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .tabla .table tbody .table-light {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .tabla .table tbody .table-light td {
+    width: 4.2rem;
+    font-size: 0.6rem;
+    height: 3rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .tabla .table tbody .linea_selec {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .tabla .table tbody .linea_selec td {
+    width: 4.2rem;
+    font-size: 0.6rem;
+    height: 3rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer-container {
+    margin-top: 0.6rem;
+  }
+  .footer-container ul.ul_footer {
+    margin-left: 0.5rem;
+    margin: 0rem;
+    padding: 0rem;
+  }
+  .footer-container ul.ul_footer li {
+    font-size: 0.5rem;
+    padding: 0.3rem;
+  }
 }
 
-.img_main {
-  display: block;
-  width: 50rem;
-  margin: auto;
+@media (min-width: 321px) and (max-width: 376px) {
+  * {
+    font-size: 1rem;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .img_main {
+    width: 20rem;
+    height: auto;
+  }
+  .container-promociones {
+    width: auto;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 1rem;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 33% 33% 33%;
+        grid-template-columns: 33% 33% 33%;
+  }
+  .container-promociones h4 {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    -ms-grid-column-span: 3;
+        grid-column-end: span 3;
+    padding: 0rem;
+    font-size: 0.9rem;
+  }
+  .container-promociones .promo-tarjeta {
+    padding: 0.5rem;
+  }
+  .reserva {
+    width: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .reserva .container-reserva {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .reserva .container-reserva .index_pais {
+    margin: 0rem;
+    margin-bottom: 1rem;
+  }
+  .reserva .container-reserva .index_ciudad {
+    margin: 0rem;
+    margin-bottom: 1rem;
+  }
+  .reserva .container-reserva .index_fecha {
+    margin: 0rem;
+  }
+  .tabla {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: 0.1rem;
+    margin-right: 0.1rem;
+  }
+  .tabla .table {
+    margin-left: 0rem;
+    margin-right: 0rem;
+    width: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .tabla .table tbody {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: auto;
+    margin-top: 0.1rem;
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
+  .tabla .table tbody .table-dark {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .tabla .table tbody .table-dark th {
+    width: 7rem;
+    font-size: 0.7rem;
+    height: 3rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .tabla .table tbody .table-light {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .tabla .table tbody .table-light td {
+    width: 5rem;
+    font-size: 0.7rem;
+    height: 3rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .tabla .table tbody .linea_selec {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .tabla .table tbody .linea_selec td {
+    width: 5rem;
+    font-size: 0.7rem;
+    height: 3rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
-.h1-titulo {
-  background-color: #222121;
-  color: whitesmoke;
-  font-family: "Bauhaus 93";
-  text-align: center;
-  font-size: 2rem;
+@media (min-width: 376px) and (max-width: 426px) {
+  * {
+    font-size: 1rem;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .img_main {
+    width: 30rem;
+    height: auto;
+  }
+  .container-promociones {
+    width: auto;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 1rem;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 33% 33% 33%;
+        grid-template-columns: 33% 33% 33%;
+  }
+  .container-promociones h4 {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    -ms-grid-column-span: 3;
+        grid-column-end: span 3;
+    padding: 0rem;
+    font-size: 0.9rem;
+  }
+  .container-promociones .promo-tarjeta {
+    padding: 0.5rem;
+  }
+  .reserva {
+    width: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .reserva .container-reserva {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .reserva .container-reserva .index_pais {
+    margin: 0rem;
+    margin-bottom: 1rem;
+  }
+  .reserva .container-reserva .index_ciudad {
+    margin: 0rem;
+    margin-bottom: 1rem;
+  }
+  .reserva .container-reserva .index_fecha {
+    margin: 0rem;
+  }
+  .tabla {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: 0.1rem;
+    margin-right: 0.1rem;
+  }
+  .tabla .table {
+    margin-left: 0rem;
+    margin-right: 0rem;
+    width: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .tabla .table tbody {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: auto;
+    margin-top: 0.1rem;
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
+  .tabla .table tbody .table-dark {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .tabla .table tbody .table-dark th {
+    width: 7rem;
+    font-size: 0.8rem;
+    height: 3rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .tabla .table tbody .table-light {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .tabla .table tbody .table-light td {
+    width: 6rem;
+    font-size: 0.8rem;
+    height: 3rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .tabla .table tbody .linea_selec {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .tabla .table tbody .linea_selec td {
+    width: 6rem;
+    font-size: 0.8rem;
+    height: 3rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
-.h2-subtitulo {
-  text-align: center;
-  font-size: 1.25rem;
-}
-
-.h3-v2 {
-  font-size: 1rem;
-  text-align: center;
-}
-
-.container-promociones {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr,6);
-      grid-template-columns: repeat(6, 1fr);
-  -ms-grid-rows: 1fr;
-      grid-template-rows: 1fr;
-  justify-items: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border: 0.05rem solid black;
-  border-radius: 1rem;
-  background-color: whitesmoke;
-  margin-bottom: 1rem;
-  margin-left: 5rem;
-  margin-right: 5rem;
-  margin-top: 0rem;
-  padding: 1rem;
-}
-
-.container-promociones h4 {
-      grid-column-start: 1;
-  -ms-grid-column-span: 6;
-      grid-column-end: span 6;
-  text-align: center;
-  font-size: 1rem;
-  padding-bottom: 1rem;
-  font-weight: bold;
-}
-
-.container-promociones .promo-tarjeta {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-  height: 100%;
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-.container-promociones .promo-tarjeta .tarjeta {
-  width: 100%;
-  height: 100%;
-}
-
-.container-promociones .promo-tarjeta .promo-texto {
-  font-size: 0.6rem;
-  font-weight: 600;
-  text-align: center;
-  padding-top: 1rem;
-}
-
-.reserva {
-  text-align: center;
-  background-color: #c7ced1;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-left: 5rem;
-  margin-right: 5rem;
-  padding: 0.5rem;
-}
-
-.reserva .container-reserva {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-  -ms-grid-rows: 100%;
-      grid-template-rows: 100%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-top: 0.5rem;
-}
-
-.reserva .container-reserva .index_pais {
-  margin-left: 0.5rem;
-  background-color: #e8e8e8;
-}
-
-.reserva .container-reserva .index_ciudad {
-  margin-left: 1rem;
-  margin-right: 1rem;
-  background-color: #e8e8e8;
-}
-
-.reserva .container-reserva .index_fecha {
-  margin-left: 1.5rem;
-  background-color: #e8e8e8;
-  width: 100%;
-  height: 100%;
-  padding-left: 1rem;
-}
-
-.tabla {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center;
-  margin-left: 5rem;
-  margin-right: 5rem;
-}
-
-.tabla .linea_selec {
-  background-color: #e42121;
-  color: whitesmoke;
-  font-weight: bold;
+@media (min-width: 426px) and (max-width: 769px) {
+  * {
+    font-size: 1rem;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .img_main {
+    width: 30rem;
+    height: auto;
+  }
+  .container-promociones {
+    width: auto;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 1rem;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 16.66% 16.66% 16.66% 16.66% 16.66% 16.66%;
+        grid-template-columns: 16.66% 16.66% 16.66% 16.66% 16.66% 16.66%;
+  }
+  .container-promociones h4 {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    -ms-grid-column-span: 6;
+        grid-column-end: span 6;
+    padding: 0rem;
+    font-size: 0.9rem;
+  }
+  .container-promociones .promo-tarjeta {
+    padding: 0.5rem;
+  }
+  .reserva {
+    width: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .reserva .container-reserva {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .reserva .container-reserva .index_pais {
+    margin: 0rem;
+    margin-right: 1rem;
+  }
+  .reserva .container-reserva .index_ciudad {
+    margin: 0rem;
+    margin-right: 1rem;
+  }
+  .reserva .container-reserva .index_fecha {
+    margin: 0rem;
+    height: 2.2rem;
+  }
+  .tabla {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
 }
 /*# sourceMappingURL=index.css.map */

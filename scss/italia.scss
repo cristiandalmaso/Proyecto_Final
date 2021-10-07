@@ -1,0 +1,243 @@
+*{
+    font-family: 'Montserrat',sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+}
+@import "header";
+@import "footer";
+@import "main";
+
+h1{
+    background-image: url(../multimedia/bandera_italia.jpg);
+    background-size: cover;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 0.5rem;
+}
+
+.titulo{
+    display: flex;
+    font-family: 'Stick No Bills', sans-serif; 
+    font-size: 2rem;
+    color: black;
+    vertical-align: middle;
+    justify-content: center;
+    margin-bottom: 0rem;
+}
+
+body{
+    background-color: whitesmoke;
+}
+
+.container-ciudad{
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(to right, rgb(128, 0, 0), white, rgb(128, 0, 0))
+}
+
+h2{
+    font-family: 'Stick No Bills', sans-serif; 
+    font-size: 2rem;
+    margin: 0.2rem;
+}
+
+.ciudad{
+    margin: 0rem;
+}
+
+.italia-container-v2{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(7,0.8fr);
+    row-gap: 0.1rem;
+    margin: 0rem;
+}
+
+.container-individual{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 20% 80%;
+    align-items: center;
+    border: 0.1rem solid black;
+    border-radius: 1rem;
+    margin-bottom: 0.2rem;
+    margin-top: 0.2rem;
+}
+
+.container-titulo{
+    grid-column-start: 1;
+    grid-column-end: span 2;
+    margin: 0rem;
+    align-items: center;
+}
+
+.container-titulo h6{
+    text-align: center;
+    font-size: 2rem;
+    margin: 0rem;
+}
+
+.container-imagen-v2{
+   display: flex; 
+   justify-content: center;
+   align-items: center; 
+   margin: 1rem;
+}
+
+.imagen-v2{
+    max-width: 100%;
+    min-height: 100%;  
+}
+
+.container-descripcion{
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+
+.container-parrafo p{
+    font-size: 0.9rem;
+}
+
+.container-gastronomia{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 10% 90%;
+    margin-bottom: 1rem;
+    border: 0.1rem solid black;
+    border-radius: 1rem;
+    margin-left: 0.1rem;
+    margin-right: 0.1rem;
+}
+
+.container-gastronomia-titulo{
+    grid-column-start: 1;
+    grid-column-end: span 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
+
+.container-gastronomia-titulo h5{
+    font-size: 1.5rem;
+}
+
+.container-gastronomia-individual{
+   padding: 1rem;
+   display: flex;
+   justify-content: center;
+   text-align: center;
+}
+
+.gastronomia-parrafo{
+    font-size: 0.7rem;
+}
+
+.container-gastronomia-subtitulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.container-gastronomia-imagen{
+    display: flex;
+    justify-content: center;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    margin-bottom: 0rem;
+}
+
+.gastronomia-imagen{
+    width: 100%;
+    max-height: 90%;
+}
+
+.container-gastronomia-descripcion{
+    display: flex;
+    align-items: start;
+    margin-top: 0rem;
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
+}
+
+.gastronomia-parrafo{
+    text-align: left;
+    font-size: 0.7rem;
+    padding-left: 0.5rem;
+}
+
+.container-atracciones-titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.1rem solid black;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    padding: 0rem;
+    height: 3rem;
+}
+
+.container-atracciones-titulo h5{
+    font-size: 2rem;
+}
+
+.container-marcas{
+    display: grid;
+    grid-template-columns: repeat(5,0.5fr);
+    grid-template-rows: 50% 50%;
+}
+
+.container-marcas-logo{
+    display: flex;
+    justify-content: space-around;
+}
+
+.marcas-logo{
+    width: 80%;
+    height: 80%;
+}
+
+.container-video{
+    display: flex;
+    justify-content: center;
+    padding-top:2rem;
+    padding-bottom: 2rem;
+}
+
+.container-atracciones{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+}
+.container-atracciones-individual{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 50% 10%;
+    border: 0.1rem solid black;
+    border-radius: 1rem;
+    margin:0.5rem;
+}
+
+.container-atracciones-lugar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    margin: 0rem;
+    padding: 0rem;
+}
+
+.container-atracciones-imagen{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+}
+
+.atracciones-imagen{
+    width: 100%;
+    height: 100%;
+}

@@ -1,304 +1,674 @@
-*{
+* {
+  font-family: 'Montserrat',sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+}
+
+.header-color {
+  background-color: #e42121;
+  padding-top: 0.5rem;
+  margin: 0.1rem;
+}
+
+.navbar-alinear {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  text-align: center;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #c7ced1;
+  -webkit-transform: scale(1.5, 1.5);
+          transform: scale(1.5, 1.5);
+}
+
+.container-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  background-color: white;
+}
+
+.logo {
+  width: 20rem;
+  margin: auto;
+}
+
+@media (max-width: 376px) {
+  * {
     font-family: 'Montserrat',sans-serif;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     margin: 0;
-}
-
-a:hover{
-    color:#c7ced1;
-    transform: scale(1.5,1.5);
-} 
-
-.header-color{
-    background-color: #e42121;
-    padding-top: 0.5rem;
-    margin: 0.1rem;
-}
-
-.navbar-alinear{
-    justify-content: space-between;
+  }
+  img.logo {
     width: 100%;
-    text-align: center;
-    margin-left: 2rem;
-    margin-right: 2rem;
-    align-items: center;
-    color: whitesmoke;
-    text-decoration: none;
-}
-
-.container-logo{
-    display: flex;
+  }
+  ul.navbar-nav.navbar-alinear {
+    margin: 0px;
+  }
+  li.nav-item {
+    margin: 0px;
+  }
+  a.navbar-alinear {
+    margin: 0px;
+  }
+  .navbar-alinear {
+    font-size: 1rem;
     width: 100%;
-    background-color: white;
-}
-
-.logo{
-    width: 20rem;
-    margin:auto;
-}
-
-h1{
-    background-image: url(../multimedia/bandera_italia.jpg);
-    background-size: cover;
-    text-align: center;
-    padding: 1rem;
-    margin-top: 0.5rem;
-}
-
-.titulo{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    font-family: 'Stick No Bills', sans-serif; 
-    font-size: 2rem;
-    color: black;
-    vertical-align: middle;
-    justify-content: center;
-    margin-bottom: 0rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
-body{
-    background-color: whitesmoke;
-}
-
-.container-ciudad{
-    display: flex;
-    justify-content: center;
-    background-image: linear-gradient(to right, rgb(128, 0, 0), white, rgb(128, 0, 0))
-}
-
-h2{
-    font-family: 'Stick No Bills', sans-serif; 
-    font-size: 2rem;
-    margin: 0.2rem;
-}
-
-.ciudad{
-    margin: 0rem;
-}
-
-.italia-container-v2{
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: repeat(7,0.8fr);
-    row-gap: 0.1rem;
-    margin: 0rem;
-}
-
-.container-individual{
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 20% 80%;
-    align-items: center;
-    border: 0.1rem solid black;
-    border-radius: 1rem;
-    margin-bottom: 0.2rem;
-    margin-top: 0.2rem;
-}
-
-.container-titulo{
-    grid-column-start: 1;
-    grid-column-end: span 2;
-    margin: 0rem;
-    align-items: center;
-}
-
-.container-titulo h6{
-    text-align: center;
-    font-size: 2rem;
-    margin: 0rem;
-}
-
-.container-imagen-v2{
-   display: flex; 
-   justify-content: center;
-   align-items: center; 
-   margin: 1rem;
-}
-
-.imagen-v2{
-    max-width: 100%;
-    min-height: 100%;  
-}
-
-.container-descripcion{
-    display: flex;
-    align-items: center;
-    padding: 1rem;
-}
-
-.container-parrafo p{
-    font-size: 0.9rem;
-}
-
-.container-gastronomia{
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 10% 90%;
-    margin-bottom: 1rem;
-    border: 0.1rem solid black;
-    border-radius: 1rem;
-    margin-left: 0.1rem;
-    margin-right: 0.1rem;
-}
-
-.container-gastronomia-titulo{
-    grid-column-start: 1;
-    grid-column-end: span 4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 1rem;
-}
-
-.container-gastronomia-titulo h5{
-    font-size: 1.5rem;
-}
-
-.container-gastronomia-individual{
-   padding: 1rem;
-   display: flex;
-   justify-content: center;
-   text-align: center;
-}
-
-.gastronomia-parrafo{
-    font-size: 0.7rem;
-}
-
-.container-gastronomia-subtitulo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
-}
-
-.container-gastronomia-imagen{
-    display: flex;
-    justify-content: center;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    margin-bottom: 0rem;
-}
-
-.gastronomia-imagen{
-    width: 100%;
-    max-height: 90%;
-}
-
-.container-gastronomia-descripcion{
-    display: flex;
-    align-items: start;
-    margin-top: 0rem;
-    margin-left: 0.2rem;
-    margin-right: 0.2rem;
-}
-
-.gastronomia-parrafo{
-    text-align: left;
-    font-size: 0.7rem;
-    padding-left: 0.5rem;
-}
-
-.container-atracciones-titulo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 0.1rem solid black;
-    border-radius: 1rem;
-    margin-bottom: 1rem;
-    margin-top: 1rem;
-    padding: 0rem;
-    height: 3rem;
-}
-
-.container-atracciones-titulo h5{
-    font-size: 2rem;
-}
-
-.container-marcas{
-    display: grid;
-    grid-template-columns: repeat(5,0.5fr);
-    grid-template-rows: 50% 50%;
-}
-
-.container-marcas-logo{
-    display: flex;
-    justify-content: space-around;
-}
-
-.marcas-logo{
-    width: 80%;
-    height: 80%;
-}
-
-.container-video{
-    display: flex;
-    justify-content: center;
-    padding-top:2rem;
-    padding-bottom: 2rem;
-}
-
-.container-atracciones{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 100%;
-}
-
-.container-atracciones-individual{
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 10% 50% 10%;
-    border: 0.1rem solid black;
-    border-radius: 1rem;
-    margin:0.5rem;
-}
-
-.container-atracciones-lugar{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.5rem;
-    margin: 0rem;
-    padding: 0rem;
-}
-
-.container-atracciones-imagen{
-    margin-left: 1rem;
-    margin-right: 1rem;
-    margin-top: 0rem;
-    margin-bottom: 0rem;
-}
-
-.atracciones-imagen{
-    width: 100%;
-    height: 100%;
-}
-
-.footer-container{
-    background-color: #709995;
+@media (min-width: 376px) and (max-width: 426px) {
+  * {
     font-family: 'Montserrat',sans-serif;
-    font-weight: bold;
-    color: whitesmoke;
-    font-size: 0.9rem;
-    display: flex;  
-}
-
-.ul_footer{
-    list-style-type: none;
-    text-align: center;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin: 0;
+  }
+  img.logo {
     width: 100%;
+  }
+  ul.navbar-nav.navbar-alinear {
+    margin: 0rem;
+  }
+  li.nav-item {
+    margin: 0rem;
+  }
+  a.navbar-alinear {
+    margin: 0rem;
+  }
+  .navbar-alinear {
+    font-size: 1rem;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 4.5rem;
-    margin-right: 4.5rem;
-    height: 3rem;
-    margin-bottom: 0rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
-.a_footer{
-    color: whitesmoke;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 0.9rem;
-    font-weight: 600;
-    text-decoration: none;
+@media (min-width: 426px) and (max-width: 769px) {
+  * {
+    font-family: 'Montserrat',sans-serif;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin: 0;
+  }
+  img.logo {
+    width: 20rem;
+  }
+  ul.navbar-nav.navbar-alinear {
+    margin: 0rem;
+  }
+  li.nav-item {
+    margin: 0rem;
+  }
+  a.navbar-alinear {
+    margin: 0rem;
+  }
+  .navbar-alinear {
+    font-size: 1rem;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
+
+@media (min-width: 769px) and (max-width: 1025px) {
+  * {
+    font-family: 'Montserrat',sans-serif;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin: 0;
+  }
+  img.logo {
+    width: 20rem;
+  }
+  ul.navbar-nav.navbar-alinear {
+    margin: 0rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  li.nav-item {
+    margin: 0rem;
+  }
+  a.navbar-alinear {
+    margin: 0rem;
+  }
+  .navbar-alinear {
+    font-size: 1.25rem;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (min-width: 1439px) and (max-width: 2560px) {
+  * {
+    font-family: 'Montserrat',sans-serif;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin: 0;
+  }
+  img.logo {
+    width: 20rem;
+  }
+  ul.navbar-nav.navbar-alinear {
+    margin: 0rem;
+  }
+  li.nav-item {
+    margin: 0rem;
+  }
+  a.navbar-alinear {
+    margin: 0rem;
+  }
+  .navbar-alinear {
+    font-size: 1.5rem;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-left: 4rem;
+    padding-right: 2rem;
+  }
+}
+
+* {
+  margin: 0;
+}
+
+.footer-container {
+  background-color: #709995;
+  font-family: 'Montserrat',sans-serif;
+  font-weight: bold;
+  color: whitesmoke;
+  font-size: 0.9rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer-container .ul_footer {
+  list-style-type: none;
+  text-align: center;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 4.5rem;
+  margin-right: 4.5rem;
+  height: 3rem;
+  margin-bottom: 0rem;
+}
+
+.footer-container .ul_footer .a_footer {
+  color: whitesmoke;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.footer-container .ul_footer a:hover {
+  color: #0a58ca;
+}
+
+@media (max-width: 376px) {
+  .footer-container {
+    margin-top: 0.6rem;
+  }
+  .footer-container ul.ul_footer {
+    margin-left: 0.5rem;
+    margin: 0rem;
+    padding: 0rem;
+  }
+  .footer-container ul.ul_footer li {
+    font-size: 0.6rem;
+    padding: 0.3rem;
+  }
+}
+
+@media (min-width: 376px) and (max-width: 426px) {
+  .footer-container {
+    margin-top: 0.6rem;
+  }
+  .footer-container ul.ul_footer {
+    margin: 0rem;
+    padding: 0rem;
+  }
+  .footer-container ul.ul_footer li {
+    font-size: 0.75rem;
+    padding: 0.3rem;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 769px) {
+  .footer-container {
+    margin-top: 0.6rem;
+  }
+  .footer-container ul.ul_footer {
+    margin: 0rem;
+    padding: 0rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  ul.ul_footer li {
+    font-size: 1rem;
+    padding: 0.3rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1025px) {
+  .footer-container {
+    margin-top: 0.6rem;
+    padding: 1rem;
+  }
+  .footer-container ul.ul_footer {
+    margin: 0rem;
+    padding: 0rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  ul.ul_footer li {
+    font-size: 1.25rem;
+    padding: 0.3rem;
+  }
+}
+
+/* Desde 1440px */
+@media (min-width: 1439px) and (max-width: 2560px) {
+  .footer-container {
+    margin-top: 0.6rem;
+    padding: 1rem;
+  }
+  .footer-container ul.ul_footer {
+    margin: 0rem;
+    padding: 0rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  ul.ul_footer li {
+    font-size: 1.5rem;
+    padding: 0.3rem;
+  }
+}
+
+main {
+  background-color: #e8e8e8;
+  font-family: 'Montserrat',sans-serif;
+  font-size: 1rem;
+}
+
+h1 {
+  background-image: url(../multimedia/bandera_italia.jpg);
+  background-size: cover;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 0.5rem;
+}
+
+.titulo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'Stick No Bills', sans-serif;
+  font-size: 2rem;
+  color: black;
+  vertical-align: middle;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 0rem;
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+.container-ciudad {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: -webkit-gradient(linear, left top, right top, from(maroon), color-stop(white), to(maroon));
+  background-image: linear-gradient(to right, maroon, white, maroon);
+}
+
+h2 {
+  font-family: 'Stick No Bills', sans-serif;
+  font-size: 2rem;
+  margin: 0.2rem;
+}
+
+.ciudad {
+  margin: 0rem;
+}
+
+.italia-container-v2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  -ms-grid-rows: (0.8fr)[7];
+      grid-template-rows: repeat(7, 0.8fr);
+  row-gap: 0.1rem;
+  margin: 0rem;
+}
+
+.container-individual {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+  -ms-grid-rows: 20% 80%;
+      grid-template-rows: 20% 80%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 0.1rem solid black;
+  border-radius: 1rem;
+  margin-bottom: 0.2rem;
+  margin-top: 0.2rem;
+}
+
+.container-titulo {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  -ms-grid-column-span: 2;
+      grid-column-end: span 2;
+  margin: 0rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container-titulo h6 {
+  text-align: center;
+  font-size: 2rem;
+  margin: 0rem;
+}
+
+.container-imagen-v2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1rem;
+}
+
+.imagen-v2 {
+  max-width: 100%;
+  min-height: 100%;
+}
+
+.container-descripcion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+}
+
+.container-parrafo p {
+  font-size: 0.9rem;
+}
+
+.container-gastronomia {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 25% 25% 25% 25%;
+      grid-template-columns: 25% 25% 25% 25%;
+  -ms-grid-rows: 10% 90%;
+      grid-template-rows: 10% 90%;
+  margin-bottom: 1rem;
+  border: 0.1rem solid black;
+  border-radius: 1rem;
+  margin-left: 0.1rem;
+  margin-right: 0.1rem;
+}
+
+.container-gastronomia-titulo {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  -ms-grid-column-span: 4;
+      grid-column-end: span 4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1rem;
+}
+
+.container-gastronomia-titulo h5 {
+  font-size: 1.5rem;
+}
+
+.container-gastronomia-individual {
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.gastronomia-parrafo {
+  font-size: 0.7rem;
+}
+
+.container-gastronomia-subtitulo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: bold;
+}
+
+.container-gastronomia-imagen {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  margin-bottom: 0rem;
+}
+
+.gastronomia-imagen {
+  width: 100%;
+  max-height: 90%;
+}
+
+.container-gastronomia-descripcion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  margin-top: 0rem;
+  margin-left: 0.2rem;
+  margin-right: 0.2rem;
+}
+
+.gastronomia-parrafo {
+  text-align: left;
+  font-size: 0.7rem;
+  padding-left: 0.5rem;
+}
+
+.container-atracciones-titulo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 0.1rem solid black;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  padding: 0rem;
+  height: 3rem;
+}
+
+.container-atracciones-titulo h5 {
+  font-size: 2rem;
+}
+
+.container-marcas {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (0.5fr)[5];
+      grid-template-columns: repeat(5, 0.5fr);
+  -ms-grid-rows: 50% 50%;
+      grid-template-rows: 50% 50%;
+}
+
+.container-marcas-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.marcas-logo {
+  width: 80%;
+  height: 80%;
+}
+
+.container-video {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.container-atracciones {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  -ms-grid-rows: 100%;
+      grid-template-rows: 100%;
+}
+
+.container-atracciones-individual {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  -ms-grid-rows: 10% 50% 10%;
+      grid-template-rows: 10% 50% 10%;
+  border: 0.1rem solid black;
+  border-radius: 1rem;
+  margin: 0.5rem;
+}
+
+.container-atracciones-lugar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.5rem;
+  margin: 0rem;
+  padding: 0rem;
+}
+
+.container-atracciones-imagen {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+}
+
+.atracciones-imagen {
+  width: 100%;
+  height: 100%;
+}
+/*# sourceMappingURL=italia.css.map */
