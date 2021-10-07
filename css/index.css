@@ -290,8 +290,8 @@ main {
 }
 
 .container-promociones .promo-tarjeta .tarjeta {
-  width: 90%;
-  height: 55%;
+  width: 100%;
+  height: 70%;
 }
 
 .container-promociones .promo-tarjeta .promo-texto {
@@ -529,6 +529,8 @@ main {
     display: grid;
     -ms-grid-columns: 33% 33% 33%;
         grid-template-columns: 33% 33% 33%;
+    -ms-grid-rows: 20% 40% 40%;
+        grid-template-rows: 20% 40% 40%;
   }
   .container-promociones h4 {
     -ms-grid-column: 1;
@@ -542,8 +544,8 @@ main {
     padding: 0.5rem;
   }
   .container-promociones .promo-tarjeta .tarjeta {
-    width: 90%;
-    height: 55%;
+    width: 100%;
+    height: 100%;
   }
   .reserva {
     display: -webkit-box;
@@ -716,6 +718,8 @@ main {
     display: grid;
     -ms-grid-columns: 33% 33% 33%;
         grid-template-columns: 33% 33% 33%;
+    -ms-grid-rows: 20% 40% 40%;
+        grid-template-rows: 20% 40% 40%;
   }
   .container-promociones h4 {
     -ms-grid-column: 1;
@@ -729,8 +733,8 @@ main {
     padding: 0.5rem;
   }
   .container-promociones .promo-tarjeta .tarjeta {
-    width: 90%;
-    height: 55%;
+    width: 100%;
+    height: 100%;
   }
   .reserva {
     display: -webkit-box;
@@ -892,6 +896,8 @@ main {
     display: grid;
     -ms-grid-columns: 33% 33% 33%;
         grid-template-columns: 33% 33% 33%;
+    -ms-grid-rows: 20% 40% 40%;
+        grid-template-rows: 20% 40% 40%;
   }
   .container-promociones h4 {
     -ms-grid-column: 1;
@@ -905,8 +911,8 @@ main {
     padding: 0.5rem;
   }
   .container-promociones .promo-tarjeta .tarjeta {
-    width: 90%;
-    height: 55%;
+    width: 100%;
+    height: 100%;
   }
   .reserva {
     display: -webkit-box;
@@ -1065,6 +1071,8 @@ main {
     display: grid;
     -ms-grid-columns: 16.66% 16.66% 16.66% 16.66% 16.66% 16.66%;
         grid-template-columns: 16.66% 16.66% 16.66% 16.66% 16.66% 16.66%;
+    -ms-grid-rows: 20% 80%;
+        grid-template-rows: 20% 80%;
   }
   .container-promociones h4 {
     -ms-grid-column: 1;
@@ -1078,8 +1086,8 @@ main {
     padding: 0.5rem;
   }
   .container-promociones .promo-tarjeta .tarjeta {
-    width: 90%;
-    height: 55%;
+    width: 100%;
+    height: 70%;
   }
   .reserva {
     display: -webkit-box;
