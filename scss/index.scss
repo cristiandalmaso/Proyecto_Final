@@ -33,7 +33,7 @@
 .container-promociones{
     display: grid;
     grid-template-columns: 16.66% 16.66% 16.66% 16.66% 16.66% 16.66%;
-    grid-template-rows: 1fr;
+    grid-template-rows: 20% 80%;
     justify-items: center;
     align-items: center;
     border: 0.05rem solid black;
@@ -65,8 +65,8 @@
         padding-right: 1rem;
         
         .tarjeta{
-            width: 100%;
-            height: 70%;
+            width: 85%;
+            height: 50%;
         }    
         
         .promo-texto{
@@ -168,8 +168,8 @@
             padding: 0.5rem;  
 
             .tarjeta{
-                width: 100%;
-                height: 100%;
+                width: 85%;
+                height: 50%;
             } 
         }
     }
@@ -315,8 +315,8 @@
             padding: 0.5rem;  
 
             .tarjeta{
-                width: 100%;
-                height: 100%;
+                width: 85%;
+                height: 50%;
             } 
         }
     }
@@ -445,8 +445,8 @@
         .promo-tarjeta{
             padding: 0.5rem;  
             .tarjeta{
-                width: 100%;
-                height: 100%;
+                width: 85%;
+                height: 50%;
             } 
         }
     }
@@ -570,8 +570,8 @@
         .promo-tarjeta{
             padding: 0.5rem;  
             .tarjeta{
-                width: 100%;
-                height: 70%;
+                width: 85%;
+                height: 50%;
             } 
         }
     }
