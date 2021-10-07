@@ -146,7 +146,6 @@
     }
     
     .container-promociones{
-        width: auto;
         margin-left: 0.5rem;
         margin-right: 0.5rem;
         margin-bottom: 1rem;
@@ -166,7 +165,6 @@
     }
     
     .reserva{
-        width: auto;
         display: flex;
         justify-content: center;
         margin-left: 1rem;
@@ -274,18 +272,16 @@
     }   
 }
 
-@media (min-width:321px) and (max-width: 375px){
+@media (min-width:321px) and (max-width: 376px){
     *{
         font-size: 1rem;
         margin:0;
         box-sizing: border-box;
     }
     .img_main{
-        width: 20rem;
-        height: auto;
+        width: 25rem;
     }
     .container-promociones{
-        width: auto;
         margin-left: 0.5rem;
         margin-right: 0.5rem;
         margin-bottom: 1rem;
@@ -305,7 +301,6 @@
     }
     
     .reserva{
-        width: auto;
         display: flex;
         justify-content: center;
         margin-left: 1rem;
@@ -338,7 +333,7 @@
         .table{ 
             margin-left: 0rem;
             margin-right: 0rem;
-            width: auto;
+            width: 100%;
             display: flex;
             justify-content: center;
            
@@ -347,7 +342,7 @@
                 display: flex;
                 flex-direction: row;
                 justify-content: center;
-                width: auto;
+                width: 100%;
                 margin-top: 0.1rem;
                 margin-left: 0rem;
                 margin-right: 0rem;
@@ -407,7 +402,6 @@
         height: auto;
     }
     .container-promociones{
-        width: auto;
         margin-left: 0.5rem;
         margin-right: 0.5rem;
         margin-bottom: 1rem;
@@ -427,7 +421,6 @@
     }
     
     .reserva{
-        width: auto;
         display: flex;
         justify-content: center;
         margin-left: 1rem;
@@ -460,7 +453,7 @@
         .table{ 
             margin-left: 0rem;
             margin-right: 0rem;
-            width: auto;
+            width: 100%;
             display: flex;
             justify-content: center;
            
@@ -469,7 +462,7 @@
                 display: flex;
                 flex-direction: row;
                 justify-content: center;
-                width: auto;
+                width: 100%;
                 margin-top: 0.1rem;
                 margin-left: 0rem;
                 margin-right: 0rem;
@@ -525,11 +518,10 @@
         box-sizing: border-box;
     }
     .img_main{
-        width: 30rem;
+        width: 50rem;
         height: auto;
     }
     .container-promociones{
-        width: auto;
         margin-left: 0.5rem;
         margin-right: 0.5rem;
         margin-bottom: 1rem;
@@ -549,7 +541,6 @@
     }
     
     .reserva{
-        width: auto;
         display: flex;
         justify-content: center;
         margin-left: 1rem;
