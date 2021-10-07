@@ -74,8 +74,8 @@
             font-weight: 600;
             text-align: center;
             padding-top:1rem;
-            }
         }
+    }
 }
 
 .reserva{
@@ -216,7 +216,6 @@
                 .table-dark{
                     display: flex;
                     flex-direction: column;
-                    
                     th{
                         width: 5rem;
                         font-size: 0.6rem;
@@ -225,9 +224,9 @@
                         align-items: center;
                         justify-content: center;
                     }
-                    
-            }
-            .table-light{
+                }    
+            
+                .table-light{
                     display: flex;
                     flex-direction: column;
                     
@@ -239,8 +238,9 @@
                         align-items: center;
                         justify-content: center;
                     }
-            } 
-            .linea_selec{
+                } 
+
+                .linea_selec{
                 display: flex;
                 flex-direction: column;
                 
@@ -252,11 +252,12 @@
                     align-items: center;
                     justify-content: center;
                 }
-            }      
+                }      
             }
             
         }
     }
+
     .footer-container{
         margin-top: 0.6rem;
 
@@ -390,11 +391,11 @@
                     justify-content: center;
                 }
             }      
-            }
-            
         }
+            
     }
 }
+
 @media (min-width: 376px) and (max-width: 426px){
     *{
         font-size: 1rem;
@@ -485,8 +486,8 @@
                         justify-content: center;
                     }
                     
-            }
-            .table-light{
+                }   
+                .table-light{
                     display: flex;
                     flex-direction: column;
                     
@@ -498,8 +499,8 @@
                         align-items: center;
                         justify-content: center;
                     }
-            } 
-            .linea_selec{
+                } 
+                .linea_selec{
                 display: flex;
                 flex-direction: column;
                 
@@ -511,9 +512,8 @@
                     align-items: center;
                     justify-content: center;
                 }
-            }      
+                }      
             }
-            
         }
     }
 }
@@ -580,52 +580,7 @@
         justify-content: center;
         text-align: center;
         margin-left: 1rem;
-        margin-right: 1rem;
-        
+        margin-right: 1rem;    
     }
-    
-    
-    
 }
-   
-
-
-    
-
-    
-
-  
-    
-
-    
-
-    
-
-
-   
-
-    
-
-    
-
-  
-
-   
-
-   
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
