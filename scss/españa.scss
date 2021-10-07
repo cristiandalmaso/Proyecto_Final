@@ -44,7 +44,6 @@ h1{
 }
 
 .container-ciudad{
-    display: flex;
     margin-top: 0rem;
 
     .españa_div{
@@ -304,8 +303,6 @@ h1{
                 display: grid;
                     grid-template-columns: 100%;
                     grid-template-rows: 1fr 1fr 1fr;
-                .container-individual{
-                }
             }
         }
     }

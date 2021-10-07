@@ -389,9 +389,6 @@ h1 .titulo {
 }
 
 .container-ciudad {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   margin-top: 0rem;
 }
 
