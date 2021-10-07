@@ -555,7 +555,7 @@ body {
 .container-hollywood-2 {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[5];
+  -ms-grid-columns: repeat(5, 1fr);
       grid-template-columns: repeat(5, 1fr);
   -ms-grid-rows: 1fr 0.2fr;
       grid-template-rows: 1fr 0.2fr;
