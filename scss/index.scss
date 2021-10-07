@@ -15,7 +15,6 @@
 .h1-titulo{
     background-color: rgb(34, 33, 33);
     color: whitesmoke;
-    font-family: "Bauhaus 93";
     text-align: center;
     font-size: 2rem;
 }
@@ -161,6 +160,11 @@
     
         .promo-tarjeta{
             padding: 0.5rem;  
+
+            .tarjeta{
+                width: 80%;
+                height: 80%;
+            } 
         }
     }
     
@@ -297,6 +301,11 @@
     
         .promo-tarjeta{
             padding: 0.5rem;  
+
+            .tarjeta{
+                width: 80%;
+                height: 80%;
+            } 
         }
     }
     
@@ -417,6 +426,10 @@
     
         .promo-tarjeta{
             padding: 0.5rem;  
+            .tarjeta{
+                width: 80%;
+                height: 80%;
+            } 
         }
     }
     
@@ -537,6 +550,10 @@
     
         .promo-tarjeta{
             padding: 0.5rem;  
+            .tarjeta{
+                width: 80%;
+                height: 80%;
+            } 
         }
     }
     

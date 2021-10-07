@@ -222,7 +222,6 @@ main {
 .h1-titulo {
   background-color: #222121;
   color: whitesmoke;
-  font-family: "Bauhaus 93";
   text-align: center;
   font-size: 2rem;
 }
@@ -538,6 +537,10 @@ main {
   .container-promociones .promo-tarjeta {
     padding: 0.5rem;
   }
+  .container-promociones .promo-tarjeta .tarjeta {
+    width: 80%;
+    height: 80%;
+  }
   .reserva {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -718,6 +721,10 @@ main {
   .container-promociones .promo-tarjeta {
     padding: 0.5rem;
   }
+  .container-promociones .promo-tarjeta .tarjeta {
+    width: 80%;
+    height: 80%;
+  }
   .reserva {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -887,6 +894,10 @@ main {
   .container-promociones .promo-tarjeta {
     padding: 0.5rem;
   }
+  .container-promociones .promo-tarjeta .tarjeta {
+    width: 80%;
+    height: 80%;
+  }
   .reserva {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1055,6 +1066,10 @@ main {
   }
   .container-promociones .promo-tarjeta {
     padding: 0.5rem;
+  }
+  .container-promociones .promo-tarjeta .tarjeta {
+    width: 80%;
+    height: 80%;
   }
   .reserva {
     display: -webkit-box;
