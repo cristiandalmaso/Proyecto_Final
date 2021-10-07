@@ -690,7 +690,7 @@ main {
   }
 }
 
-@media (min-width: 321px) and (max-width: 376px) {
+@media (min-width: 321px) and (max-width: 375px) {
   * {
     font-size: 1rem;
     margin: 0;
@@ -861,7 +861,7 @@ main {
   }
 }
 
-@media (min-width: 321px) and (max-width: 376px) and (min-width: 376px) and (max-width: 426px) {
+@media (min-width: 376px) and (max-width: 426px) {
   * {
     font-size: 1rem;
     margin: 0;
@@ -1032,7 +1032,7 @@ main {
   }
 }
 
-@media (min-width: 321px) and (max-width: 376px) and (min-width: 426px) and (max-width: 769px) {
+@media (min-width: 426px) and (max-width: 769px) {
   * {
     font-size: 1rem;
     margin: 0;
