@@ -223,7 +223,8 @@ main {
   background-color: #222121;
   color: whitesmoke;
   text-align: center;
-  font-size: 2rem;
+  font-family: 'Righteous', cursive;
+  font-size: 3rem;
 }
 
 .h2-subtitulo {
@@ -290,7 +291,7 @@ main {
 
 .container-promociones .promo-tarjeta .tarjeta {
   width: 100%;
-  height: 100%;
+  height: 70%;
 }
 
 .container-promociones .promo-tarjeta .promo-texto {
@@ -517,6 +518,9 @@ main {
     width: 20rem;
     height: auto;
   }
+  .h1-titulo {
+    font-size: 2rem;
+  }
   .container-promociones {
     margin-left: 0.5rem;
     margin-right: 0.5rem;
@@ -538,8 +542,8 @@ main {
     padding: 0.5rem;
   }
   .container-promociones .promo-tarjeta .tarjeta {
-    width: 80%;
-    height: 80%;
+    width: 100%;
+    height: 70%;
   }
   .reserva {
     display: -webkit-box;
@@ -701,6 +705,9 @@ main {
   .img_main {
     width: 25rem;
   }
+  .h1-titulo {
+    font-size: 2rem;
+  }
   .container-promociones {
     margin-left: 0.5rem;
     margin-right: 0.5rem;
@@ -722,8 +729,8 @@ main {
     padding: 0.5rem;
   }
   .container-promociones .promo-tarjeta .tarjeta {
-    width: 80%;
-    height: 80%;
+    width: 100%;
+    height: 70%;
   }
   .reserva {
     display: -webkit-box;
@@ -874,6 +881,9 @@ main {
     width: 30rem;
     height: auto;
   }
+  .h1-titulo {
+    font-size: 2rem;
+  }
   .container-promociones {
     margin-left: 0.5rem;
     margin-right: 0.5rem;
@@ -895,8 +905,8 @@ main {
     padding: 0.5rem;
   }
   .container-promociones .promo-tarjeta .tarjeta {
-    width: 80%;
-    height: 80%;
+    width: 100%;
+    height: 70%;
   }
   .reserva {
     display: -webkit-box;
@@ -1068,8 +1078,8 @@ main {
     padding: 0.5rem;
   }
   .container-promociones .promo-tarjeta .tarjeta {
-    width: 80%;
-    height: 80%;
+    width: 100%;
+    height: 70%;
   }
   .reserva {
     display: -webkit-box;
