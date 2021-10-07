@@ -399,7 +399,6 @@ h1 .titulo {
   font-family: 'Montserrat',sans-serif;
   text-align: center;
   color: black;
-  border: solid 0.1rem black;
   margin: 0.1rem;
   padding-left: 1rem;
   padding-right: 1rem;
@@ -440,9 +439,16 @@ h1 .titulo {
   padding: 0.2rem;
 }
 
+.container-ciudad .españa_div .atracciones .container-individual .card-img-top {
+  height: 100%;
+  width: 100%;
+}
+
 .container-ciudad .españa_div .atracciones .container-individual .modifica-h5 {
   font-weight: bold;
-  font-size: 0.9rem;
+  font-size: 1rem;
+  height: 2rem;
+  margin-bottom: 1rem;
 }
 
 .container-ciudad .españa_div .atracciones .container-individual .modifica-parrafo {
@@ -450,7 +456,7 @@ h1 .titulo {
 }
 
 .container-ciudad .españa_div .atracciones .container-individual .modifica-li-titulo {
-  font-size: 0.7rem;
+  font-size: 1rem;
   font-weight: bold;
 }
 
@@ -528,35 +534,20 @@ h1 .titulo {
             box-sizing: border-box;
     margin: 0;
   }
-  .logo {
-    width: 100%;
-  }
-  ul.navbar-nav.navbar-alinear {
-    margin: 0px;
-  }
-  li.nav-item {
-    margin: 0px;
-  }
-  a.navbar-alinear {
-    margin: 0px;
-  }
-  div.españa_div {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .atracciones {
+  .container-ciudad .españa_div .atracciones {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
   }
-  .container-video {
+  .container-ciudad .españa_div .atracciones .container-individual .modifica-h5 {
+    margin-bottom: 1rem;
+    height: auto;
+  }
+  .container-ciudad .españa_div .atracciones .container-individual .card-body {
+    height: auto;
+  }
+  .container-ciudad .españa_div .container-video {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -565,8 +556,9 @@ h1 .titulo {
             align-items: center;
     margin-bottom: 0.1rem;
   }
-  .container-video iframe {
-    height: 100%;
+  .container-ciudad .españa_div .container-video .iframe_madrid {
+    width: 100%;
+    height: auto;
   }
   .container_playlist {
     display: -webkit-box;
@@ -579,9 +571,10 @@ h1 .titulo {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    border: 0.2rem solid #d30000;
+    border: 0.1rem solid #d30000;
+    margin-bottom: 0.5rem;
   }
-  p.playlist_barcelona {
+  .container_playlist p.playlist_barcelona {
     font-size: 1rem;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -592,11 +585,8 @@ h1 .titulo {
     margin-bottom: 0.5rem;
     margin-top: 0.5rem;
   }
-  div.container_playlist {
-    margin-bottom: 0.1rem;
-  }
-  div.grid-container {
-    margin-bottom: 0.2rem;
+  .container_playlist .grid-container {
+    margin-bottom: 0rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -604,8 +594,10 @@ h1 .titulo {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
   }
-  div.grid-container div {
+  .container_playlist .grid-container div.grid-container div {
     margin: 0.5rem;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -615,20 +607,8 @@ h1 .titulo {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .barcelona_spotify {
+  .container_playlist .grid-container .barcelona_spotify {
     border: 0.1rem solid #faaf0e;
-  }
-  .footer-container {
-    margin-top: 0.6rem;
-  }
-  ul.ul_footer {
-    margin-left: 0.5rem;
-    margin: 0rem;
-    padding: 0rem;
-  }
-  ul.ul_footer li {
-    font-size: 0.6rem;
-    padding: 0.3rem;
   }
 }
 
@@ -640,45 +620,20 @@ h1 .titulo {
             box-sizing: border-box;
     margin: 0;
   }
-  img.logo {
-    width: 100%;
-  }
-  ul.navbar-nav.navbar-alinear {
-    margin: 0rem;
-  }
-  li.nav-item {
-    margin: 0rem;
-  }
-  a.navbar-alinear {
-    margin: 0rem;
-  }
-  .navbar-alinear {
-    font-size: 1rem;
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  div.españa_div {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .atracciones {
+  .container-ciudad .españa_div .atracciones {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
   }
-  .container-video {
+  .container-ciudad .españa_div .atracciones .container-individual .modifica-h5 {
+    margin-bottom: 1rem;
+    height: auto;
+  }
+  .container-ciudad .españa_div .atracciones .container-individual .card-body {
+    height: auto;
+  }
+  .container-ciudad .españa_div .container-video {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -687,10 +642,11 @@ h1 .titulo {
             align-items: center;
     margin-bottom: 0.1rem;
   }
-  .container-video iframe {
-    height: 100%;
+  .container-ciudad .españa_div .container-video .iframe_madrid {
+    width: 100%;
+    height: auto;
   }
-  .container_playlist {
+  .container-ciudad .container_playlist {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -701,9 +657,10 @@ h1 .titulo {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    border: 0.2rem solid #d30000;
+    border: 0.1rem solid #d30000;
+    margin-bottom: 0.5rem;
   }
-  p.playlist_barcelona {
+  .container-ciudad .container_playlist p.playlist_barcelona {
     font-size: 1rem;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -714,11 +671,8 @@ h1 .titulo {
     margin-bottom: 0.5rem;
     margin-top: 0.5rem;
   }
-  div.container_playlist {
-    margin-bottom: 0.1rem;
-  }
-  div.grid-container {
-    margin-bottom: 0.2rem;
+  .container-ciudad .container_playlist .grid-container {
+    margin-bottom: 0rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -726,8 +680,10 @@ h1 .titulo {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
   }
-  div.grid-container div {
+  .container-ciudad .container_playlist .grid-container div.grid-container div {
     margin: 0.5rem;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -737,19 +693,24 @@ h1 .titulo {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .barcelona_spotify {
+  .container-ciudad .container_playlist .grid-container .barcelona_spotify {
     border: 0.1rem solid #faaf0e;
   }
-  .footer-container {
-    margin-top: 0.6rem;
+}
+
+@media (min-width: 426px) and (max-width: 769px) {
+  * {
+    font-size: 1rem;
   }
-  ul.ul_footer {
-    margin: 0rem;
-    padding: 0rem;
+  .container-ciudad .españa_div .atracciones .container-individual .modifica-h5 {
+    margin-bottom: 1rem;
+    height: 3rem;
   }
-  ul.ul_footer li {
-    font-size: 0.75rem;
-    padding: 0.3rem;
+  .container-ciudad .españa_div .atracciones .container-individual .card-body {
+    height: auto;
+  }
+  .container-ciudad .españa_div .atracciones .container-individual .card-img-top {
+    height: auto;
   }
 }
 /*# sourceMappingURL=españa.css.map */
