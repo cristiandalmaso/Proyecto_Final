@@ -174,7 +174,7 @@ h1{
             .atracciones{
                 display: grid;
                 grid-template-columns: 100%;
-
+                grid-template-rows: 1fr 1fr 1fr;
                 .container-individual{
                     .modifica-h5{
                         margin-bottom: 1rem;
@@ -244,7 +244,7 @@ h1{
                 .atracciones{
                     display: grid;
                     grid-template-columns: 100%;
-
+                    grid-template-rows: 1fr 1fr 1fr;
                     .container-individual{
                         .modifica-h5{
                             margin-bottom: 1rem;
@@ -308,11 +308,10 @@ h1{
     .container-ciudad{
         .españa_div{
             .atracciones{
+                display: grid;
+                    grid-template-columns: 100%;
+                    grid-template-rows: 1fr 1fr 1fr;
                 .container-individual{
-                    .modifica-h5{
-                        margin-bottom: 1rem;
-                        height: 3rem;
-                    }
                     .card-body{
                         height: auto;
                     }
@@ -321,6 +320,36 @@ h1{
                     }
                 }
             }
+        }
+    }
+    .container_playlist{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 0.2rem solid rgb(211, 0, 0);
+        margin-bottom: 0.5rem;
+    
+        p.playlist_barcelona{
+            font-size: 1rem;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 0.5rem;
+            margin-top: 0.5rem;
+        }
+        
+        .grid-container{
+        margin-bottom: 0rem;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+       
+        div.grid-container div{
+            margin: 0.5rem;
+            display: flex;
+            flex-direction: column;
+           }
+        .barcelona_spotify{
+        border: 0.2rem solid rgb(250, 175, 14);
+         }            
         }
     }    
 }
