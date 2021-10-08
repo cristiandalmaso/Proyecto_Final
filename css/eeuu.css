@@ -356,7 +356,7 @@ h1 {
   margin-top: 0.5rem;
 }
 
-.titulo {
+h1 .titulo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -375,13 +375,14 @@ body {
   text-align: center;
 }
 
-.ciudad {
+body .ciudad {
   border: 0.1rem solid black;
   margin-left: 0.1rem;
   margin-right: 0.1rem;
+  margin-bottom: 1rem;
 }
 
-.titulo-ciudad {
+body .ciudad .titulo-ciudad {
   background-image: -webkit-gradient(linear, left top, right top, from(#011384), color-stop(whitesmoke), to(#960000));
   background-image: linear-gradient(to right, #011384, whitesmoke, #960000);
   display: -webkit-box;
@@ -392,13 +393,13 @@ body {
           justify-content: center;
 }
 
-.titulo-ciudad h2 {
+body .ciudad .titulo-ciudad h2 {
   font-family: 'Londrina Shadow', cursive;
   font-size: 2rem;
   margin: 0.2rem;
 }
 
-.titulo_atraccion {
+body .ciudad .titulo_atraccion {
   text-align: center;
   font-size: 1rem;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#011384), to(#960000));
@@ -408,7 +409,7 @@ body {
   color: whitesmoke;
 }
 
-.container-centralpark {
+body .ciudad .container-centralpark {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
@@ -417,13 +418,13 @@ body {
       grid-template-rows: 1fr 1fr 1.5fr;
 }
 
-.imagen {
+body .ciudad .container-centralpark .imagen {
   padding: 0.2rem;
   max-width: 100%;
   min-height: 100%;
 }
 
-.cp-parrafo {
+body .ciudad .container-centralpark .cp-parrafo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -435,25 +436,13 @@ body {
           justify-content: center;
 }
 
-.cp-texto {
+body .ciudad .container-centralpark .cp-parrafo .cp-texto {
   text-align: center;
   font-family: 'Londrina Shadow',cursive;
   font-size: 5rem;
 }
 
-.container-video {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 0.2rem;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 100%;
-  height: 100%;
-}
-
-.cp_video {
+body .ciudad .container-centralpark .cp_video {
   width: 100%;
   height: 100%;
   -ms-grid-column: 1;
@@ -468,21 +457,7 @@ body {
   padding-right: 0.1rem;
 }
 
-.container-descripcion {
-  text-align: left;
-  padding-left: 1rem;
-  margin: 0.2rem;
-  font-size: 1rem;
-}
-
-.container-descripcion-la {
-  text-align: center;
-  margin: 0.2rem;
-  font-size: 0.8rem;
-  font-weight: bold;
-}
-
-.container-estatua {
+body .ciudad .container-estatua {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 50% 50%;
@@ -494,11 +469,11 @@ body {
   height: 100%;
 }
 
-.estatua-individual {
+body .ciudad .container-estatua .estatua-individual {
   padding: 0.2rem;
 }
 
-.container-times {
+body .ciudad .container-times {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 25% 25% 25% 25%;
@@ -507,7 +482,18 @@ body {
       grid-template-rows: 50% 50%;
 }
 
-.caja-times {
+body .ciudad .container-times .container-imagen {
+  margin: 0.2rem;
+  padding: 0.1rem;
+}
+
+body .ciudad .container-times .imagen {
+  padding: 0.2rem;
+  max-width: 100%;
+  min-height: 100%;
+}
+
+body .ciudad .container-times .caja-times {
   -ms-grid-column: 2;
       grid-column-start: 2;
   -ms-grid-column-span: 2;
@@ -519,18 +505,32 @@ body {
   padding: 0.4rem;
 }
 
-.container-imagen {
+body .ciudad .container-times .caja-times .container-imagen {
   margin: 0.2rem;
 }
 
-.container-miami_beach {
+body .ciudad .container-times .caja-times .estatua-individual {
+  padding: 0.2rem;
+}
+
+body .ciudad .container-miami_beach {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
 }
 
-.container-hollywood {
+body .ciudad .container-miami_beach .container-imagen {
+  margin: 0.2rem;
+}
+
+body .ciudad .container-miami_beach .container-imagen .imagen {
+  padding: 0.2rem;
+  max-width: 100%;
+  min-height: 100%;
+}
+
+body .ciudad .container-hollywood {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 50% 50%;
@@ -540,7 +540,11 @@ body {
   position: relative;
 }
 
-.container-hollywood-titulo {
+body .ciudad .container-hollywood iframe {
+  width: 100%;
+}
+
+body .ciudad .container-hollywood .container-hollywood-titulo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -552,12 +556,505 @@ body {
   font-weight: bold;
 }
 
-.container-hollywood-2 {
+body .ciudad .container-hollywood .container-imagen {
+  margin: 0.2rem;
+}
+
+body .ciudad .container-hollywood-2 {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[5];
       grid-template-columns: repeat(5, 1fr);
   -ms-grid-rows: 1fr 0.2fr;
       grid-template-rows: 1fr 0.2fr;
+}
+
+body .ciudad .container-hollywood-2 .container-imagen {
+  margin: 0.2rem;
+}
+
+body .ciudad .container-hollywood-2 .container-imagen .imagen {
+  padding: 0.2rem;
+  max-width: 100%;
+  min-height: 100%;
+}
+
+body .ciudad .container-hollywood-2 .container-descripcion-la {
+  text-align: center;
+  margin: 0.2rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+@media (max-width: 321px) {
+  body .ciudad .container-centralpark {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .ciudad .container-centralpark .imagen {
+    padding: 0.2rem;
+    max-width: 100%;
+    min-height: 100%;
+  }
+  body .ciudad .container-centralpark .imagen iframe {
+    height: 5rem;
+  }
+  body .ciudad .container-centralpark .cp_video {
+    height: 10rem;
+  }
+  body .ciudad .container-estatua {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .ciudad .container-estatua iframe {
+    height: auto;
+  }
+  body .ciudad .container-times {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .ciudad .container-times iframe {
+    height: 5rem;
+  }
+  body .ciudad .container-miami_beach {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .ciudad .container-miami_beach iframe {
+    height: auto;
+  }
+  body .ciudad .container-miami_beach .spotify_responsive {
+    height: 5.5rem;
+  }
+  body .ciudad .container-hollywood {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    -ms-grid-rows: 0.2fr 1fr 0.2fr 1fr;
+        grid-template-rows: 0.2fr 1fr 0.2fr 1fr;
+  }
+  body .ciudad .container-hollywood .item1 {
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+    grid-row-end: 1;
+  }
+  body .ciudad .container-hollywood .item3 {
+    -ms-grid-row: 2;
+        grid-row-start: 2;
+    grid-row-end: 2;
+  }
+  body .ciudad .container-hollywood .item2 {
+    -ms-grid-row: 3;
+        grid-row-start: 3;
+    grid-row-end: 3;
+  }
+  body .ciudad .container-hollywood .item4 {
+    -ms-grid-row: 4;
+        grid-row-start: 4;
+    grid-row-end: 4;
+  }
+  body .ciudad .container-hollywood iframe {
+    width: 100%;
+    height: 100%;
+  }
+  body .ciudad .container-hollywood-2 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+  }
+  body .ciudad .container-hollywood-2 .item2 {
+    -ms-grid-row: 2;
+        grid-row-start: 2;
+    grid-row-end: 2;
+  }
+  body .ciudad .container-hollywood-2 .item4 {
+    -ms-grid-row: 4;
+        grid-row-start: 4;
+    grid-row-end: 4;
+  }
+  body .ciudad .container-hollywood-2 .item6 {
+    -ms-grid-row: 6;
+        grid-row-start: 6;
+    grid-row-end: 6;
+  }
+  body .ciudad .container-hollywood-2 .item8 {
+    -ms-grid-row: 8;
+        grid-row-start: 8;
+    grid-row-end: 8;
+  }
+  body .ciudad .container-hollywood-2 .item10 {
+    -ms-grid-row: 10;
+        grid-row-start: 10;
+    grid-row-end: 10;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 376px) {
+  body .ciudad .container-centralpark {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .ciudad .container-centralpark .imagen {
+    padding: 0.2rem;
+    max-width: 100%;
+    min-height: 100%;
+  }
+  body .ciudad .container-centralpark .imagen iframe {
+    height: 5rem;
+  }
+  body .ciudad .container-centralpark .cp_video {
+    height: 13rem;
+  }
+  body .ciudad .container-estatua {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .ciudad .container-estatua iframe {
+    height: auto;
+  }
+  body .ciudad .container-times {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .ciudad .container-times iframe {
+    height: 5rem;
+  }
+  body .ciudad .container-miami_beach {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .ciudad .container-miami_beach iframe {
+    height: 16rem;
+  }
+  body .ciudad .container-miami_beach .spotify_responsive {
+    height: 5.5rem;
+  }
+  body .ciudad .container-hollywood {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    -ms-grid-rows: 0.2fr 1fr 0.2fr 1fr;
+        grid-template-rows: 0.2fr 1fr 0.2fr 1fr;
+  }
+  body .ciudad .container-hollywood .item1 {
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+    grid-row-end: 1;
+  }
+  body .ciudad .container-hollywood .item3 {
+    -ms-grid-row: 2;
+        grid-row-start: 2;
+    grid-row-end: 2;
+  }
+  body .ciudad .container-hollywood .item2 {
+    -ms-grid-row: 3;
+        grid-row-start: 3;
+    grid-row-end: 3;
+  }
+  body .ciudad .container-hollywood .item4 {
+    -ms-grid-row: 4;
+        grid-row-start: 4;
+    grid-row-end: 4;
+  }
+  body .ciudad .container-hollywood iframe {
+    width: 100%;
+    height: 100%;
+  }
+  body .ciudad .container-hollywood-2 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+  }
+  body .ciudad .container-hollywood-2 .item2 {
+    -ms-grid-row: 2;
+        grid-row-start: 2;
+    grid-row-end: 2;
+  }
+  body .ciudad .container-hollywood-2 .item4 {
+    -ms-grid-row: 4;
+        grid-row-start: 4;
+    grid-row-end: 4;
+  }
+  body .ciudad .container-hollywood-2 .item6 {
+    -ms-grid-row: 6;
+        grid-row-start: 6;
+    grid-row-end: 6;
+  }
+  body .ciudad .container-hollywood-2 .item8 {
+    -ms-grid-row: 8;
+        grid-row-start: 8;
+    grid-row-end: 8;
+  }
+  body .ciudad .container-hollywood-2 .item10 {
+    -ms-grid-row: 10;
+        grid-row-start: 10;
+    grid-row-end: 10;
+  }
+}
+
+@media (min-width: 376px) and (max-width: 426px) {
+  body .ciudad .container-centralpark {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .ciudad .container-centralpark .imagen {
+    padding: 0.2rem;
+    max-width: 100%;
+    min-height: 100%;
+  }
+  body .ciudad .container-centralpark .imagen iframe {
+    height: 5rem;
+  }
+  body .ciudad .container-centralpark .cp_video {
+    height: 14rem;
+  }
+  body .ciudad .container-estatua {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .ciudad .container-estatua iframe {
+    height: auto;
+  }
+  body .ciudad .container-times {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .ciudad .container-times iframe {
+    height: 5rem;
+  }
+  body .ciudad .container-miami_beach {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .ciudad .container-miami_beach iframe {
+    height: 18rem;
+  }
+  body .ciudad .container-miami_beach .spotify_responsive {
+    height: 5.5rem;
+  }
+  body .ciudad .container-hollywood {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    -ms-grid-rows: 0.2fr 1fr 0.2fr 1fr;
+        grid-template-rows: 0.2fr 1fr 0.2fr 1fr;
+  }
+  body .ciudad .container-hollywood .item1 {
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+    grid-row-end: 1;
+  }
+  body .ciudad .container-hollywood .item3 {
+    -ms-grid-row: 2;
+        grid-row-start: 2;
+    grid-row-end: 2;
+  }
+  body .ciudad .container-hollywood .item2 {
+    -ms-grid-row: 3;
+        grid-row-start: 3;
+    grid-row-end: 3;
+  }
+  body .ciudad .container-hollywood .item4 {
+    -ms-grid-row: 4;
+        grid-row-start: 4;
+    grid-row-end: 4;
+  }
+  body .ciudad .container-hollywood iframe {
+    width: 100%;
+    height: 100%;
+  }
+  body .ciudad .container-hollywood-2 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+  }
+  body .ciudad .container-hollywood-2 .item2 {
+    -ms-grid-row: 2;
+        grid-row-start: 2;
+    grid-row-end: 2;
+  }
+  body .ciudad .container-hollywood-2 .item4 {
+    -ms-grid-row: 4;
+        grid-row-start: 4;
+    grid-row-end: 4;
+  }
+  body .ciudad .container-hollywood-2 .item6 {
+    -ms-grid-row: 6;
+        grid-row-start: 6;
+    grid-row-end: 6;
+  }
+  body .ciudad .container-hollywood-2 .item8 {
+    -ms-grid-row: 8;
+        grid-row-start: 8;
+    grid-row-end: 8;
+  }
+  body .ciudad .container-hollywood-2 .item10 {
+    -ms-grid-row: 10;
+        grid-row-start: 10;
+    grid-row-end: 10;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 769px) {
+  body .ciudad .container-times {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .ciudad .container-times iframe {
+    height: 5rem;
+  }
+  body .ciudad .container-miami_beach {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .ciudad .container-miami_beach iframe {
+    height: 30rem;
+    width: 100%;
+  }
+  body .ciudad .container-miami_beach .spotify_responsive {
+    height: 5.5rem;
+  }
+  body .ciudad .container-hollywood {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    -ms-grid-rows: 0.2fr 1fr 0.2fr 1fr;
+        grid-template-rows: 0.2fr 1fr 0.2fr 1fr;
+  }
+  body .ciudad .container-hollywood .item1 {
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+    grid-row-end: 1;
+  }
+  body .ciudad .container-hollywood .item3 {
+    -ms-grid-row: 2;
+        grid-row-start: 2;
+    grid-row-end: 2;
+  }
+  body .ciudad .container-hollywood .item2 {
+    -ms-grid-row: 3;
+        grid-row-start: 3;
+    grid-row-end: 3;
+  }
+  body .ciudad .container-hollywood .item4 {
+    -ms-grid-row: 4;
+        grid-row-start: 4;
+    grid-row-end: 4;
+  }
+  body .ciudad .container-hollywood iframe {
+    width: 100%;
+    height: 20rem;
+  }
+  body .ciudad .container-hollywood-2 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+  }
+  body .ciudad .container-hollywood-2 .item2 {
+    -ms-grid-row: 2;
+        grid-row-start: 2;
+    grid-row-end: 2;
+  }
+  body .ciudad .container-hollywood-2 .item4 {
+    -ms-grid-row: 4;
+        grid-row-start: 4;
+    grid-row-end: 4;
+  }
+  body .ciudad .container-hollywood-2 .item6 {
+    -ms-grid-row: 6;
+        grid-row-start: 6;
+    grid-row-end: 6;
+  }
+  body .ciudad .container-hollywood-2 .item8 {
+    -ms-grid-row: 8;
+        grid-row-start: 8;
+    grid-row-end: 8;
+  }
+  body .ciudad .container-hollywood-2 .item10 {
+    -ms-grid-row: 10;
+        grid-row-start: 10;
+    grid-row-end: 10;
+  }
+  body .ciudad .container-hollywood-2 .imagen {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=eeuu.css.map */

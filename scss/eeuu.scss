@@ -14,159 +14,674 @@ h1{
     text-align: center;
     padding: 1rem;
     margin-top: 0.5rem;
-}
 
-.titulo{
-    display: flex;
-    font-family: 'Londrina Shadow', cursive;
-    font-size: 2rem;
-    color: black;
-    vertical-align: middle;
-    justify-content: center;
-    margin-bottom: 0rem;
+    .titulo{
+        display: flex;
+        font-family: 'Londrina Shadow', cursive;
+        font-size: 2rem;
+        color: black;
+        vertical-align: middle;
+        justify-content: center;
+        margin-bottom: 0rem;
+    }
 }
 
 body{
     background-color: whitesmoke;
     text-align: center;
+
+    .ciudad{
+        border: 0.1rem solid black;
+        margin-left: 0.1rem;
+        margin-right: 0.1rem;
+        margin-bottom: 1rem;
+
+        .titulo-ciudad{
+            background-image: linear-gradient(to right,rgb(1, 19, 132), whitesmoke,rgb(150, 0, 0));
+            display: flex;
+            justify-content: center;
+        }
+
+        .titulo-ciudad h2{
+            font-family: 'Londrina Shadow', cursive;
+            font-size: 2rem;
+            margin: 0.2rem;
+        }
+
+        .titulo_atraccion{
+            text-align: center;
+            font-size: 1rem;
+            background-image: linear-gradient(rgb(1,19,132), rgb(150,0,0));
+            margin-top: 0.2rem;
+            margin-bottom: 0.2rem;
+            color: whitesmoke;
+        }
+
+        .container-centralpark{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1.5fr;
+        
+            .imagen{
+                padding: 0.2rem;
+                max-width: 100%;
+                min-height: 100%; 
+            }
+
+            .cp-parrafo{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+           
+                .cp-texto{
+                    text-align: center;
+                    font-family: 'Londrina Shadow',cursive;
+                    font-size: 5rem;
+                }
+            }
+
+            .cp_video{
+                width: 100%;
+                height: 100%;
+                grid-column-start: 1;
+                grid-column-end: span 3;
+                grid-row-start: 3;
+                grid-row-end: span 3;
+                padding-left: 0.1rem;
+                padding-right: 0.1rem;
+            }
+        }
+
+        .container-estatua{
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-row: 100%;    
+            padding: 0.2rem;
+            width: 100%;
+            height: 100%;
+
+            .estatua-individual{
+                padding: 0.2rem;
+            }   
+        }
+
+        .container-times{
+            display:grid;
+            grid-template-columns: 25% 25% 25% 25%;
+            grid-template-rows: 50% 50%;
+
+            .container-imagen{
+                margin:0.2rem;
+                padding: 0.1rem;
+            }
+
+            .imagen{
+                padding: 0.2rem;
+                max-width: 100%;
+                min-height: 100%; 
+            }
+
+            .caja-times{
+                grid-column-start: 2;
+                grid-column-end: span 2;
+                grid-row-start: 1;
+                grid-row-end: span 2;
+                padding: 0.4rem;
+
+                .container-imagen{
+                    margin:0.2rem;
+                }
+
+                .estatua-individual{
+                    padding: 0.2rem;       
+                }
+                
+            }
+         
+        }
+
+        .container-miami_beach{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+
+            .container-imagen{
+                margin:0.2rem;
+
+                .imagen{
+                    padding: 0.2rem;
+                    max-width: 100%;
+                    min-height: 100%; 
+                }
+            }
+
+            
+
+        }
+
+        
+        .container-hollywood{
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 10% 90%;
+            position: relative;
+
+            iframe{
+                width: 100%;
+            }
+
+            .container-hollywood-titulo{
+                display: flex;
+                justify-content: center;
+                background-color: rgb(1, 19, 132);
+                color: whitesmoke;
+                font-weight: bold;
+            }
+
+            .container-imagen{
+                margin:0.2rem;
+            }
+        }
+            
+        .container-hollywood-2{
+                display: grid;
+                grid-template-columns: repeat(5,1fr);
+                grid-template-rows: 1fr 0.2fr;
+
+                .container-imagen{
+                    margin:0.2rem;
+    
+                    .imagen{
+                        padding: 0.2rem;
+                        max-width: 100%;
+                        min-height: 100%; 
+                    }
+
+                   
+                }
+
+                .container-descripcion-la{
+                    text-align: center;
+                    margin: 0.2rem;
+                    font-size: 0.8rem;
+                    font-weight: bold;
+
+                }
+
+                
+        }
+    }
 }
 
-.ciudad{
-    border: 0.1rem solid black;
-    margin-left: 0.1rem;
-    margin-right: 0.1rem;
+@media (max-width: 321px){
+    body{
+        .ciudad{
+            .container-centralpark{
+            display: flex;
+            flex-direction: column;
+        
+            .imagen{
+                padding: 0.2rem;
+                max-width: 100%;
+                min-height: 100%; 
+
+                iframe{
+                    height: 5rem;
+                }
+            }
+
+            .cp_video{
+                height: 10rem;
+            }
+        }
+        .container-estatua{
+            display: flex;
+            flex-direction: column;
+            
+            iframe{
+                height: auto;
+            }
+        }
+
+        .container-times{
+            display: flex;
+            flex-direction: column;
+
+            iframe{
+                height: 5rem;
+            }
+        }
+
+        .container-miami_beach{
+            display: flex;
+            flex-direction: column;
+
+            iframe{
+                height: auto;  
+                            
+            }
+            .spotify_responsive{
+                height: 5.5rem;
+            }   
+        }
+
+        .container-hollywood{
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: 0.2fr 1fr 0.2fr 1fr;
+
+            .item1{
+                grid-row-start: 1;
+                grid-row-end: 1;
+            }
+            .item3{
+                grid-row-start: 2;
+                grid-row-end: 2;
+            }
+
+            .item2{
+                grid-row-start: 3;
+                grid-row-end: 3;
+            }
+
+            .item4{
+                grid-row-start: 4;
+                grid-row-end: 4;
+            }
+
+            iframe{
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .container-hollywood-2{
+            display: grid;
+            grid-template-columns: 100%;
+            
+            .item2{
+                grid-row-start: 2;
+                grid-row-end: 2;
+            }
+
+            .item4{
+                grid-row-start: 4;
+                grid-row-end: 4;
+            }
+
+            .item6{
+                grid-row-start: 6;
+                grid-row-end: 6;
+            }
+
+            .item8{
+                grid-row-start: 8;
+                grid-row-end: 8;
+            }
+
+            .item10{
+                grid-row-start: 10;
+                grid-row-end: 10;
+            }
+
+        }
+
+        }
+    }       
 }
 
-.titulo-ciudad{
-    background-image: linear-gradient(to right,rgb(1, 19, 132), whitesmoke,rgb(150, 0, 0));
-    display: flex;
-    justify-content: center;
+@media (min-width:321px) and (max-width: 376px){
+    body{
+        .ciudad{
+            .container-centralpark{
+            display: flex;
+            flex-direction: column;
+        
+            .imagen{
+                padding: 0.2rem;
+                max-width: 100%;
+                min-height: 100%; 
+
+                iframe{
+                    height: 5rem;
+                }
+            }
+
+            .cp_video{
+                height: 13rem;
+            }
+        }
+        .container-estatua{
+            display: flex;
+            flex-direction: column;
+            
+            iframe{
+                height: auto;
+            }
+        }
+
+        .container-times{
+            display: flex;
+            flex-direction: column;
+
+            iframe{
+                height: 5rem;
+            }
+        }
+
+        .container-miami_beach{
+            display: flex;
+            flex-direction: column;
+
+            iframe{
+                height: 16rem;  
+            }
+            .spotify_responsive{
+                height: 5.5rem;
+            }   
+        }
+
+        .container-hollywood{
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: 0.2fr 1fr 0.2fr 1fr;
+
+            .item1{
+                grid-row-start: 1;
+                grid-row-end: 1;
+            }
+            .item3{
+                grid-row-start: 2;
+                grid-row-end: 2;
+            }
+
+            .item2{
+                grid-row-start: 3;
+                grid-row-end: 3;
+            }
+
+            .item4{
+                grid-row-start: 4;
+                grid-row-end: 4;
+            }
+
+            iframe{
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .container-hollywood-2{
+            display: grid;
+            grid-template-columns: 100%;
+            
+            .item2{
+                grid-row-start: 2;
+                grid-row-end: 2;
+            }
+
+            .item4{
+                grid-row-start: 4;
+                grid-row-end: 4;
+            }
+
+            .item6{
+                grid-row-start: 6;
+                grid-row-end: 6;
+            }
+
+            .item8{
+                grid-row-start: 8;
+                grid-row-end: 8;
+            }
+
+            .item10{
+                grid-row-start: 10;
+                grid-row-end: 10;
+            }
+
+        }
+
+        }
+    }       
 }
 
-.titulo-ciudad h2{
-    font-family: 'Londrina Shadow', cursive;
-    font-size: 2rem;
-    margin: 0.2rem;
+
+@media (min-width:376px) and (max-width: 426px){
+    body{
+        .ciudad{
+            .container-centralpark{
+            display: flex;
+            flex-direction: column;
+        
+            .imagen{
+                padding: 0.2rem;
+                max-width: 100%;
+                min-height: 100%; 
+
+                iframe{
+                    height: 5rem;
+                }
+            }
+
+            .cp_video{
+                height: 14rem;
+            }
+        }
+        .container-estatua{
+            display: flex;
+            flex-direction: column;
+            
+            iframe{
+                height: auto;
+            }
+        }
+
+        .container-times{
+            display: flex;
+            flex-direction: column;
+
+            iframe{
+                height: 5rem;
+            }
+        }
+
+        .container-miami_beach{
+            display: flex;
+            flex-direction: column;
+
+            iframe{
+                height: 18rem;  
+                            
+            }
+            .spotify_responsive{
+                height: 5.5rem;
+            }   
+        }
+
+        .container-hollywood{
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: 0.2fr 1fr 0.2fr 1fr;
+
+            .item1{
+                grid-row-start: 1;
+                grid-row-end: 1;
+            }
+            .item3{
+                grid-row-start: 2;
+                grid-row-end: 2;
+            }
+
+            .item2{
+                grid-row-start: 3;
+                grid-row-end: 3;
+            }
+
+            .item4{
+                grid-row-start: 4;
+                grid-row-end: 4;
+            }
+
+            iframe{
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .container-hollywood-2{
+            display: grid;
+            grid-template-columns: 100%;
+            
+            .item2{
+                grid-row-start: 2;
+                grid-row-end: 2;
+            }
+
+            .item4{
+                grid-row-start: 4;
+                grid-row-end: 4;
+            }
+
+            .item6{
+                grid-row-start: 6;
+                grid-row-end: 6;
+            }
+
+            .item8{
+                grid-row-start: 8;
+                grid-row-end: 8;
+            }
+
+            .item10{
+                grid-row-start: 10;
+                grid-row-end: 10;
+            }
+
+        }
+
+        }
+    }       
 }
 
-.titulo_atraccion{
-    text-align: center;
-    font-size: 1rem;
-    background-image: linear-gradient(rgb(1,19,132), rgb(150,0,0));
-    margin-top: 0.2rem;
-    margin-bottom: 0.2rem;
-    color: whitesmoke;
+@media (min-width:426px) and (max-width: 769px){
+    body{
+        .ciudad{
+            .container-times{
+                display: flex;
+                flex-direction: column;
+    
+                iframe{
+                    height: 5rem;
+                }
+            }
+    
+            .container-miami_beach{
+                display: flex;
+                flex-direction: column;
+    
+                iframe{
+                    height: 30rem;  
+                    width: 100%;
+                                
+                }
+                .spotify_responsive{
+                    height: 5.5rem;
+                }   
+            }
+    
+            .container-hollywood{
+                display: grid;
+                grid-template-columns: 100%;
+                grid-template-rows: 0.2fr 1fr 0.2fr 1fr;
+    
+                .item1{
+                    grid-row-start: 1;
+                    grid-row-end: 1;
+                }
+                .item3{
+                    grid-row-start: 2;
+                    grid-row-end: 2;
+                }
+    
+                .item2{
+                    grid-row-start: 3;
+                    grid-row-end: 3;
+                }
+    
+                .item4{
+                    grid-row-start: 4;
+                    grid-row-end: 4;
+                }
+    
+                iframe{
+                    width: 100%;
+                    height: 20rem;
+                }
+            }
+    
+            .container-hollywood-2{
+                display: grid;
+                grid-template-columns: 100%;
+                
+                .item2{
+                    grid-row-start: 2;
+                    grid-row-end: 2;
+                }
+    
+                .item4{
+                    grid-row-start: 4;
+                    grid-row-end: 4;
+                }
+    
+                .item6{
+                    grid-row-start: 6;
+                    grid-row-end: 6;
+                }
+    
+                .item8{
+                    grid-row-start: 8;
+                    grid-row-end: 8;
+                }
+    
+                .item10{
+                    grid-row-start: 10;
+                    grid-row-end: 10;
+                }
+
+                .imagen{
+                    width: 100%;
+                }
+    
+            }
+    
+            }
+        }     
 }
 
-.container-centralpark{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1.5fr;
-}
 
-.imagen{
-    padding: 0.2rem;
-    max-width: 100%;
-    min-height: 100%; 
-}
 
-.cp-parrafo{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
-.cp-texto{
-    text-align: center;
-    font-family: 'Londrina Shadow',cursive;
-    font-size: 5rem;
-}
 
-.container-video{  
-    display: flex;
-    padding: 0.2rem;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-}
 
-.cp_video{
-    width: 100%;
-    height: 100%;
-    grid-column-start: 1;
-    grid-column-end: span 3;
-    grid-row-start: 3;
-    grid-row-end: span 3;
-    padding-left: 0.1rem;
-    padding-right: 0.1rem;
-}
 
-.container-descripcion{
-    text-align: left;
-    padding-left: 1rem;
-    margin: 0.2rem;
-    font-size: 1rem;
-}
 
-.container-descripcion-la{
-    text-align: center;
-    margin: 0.2rem;
-    font-size: 0.8rem;
-    font-weight: bold;
-}
-.container-estatua{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-row: 100%;    
-    padding: 0.2rem;
-    width: 100%;
-    height: 100%;
-}
 
-.estatua-individual{
-    padding: 0.2rem;
-}
 
-.container-times{
-    display:grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 50% 50%;
-}
 
-.caja-times{
-    grid-column-start: 2;
-    grid-column-end: span 2;
-    grid-row-start: 1;
-    grid-row-end: span 2;
-    padding: 0.4rem;
-}
 
-.container-imagen{
-    margin:0.2rem;
-}
 
-.container-miami_beach{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
 
-.container-hollywood{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 10% 90%;
-    position: relative;
-}
 
-.container-hollywood-titulo{
-    display: flex;
-    justify-content: center;
-    background-color: rgb(1, 19, 132);
-    color: whitesmoke;
-    font-weight: bold;
-}
 
-.container-hollywood-2{
-    display: grid;
-    grid-template-columns: repeat(5,1fr);
-    grid-template-rows: 1fr 0.2fr;
-}
+
+
+
+
+
+
+
+
+
+
+
+
