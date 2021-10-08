@@ -709,6 +709,10 @@ body .ciudad .container-hollywood-2 .container-descripcion-la {
         grid-row-start: 10;
     grid-row-end: 10;
   }
+  body .ciudad .container-hollywood-2 .imagen {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 @media (min-width: 321px) and (max-width: 376px) {
@@ -833,6 +837,10 @@ body .ciudad .container-hollywood-2 .container-descripcion-la {
     -ms-grid-row: 10;
         grid-row-start: 10;
     grid-row-end: 10;
+  }
+  body .ciudad .container-hollywood-2 .imagen {
+    width: 100%;
+    height: 100%;
   }
 }
 
@@ -959,6 +967,10 @@ body .ciudad .container-hollywood-2 .container-descripcion-la {
         grid-row-start: 10;
     grid-row-end: 10;
   }
+  body .ciudad .container-hollywood-2 .imagen {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 @media (min-width: 426px) and (max-width: 769px) {
@@ -1055,6 +1067,7 @@ body .ciudad .container-hollywood-2 .container-descripcion-la {
   }
   body .ciudad .container-hollywood-2 .imagen {
     width: 100%;
+    height: 100%;
   }
 }
 /*# sourceMappingURL=eeuu.css.map */
