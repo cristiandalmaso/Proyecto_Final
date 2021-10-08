@@ -683,6 +683,8 @@ body .ciudad .container-hollywood-2 .container-descripcion-la {
     display: grid;
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
+    -ms-grid-rows: 18% 2% 18% 2% 18% 2% 18% 2% 18% 2%;
+        grid-template-rows: 18% 2% 18% 2% 18% 2% 18% 2% 18% 2%;
   }
   body .ciudad .container-hollywood-2 .item2 {
     -ms-grid-row: 2;
@@ -812,6 +814,8 @@ body .ciudad .container-hollywood-2 .container-descripcion-la {
     display: grid;
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
+    -ms-grid-rows: 18% 2% 18% 2% 18% 2% 18% 2% 18% 2%;
+        grid-template-rows: 18% 2% 18% 2% 18% 2% 18% 2% 18% 2%;
   }
   body .ciudad .container-hollywood-2 .item2 {
     -ms-grid-row: 2;
@@ -941,6 +945,8 @@ body .ciudad .container-hollywood-2 .container-descripcion-la {
     display: grid;
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
+    -ms-grid-rows: 18% 2% 18% 2% 18% 2% 18% 2% 18% 2%;
+        grid-template-rows: 18% 2% 18% 2% 18% 2% 18% 2% 18% 2%;
   }
   body .ciudad .container-hollywood-2 .item2 {
     -ms-grid-row: 2;
@@ -1039,6 +1045,8 @@ body .ciudad .container-hollywood-2 .container-descripcion-la {
     display: grid;
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
+    -ms-grid-rows: 18% 2% 18% 2% 18% 2% 18% 2% 18% 2%;
+        grid-template-rows: 18% 2% 18% 2% 18% 2% 18% 2% 18% 2%;
   }
   body .ciudad .container-hollywood-2 .item2 {
     -ms-grid-row: 2;
