@@ -543,6 +543,9 @@ h1 .titulo {
   .container-ciudad .españa_div .atracciones .container-individual .modifica-h5 {
     margin-bottom: 1rem;
   }
+  .container-ciudad .españa_div .atracciones .container-individual .card .card-img-top {
+    height: 16rem;
+  }
   .container-ciudad .españa_div .container-video {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -627,6 +630,9 @@ h1 .titulo {
   .container-ciudad .españa_div .atracciones .container-individual .modifica-h5 {
     margin-bottom: 1rem;
   }
+  .container-ciudad .españa_div .atracciones .container-individual .card .card-img-top {
+    height: 16rem;
+  }
   .container-ciudad .españa_div .container-video {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -703,6 +709,9 @@ h1 .titulo {
         grid-template-columns: 100%;
     -ms-grid-rows: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
+  }
+  .container-ciudad .españa_div .atracciones .card .card-img-top {
+    height: 16rem;
   }
   .container_playlist {
     display: -webkit-box;
