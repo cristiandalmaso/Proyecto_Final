@@ -713,7 +713,7 @@ body .ciudad .container-hollywood-2 .container-descripcion-la {
   }
   body .ciudad .container-hollywood-2 .imagen {
     width: 100%;
-    height: 100%;
+    height: 16rem;
   }
 }
 
@@ -844,7 +844,7 @@ body .ciudad .container-hollywood-2 .container-descripcion-la {
   }
   body .ciudad .container-hollywood-2 .imagen {
     width: 100%;
-    height: 100%;
+    height: 18rem;
   }
 }
 
@@ -975,7 +975,7 @@ body .ciudad .container-hollywood-2 .container-descripcion-la {
   }
   body .ciudad .container-hollywood-2 .imagen {
     width: 100%;
-    height: 100%;
+    height: 22rem;
   }
 }
 
@@ -1052,30 +1052,75 @@ body .ciudad .container-hollywood-2 .container-descripcion-la {
     -ms-grid-row: 2;
         grid-row-start: 2;
     grid-row-end: 2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   body .ciudad .container-hollywood-2 .item4 {
     -ms-grid-row: 4;
         grid-row-start: 4;
     grid-row-end: 4;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   body .ciudad .container-hollywood-2 .item6 {
     -ms-grid-row: 6;
         grid-row-start: 6;
     grid-row-end: 6;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   body .ciudad .container-hollywood-2 .item8 {
     -ms-grid-row: 8;
         grid-row-start: 8;
     grid-row-end: 8;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   body .ciudad .container-hollywood-2 .item10 {
     -ms-grid-row: 10;
         grid-row-start: 10;
     grid-row-end: 10;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   body .ciudad .container-hollywood-2 .imagen {
     width: 100%;
-    height: 100%;
+    height: 34rem;
   }
 }
 /*# sourceMappingURL=eeuu.css.map */
