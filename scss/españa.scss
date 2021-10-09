@@ -74,6 +74,12 @@ h1{
             grid-row: 1fr;   
             margin-top: 0rem;
 
+            .container-individual{
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                padding: 0.2rem;
+
                 .card-img-top{
                     height: 100%;
                     width: 100%;
@@ -101,23 +107,15 @@ h1{
                     justify-content: center;
                     align-items: center;
                 }
-               
+            }   
         }
-
-        .container-video{
-            display: flex;
+        .iframe_madrid{
+            display: block;
             width: 100%;
-
-            .iframe_madrid{
-                display: flex;
-                width: 90rem;
-                height: 30rem;
-                margin: auto;
-                border: solid 0.2rem #580042;
-            }
+            height: 30rem;
+            margin: auto;
+            border: solid 0.2rem #580042;
         }
-
-        
     }
 }
 
@@ -177,9 +175,11 @@ h1{
                 display: grid;
                 grid-template-columns: 100%;
                 grid-template-rows: 1fr 1fr 1fr;
+                .container-individual{
                     .modifica-h5{
                         margin-bottom: 1rem;
                     }
+            }
             }
             .container-video{
                 display: flex;
@@ -241,11 +241,11 @@ h1{
                     display: grid;
                     grid-template-columns: 100%;
                     grid-template-rows: 1fr 1fr 1fr;
-                    
+                    .container-individual{
                         .modifica-h5{
                             margin-bottom: 1rem;
                         }
-                    
+                    }
                 }
                 .container-video{
                     display: flex;
@@ -337,3 +337,103 @@ h1{
         }
     }    
 }
+
+@media (min-width: 769px) and (max-width: 1025px){
+    *{
+        font-size: 1rem;
+    }
+      .container-ciudad{
+          .españa_div{
+              .atracciones{
+                  display: grid;
+                      grid-template-columns: 33% 33% 33%;
+                      grid-template-rows: 1fr;
+                      .card{
+                          .card-img-top{
+                              height: 16rem;
+                          }
+                      }
+              }
+          }
+      }
+      .container_playlist{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          border: 0.2rem solid rgb(211, 0, 0);
+          margin-bottom: 0.5rem;
+      
+          p.playlist_barcelona{
+              font-size: 1rem;
+              display: flex;
+              justify-content: center;
+              margin-bottom: 0.5rem;
+              margin-top: 0.5rem;
+          }
+          
+          .grid-container{
+          margin-bottom: 0rem;
+          margin-left: 0.5rem;
+          margin-right: 0.5rem;
+         
+          div.grid-container div{
+              margin: 0.5rem;
+              display: flex;
+              flex-direction: column;
+             }
+          .barcelona_spotify{
+          border: 0.2rem solid rgb(250, 175, 14);
+           }            
+          }
+      }    
+  }
+
+  @media (min-width: 1025px) and (max-width: 1440px){
+    *{
+        font-size: 1rem;
+    }
+      .container-ciudad{
+          .españa_div{
+              .atracciones{
+                  display: grid;
+                      grid-template-columns: 33% 33% 33%;
+                      grid-template-rows: 1fr;
+                      .card{
+                          .card-img-top{
+                              height:auto;
+                          }
+                      }
+              }
+          }
+      }
+      .container_playlist{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          border: 0.2rem solid rgb(211, 0, 0);
+          margin-bottom: 0.5rem;
+      
+          p.playlist_barcelona{
+              font-size: 1rem;
+              display: flex;
+              justify-content: center;
+              margin-bottom: 0.5rem;
+              margin-top: 0.5rem;
+          }
+          
+          .grid-container{
+          margin-bottom: 0rem;
+          margin-left: 0.5rem;
+          margin-right: 0.5rem;
+         
+          div.grid-container div{
+              margin: 0.5rem;
+              display: flex;
+              flex-direction: column;
+             }
+          .barcelona_spotify{
+          border: 0.2rem solid rgb(250, 175, 14);
+           }            
+          }
+      }    
+  }
