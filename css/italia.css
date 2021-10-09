@@ -356,7 +356,7 @@ h1 {
   margin-top: 0.5rem;
 }
 
-.titulo {
+h1 .titulo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -374,7 +374,7 @@ body {
   background-color: whitesmoke;
 }
 
-.container-ciudad {
+body .container-ciudad {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -383,95 +383,35 @@ body {
           justify-content: center;
   background-image: -webkit-gradient(linear, left top, right top, from(maroon), color-stop(white), to(maroon));
   background-image: linear-gradient(to right, maroon, white, maroon);
+  margin-bottom: 1rem;
 }
 
-h2 {
+body .container-ciudad h2 {
   font-family: 'Stick No Bills', sans-serif;
   font-size: 2rem;
   margin: 0.2rem;
 }
 
-.ciudad {
-  margin: 0rem;
+body .ciudad {
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
-.italia-container-v2 {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 100%;
-      grid-template-columns: 100%;
-  -ms-grid-rows: (0.8fr)[7];
-      grid-template-rows: repeat(7, 0.8fr);
-  row-gap: 0.1rem;
-  margin: 0rem;
-}
-
-.container-individual {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 2fr;
-      grid-template-columns: 1fr 2fr;
-  -ms-grid-rows: 20% 80%;
-      grid-template-rows: 20% 80%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border: 0.1rem solid black;
-  border-radius: 1rem;
-  margin-bottom: 0.2rem;
-  margin-top: 0.2rem;
-}
-
-.container-titulo {
-  -ms-grid-column: 1;
-      grid-column-start: 1;
-  -ms-grid-column-span: 2;
-      grid-column-end: span 2;
-  margin: 0rem;
+body .ciudad .col-md-4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.container-titulo h6 {
+body .ciudad .col-md-8 .card-body .card-title {
   text-align: center;
-  font-size: 2rem;
-  margin: 0rem;
+  font-weight: bold;
 }
 
-.container-imagen-v2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 1rem;
-}
-
-.imagen-v2 {
-  max-width: 100%;
-  min-height: 100%;
-}
-
-.container-descripcion {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 1rem;
-}
-
-.container-parrafo p {
-  font-size: 0.9rem;
-}
-
-.container-gastronomia {
+body .container-gastronomia {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 25% 25% 25% 25%;
@@ -485,7 +425,7 @@ h2 {
   margin-right: 0.1rem;
 }
 
-.container-gastronomia-titulo {
+body .container-gastronomia .container-gastronomia-titulo {
   -ms-grid-column: 1;
       grid-column-start: 1;
   -ms-grid-column-span: 4;
@@ -502,11 +442,11 @@ h2 {
   margin: 1rem;
 }
 
-.container-gastronomia-titulo h5 {
+body .container-gastronomia .container-gastronomia-titulo .container-gastronomia-titulo h5 {
   font-size: 1.5rem;
 }
 
-.container-gastronomia-individual {
+body .container-gastronomia .container-gastronomia-individual {
   padding: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -517,59 +457,11 @@ h2 {
   text-align: center;
 }
 
-.gastronomia-parrafo {
+body .container-gastronomia .container-gastronomia-individual .gastronomia-parrafo {
   font-size: 0.7rem;
 }
 
-.container-gastronomia-subtitulo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-weight: bold;
-}
-
-.container-gastronomia-imagen {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-  margin-bottom: 0rem;
-}
-
-.gastronomia-imagen {
-  width: 100%;
-  max-height: 90%;
-}
-
-.container-gastronomia-descripcion {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
-  margin-top: 0rem;
-  margin-left: 0.2rem;
-  margin-right: 0.2rem;
-}
-
-.gastronomia-parrafo {
-  text-align: left;
-  font-size: 0.7rem;
-  padding-left: 0.5rem;
-}
-
-.container-atracciones-titulo {
+body .container-atracciones-titulo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -587,11 +479,11 @@ h2 {
   height: 3rem;
 }
 
-.container-atracciones-titulo h5 {
+body .container-atracciones-titulo .container-atracciones-titulo h5 {
   font-size: 2rem;
 }
 
-.container-marcas {
+body .container-marcas {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (0.5fr)[5];
@@ -600,7 +492,7 @@ h2 {
       grid-template-rows: 50% 50%;
 }
 
-.container-marcas-logo {
+body .container-marcas .container-marcas-logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -608,12 +500,12 @@ h2 {
       justify-content: space-around;
 }
 
-.marcas-logo {
+body .container-marcas .container-marcas-logo .marcas-logo {
   width: 80%;
   height: 80%;
 }
 
-.container-video {
+body .container-video {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -624,7 +516,7 @@ h2 {
   padding-bottom: 2rem;
 }
 
-.container-atracciones {
+body .container-atracciones {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 50% 50%;
@@ -633,19 +525,22 @@ h2 {
       grid-template-rows: 100%;
 }
 
-.container-atracciones-individual {
+body .container-atracciones .container-atracciones-individual {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 100%;
       grid-template-columns: 100%;
-  -ms-grid-rows: 10% 50% 10%;
-      grid-template-rows: 10% 50% 10%;
+  -ms-grid-rows: 10% 50% 10% 30%;
+      grid-template-rows: 10% 50% 10% 30%;
   border: 0.1rem solid black;
   border-radius: 1rem;
   margin: 0.5rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.container-atracciones-lugar {
+body .container-atracciones .container-atracciones-individual .container-atracciones-lugar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -660,15 +555,518 @@ h2 {
   padding: 0rem;
 }
 
-.container-atracciones-imagen {
+body .container-atracciones .container-atracciones-individual .container-atracciones-imagen {
   margin-left: 1rem;
   margin-right: 1rem;
   margin-top: 0rem;
   margin-bottom: 0rem;
 }
 
-.atracciones-imagen {
+body .container-atracciones .container-atracciones-individual .container-atracciones-imagen .atracciones-imagen {
   width: 100%;
   height: 100%;
+}
+
+body .container-atracciones .container-atracciones-individual .container-parrafo {
+  font-size: 0.7rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  text-align: center;
+}
+
+@media (min-width: 1px) and (max-width: 321px) {
+  body .ciudad {
+    font-size: 0.7rem;
+  }
+  body .container-gastronomia {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 1rem;
+    border: 0.1rem solid black;
+    border-radius: 1rem;
+    margin-left: 0.1rem;
+    margin-right: 0.1rem;
+  }
+  body .container-gastronomia .container-gastronomia-titulo {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    -ms-grid-column-span: 4;
+        grid-column-end: span 4;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 1rem;
+  }
+  body .container-gastronomia .container-gastronomia-titulo .container-gastronomia-titulo h5 {
+    font-size: 1.5rem;
+  }
+  body .container-gastronomia .container-gastronomia-individual {
+    padding: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+  body .container-gastronomia .container-gastronomia-individual .gastronomia-parrafo {
+    font-size: 0.7rem;
+  }
+  body .container-atracciones-titulo {
+    height: 3rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body .container-atracciones-titulo h5 {
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 0rem;
+  }
+  body .container-marcas {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+    -ms-grid-rows: 20% 20% 20% 20% 20%;
+        grid-template-rows: 20% 20% 20% 20% 20%;
+  }
+  body .container-marcas .container-marcas-logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  body .container-marcas .container-marcas-logo .marcas-logo {
+    width: 80%;
+    height: 80%;
+  }
+  body .container-video {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  body .container-video iframe {
+    width: 100%;
+    height: 20rem;
+  }
+  body .container-atracciones {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    -ms-grid-rows: 50% 50%;
+        grid-template-rows: 50% 50%;
+  }
+  body .container-atracciones .container-atracciones-individual {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    -ms-grid-rows: 10% 50% 10% 30%;
+        grid-template-rows: 10% 50% 10% 30%;
+    border: 0.1rem solid black;
+    border-radius: 1rem;
+    margin: 0.5rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 32rem;
+  }
+  body .container-atracciones .container-atracciones-individual .container-atracciones-lugar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 1.5rem;
+    margin: 0rem;
+    padding: 0rem;
+  }
+  body .container-atracciones .container-atracciones-individual .container-atracciones-lugar h6 {
+    text-align: center;
+  }
+  body .container-atracciones .container-atracciones-individual .container-atracciones-imagen {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+  }
+  body .container-atracciones .container-atracciones-individual .container-atracciones-imagen .atracciones-imagen {
+    width: 100%;
+    height: 14rem;
+  }
+  body .container-atracciones .container-atracciones-individual .container-parrafo {
+    font-size: 0.7rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    text-align: center;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 376px) {
+  body .ciudad {
+    font-size: 0.7rem;
+  }
+  body .container-gastronomia {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 1rem;
+    border: 0.1rem solid black;
+    border-radius: 1rem;
+    margin-left: 0.1rem;
+    margin-right: 0.1rem;
+  }
+  body .container-gastronomia .container-gastronomia-titulo {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    -ms-grid-column-span: 4;
+        grid-column-end: span 4;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 1rem;
+  }
+  body .container-gastronomia .container-gastronomia-titulo .container-gastronomia-titulo h5 {
+    font-size: 1.5rem;
+  }
+  body .container-gastronomia .container-gastronomia-individual {
+    padding: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+  body .container-gastronomia .container-gastronomia-individual .gastronomia-parrafo {
+    font-size: 0.7rem;
+  }
+  body .container-atracciones-titulo {
+    height: 3rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body .container-atracciones-titulo h5 {
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 0rem;
+  }
+  body .container-marcas {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+    -ms-grid-rows: 20% 20% 20% 20% 20%;
+        grid-template-rows: 20% 20% 20% 20% 20%;
+  }
+  body .container-marcas .container-marcas-logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  body .container-marcas .container-marcas-logo .marcas-logo {
+    width: 80%;
+    height: 80%;
+  }
+  body .container-video {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  body .container-video iframe {
+    width: 100%;
+    height: 22rem;
+  }
+  body .container-atracciones {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    -ms-grid-rows: 50% 50%;
+        grid-template-rows: 50% 50%;
+  }
+  body .container-atracciones .container-atracciones-individual {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    -ms-grid-rows: 10% 50% 10% 30%;
+        grid-template-rows: 10% 50% 10% 30%;
+    border: 0.1rem solid black;
+    border-radius: 1rem;
+    margin: 0.5rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 32rem;
+  }
+  body .container-atracciones .container-atracciones-individual .container-atracciones-lugar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 1.5rem;
+    margin: 0rem;
+    padding: 0rem;
+  }
+  body .container-atracciones .container-atracciones-individual .container-atracciones-lugar h6 {
+    text-align: center;
+  }
+  body .container-atracciones .container-atracciones-individual .container-atracciones-imagen {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+  }
+  body .container-atracciones .container-atracciones-individual .container-atracciones-imagen .atracciones-imagen {
+    width: 100%;
+    height: 14rem;
+  }
+  body .container-atracciones .container-atracciones-individual .container-parrafo {
+    font-size: 0.7rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    text-align: center;
+  }
+}
+
+@media (min-width: 376px) and (max-width: 426px) {
+  body .ciudad {
+    font-size: 0.7rem;
+  }
+  body .container-gastronomia {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 1rem;
+    border: 0.1rem solid black;
+    border-radius: 1rem;
+    margin-left: 0.1rem;
+    margin-right: 0.1rem;
+  }
+  body .container-gastronomia .container-gastronomia-titulo {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    -ms-grid-column-span: 4;
+        grid-column-end: span 4;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 1rem;
+  }
+  body .container-gastronomia .container-gastronomia-titulo .container-gastronomia-titulo h5 {
+    font-size: 1.5rem;
+  }
+  body .container-gastronomia .container-gastronomia-individual {
+    padding: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+  body .container-gastronomia .container-gastronomia-individual .gastronomia-parrafo {
+    font-size: 0.7rem;
+  }
+  body .container-atracciones-titulo {
+    height: 3rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body .container-atracciones-titulo h5 {
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 0rem;
+  }
+  body .container-marcas {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+    -ms-grid-rows: 20% 20% 20% 20% 20%;
+        grid-template-rows: 20% 20% 20% 20% 20%;
+  }
+  body .container-marcas .container-marcas-logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  body .container-marcas .container-marcas-logo .marcas-logo {
+    width: 80%;
+    height: 80%;
+  }
+  body .container-video {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  body .container-video iframe {
+    width: 100%;
+    height: 24rem;
+  }
+  body .container-atracciones {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    -ms-grid-rows: 50% 50%;
+        grid-template-rows: 50% 50%;
+  }
+  body .container-atracciones .container-atracciones-individual {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    -ms-grid-rows: 10% 50% 10% 30%;
+        grid-template-rows: 10% 50% 10% 30%;
+    border: 0.1rem solid black;
+    border-radius: 1rem;
+    margin: 0.5rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 32rem;
+  }
+  body .container-atracciones .container-atracciones-individual .container-atracciones-lugar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 1.5rem;
+    margin: 0rem;
+    padding: 0rem;
+  }
+  body .container-atracciones .container-atracciones-individual .container-atracciones-lugar h6 {
+    text-align: center;
+  }
+  body .container-atracciones .container-atracciones-individual .container-atracciones-imagen {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+  }
+  body .container-atracciones .container-atracciones-individual .container-atracciones-imagen .atracciones-imagen {
+    width: 100%;
+    height: 14rem;
+  }
+  body .container-atracciones .container-atracciones-individual .container-parrafo {
+    font-size: 0.7rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    text-align: center;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+  * {
+    margin: 0;
+  }
+  div.row.g-0 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    -ms-grid-rows: 50% 50%;
+        grid-template-rows: 50% 50%;
+  }
+  div.row.g-0 .col-md-4 {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  div.row.g-0 .col-md-4 img {
+    width: 100%;
+    height: 100%;
+  }
+  div.row.g-0 .col-md-8 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: auto;
+  }
 }
 /*# sourceMappingURL=italia.css.map */
