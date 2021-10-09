@@ -822,7 +822,7 @@ h1 .titulo {
         grid-template-rows: 1fr;
   }
   .container-ciudad .españa_div .atracciones .card .card-img-top {
-    height: auto;
+    height: 16rem;
   }
   .container_playlist {
     display: -webkit-box;
