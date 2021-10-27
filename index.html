@@ -20,6 +20,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
 </head>
 
+<!-- Header con menú hamburguesa para responsive -->
 <header class="header-color">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
@@ -27,19 +28,25 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
+            <!-- Lista sin orden-->
             <ul class="navbar-nav navbar-alinear">
+                <!-- Home -->
                 <li class="nav-item">
                 <a class="navbar-alinear" aria-current="page" href="./index.html"><i class="fas fa-home"></i> Home</a>
                 </li>
+                <!-- España -->
                 <li class="nav-item">
                 <a class="navbar-alinear" aria-current="page" href ="./html/españa.html"><i class="fas fa-place-of-worship"></i> España</a>
                 </li>
+                <!-- Italia -->
                 <li class="nav-item">
                 <a class="navbar-alinear" aria-current="page" href ="./html/italia.html"><i class="fas fa-pizza-slice"></i> Italia</a>
                 </li>
+                <!-- Estados Unidos -->
                 <li class="nav-item">
                 <a class="navbar-alinear" aria-current="page" href ="./html/estadosunidos.html"><i class="fas fa-flag-usa"></i> Estados Unidos</a>
                 </li>
+                <!-- Contacto -->
                 <li class="nav-item">
                 <a class="navbar-alinear" aria-current="page" href ="./html/contacto.html"><i class="fab fa-wpforms"></i> Contacto</a>                 
                 </li> 
@@ -48,49 +55,69 @@
           </div>
         </div>
       </nav>
+    <!-- Contenedor logo -->
     <div class="container-logo">
+        <!-- Imagen logo -->
         <img src="./multimedia/logo-v2.JPG" alt="Copenhagen logo" class="logo">
     </div>
 </header>
     <main>
         <body>
+            <!-- Imagen página principal -->
             <img src="./multimedia/pngwing.com.png" alt="Copenhagen imagen" class="img_main">  
+            <!-- Título principal -->
             <h1 class="h1-titulo">copenhagen airlines</h1> 
+            <!-- Subtitulo -->
             <h2 class= "h2-subtitulo">¡ Gracias por elegirnos !</h2>
-            <h3 class="h3-v2">Visita los mejores destinos del mundo con Copenhagen Airlines. </h3>
+            <h3 class="h3-subtitulo">Visita los mejores destinos del mundo con Copenhagen Airlines. </h3>
             
+            <!-- Contenedor promociones con tarjetas bancarias -->
             <div class="container-promociones">
                 <h4> Promociones bancarias vigentes</h4>
+                
+                <!-- Contenedor individual tarjeta -->
                 <div class="promo-tarjeta">
                     <img src="./multimedia/Visa-Logo.png" alt="Tarjeta Visa" class="tarjeta">
                     <div class="promo-texto">6 cuotas sin interés</div>
                 </div>
                         
+                <!-- Contenedor individual tarjeta -->
                 <div class="promo-tarjeta">
                     <img src="./multimedia/Mastercard-Logo.png" alt="Tarjeta Visa" class="tarjeta">
                     <div class="promo-texto">6 cuotas sin interés</div>
                 </div>
-                    
-                <div class="promo-tarjeta"><img src="./multimedia/Supervielle-Logo.png" alt="Tarjeta Visa" class="tarjeta">
-                            <div class="promo-texto">18 cuotas sin interés</div>
-                        </div>
-                        
-                        <div class="promo-tarjeta"><img src="./multimedia/ICBC_logo.png" alt="Tarjeta Visa" class="tarjeta">
-                            <div class="promo-texto">12 cuotas sin interés</div></div>
-                        
-                        <div class="promo-tarjeta"><img src="./multimedia/Logo-Galicia.png" alt="Tarjeta Visa" class="tarjeta">
-                            <div class="promo-texto">12 cuotas sin interés</div>
-                        </div>
-                        
-                        <div class="promo-tarjeta"><img src="./multimedia/Santander-Logo.png" alt="Tarjeta Visa" class="tarjeta">
-                            <div class="promo-texto">12 cuotas sin interés</div>
-                        </div>    
-                    </div>
+                  
+                <!-- Contenedor individual tarjeta -->
+                <div class="promo-tarjeta">
+                    <img src="./multimedia/Supervielle-Logo.png" alt="Tarjeta Visa" class="tarjeta">
+                    <div class="promo-texto">18 cuotas sin interés</div>
+                </div>
+
+                <!-- Contenedor individual tarjeta -->
+                <div class="promo-tarjeta">
+                    <img src="./multimedia/ICBC_logo.png" alt="Tarjeta Visa" class="tarjeta">
+                    <div class="promo-texto">12 cuotas sin interés</div>
+                </div>
+
+                <!-- Contenedor individual tarjeta -->
+                <div class="promo-tarjeta">
+                    <img src="./multimedia/Logo-Galicia.png" alt="Tarjeta Visa" class="tarjeta">
+                    <div class="promo-texto">12 cuotas sin interés</div>
+                </div>
+
+                <!-- Contenedor individual tarjeta -->
+                <div class="promo-tarjeta">
+                    <img src="./multimedia/Santander-Logo.png" alt="Tarjeta Visa" class="tarjeta">
+                    <div class="promo-texto">12 cuotas sin interés</div>
+                </div>    
             </div>
             
+            <!-- Sección reserva vuelos -->
             <section class="reserva">
                 <form action="Reserva.php" method="GET" >
+                    <!-- Contenedor -->
                     <div class="container-reserva">
+                    <!-- Selector país -->    
                     <select class="form-select index_pais" aria-label="País">
                         <option selected disabled>País</option>
                         <option value="España">España</option>
@@ -98,28 +125,36 @@
                         <option value="Estados Unidos">Estados Unidos</option>
                     </select>
                         
+                    <!-- Selector ciudad (por el momento sin posibilidad de filtrar pais y ciudad correctamente)-->
                     <select class="form-select index_ciudad" aria-label="Ciudad">
-                            <option selected disabled>Ciudad</option>
-                            <option value="Madrid">Madrid</option>
-                            <option value="Barcelona">Barcelona</option>
-                       
-                            <option value="Roma">Roma</option>
-                            <option value="Milán">Milán</option>
-                            <option value="New York">New York</option>
-                            <option value="Miami">Miami</option>
-                            <option value="Los Ángeles">Los Ángeles</option>
-                        </select>    
-                               
+                        <option selected disabled>Ciudad</option>
+                        <option value="Madrid">Madrid</option>
+                        <option value="Barcelona">Barcelona</option>
+                        <option value="Roma">Roma</option>
+                        <option value="Milán">Milán</option>
+                        <option value="New York">New York</option>
+                        <option value="Miami">Miami</option>
+                        <option value="Los Ángeles">Los Ángeles</option>
+                    </select>    
+                           
+                    <!-- Calendario para seleccionar fecha entre 01/01/2022 y 31/12/2023 -->
                     <input type="date" name="Fecha" id="Fecha" min="2022-01-01" max="2023-12-31" class="index_fecha">
-                </div>
+                    </div>
                     <br>
+
+                    <!-- Botón buscar vuelo -->
                     <input type="submit" value="Buscar vuelos" class="btn btn-success">
+
+                    <!-- Botón cancelar -->
                     <input type="reset" value="Cancelar" class="btn btn-secondary">
                 </form>
             </section>
             <br>
+            <!-- Sección tabla -->
             <section class="tabla">
+                <!-- Tabla para comparar precios de otras aerolíneas -->
                 <table class="table">
+                    <!-- Título -->
                     <tr class="table-dark">
                         <th>Aerolinea</th>
                         <th>Barcelona</th>
@@ -130,6 +165,7 @@
                         <th>Miami</th>
                         <th>Los Ángeles</th>
                     </tr>
+                    <!-- Aerolíneas Argentinas -->
                     <tr class="table-light">
                         <td>Aerolineas Argentinas</td>
                         <td>900 USD</td>
@@ -140,6 +176,7 @@
                         <td>600 USD</td>
                         <td>750 USD</td>
                     </tr>
+                    <!-- Qatar Airways -->
                     <tr class="table-light">
                         <td>Qatar Airways</td>
                         <td>850 USD</td>
@@ -150,6 +187,7 @@
                         <td>600 USD</td>
                         <td>650 USD</td>
                     </tr>
+                    <!-- Copenhagen Airlines -->
                     <tr class="linea_selec">
                         <td>Copenhagen Airlines</td>
                         <td>750 USD</td>
@@ -163,13 +201,15 @@
                 </table>
             </section>
 
-            
-
+        <!-- Scripts bootstrap -->    
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>   
         </body>    
     </main>  
+
+    <!-- Footer -->
     <footer class="footer-container">
+        <!-- Lista sin orden para footer -->
         <ul class="ul_footer">
             <a href="" class= "a_footer"><li><i class="fas fa-envelope"></i> E-mail</li></a>
             <a href="" class= "a_footer"><li><i class="fab fa-facebook-f"></i> Facebook</li></a>

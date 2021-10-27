@@ -12,7 +12,7 @@
   margin: 0.1rem;
 }
 
-.navbar-alinear {
+.header-color .navbar-alinear {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -27,13 +27,11 @@
   text-decoration: none;
 }
 
-a:hover {
-  color: #c7ced1;
-  -webkit-transform: scale(1.5, 1.5);
-          transform: scale(1.5, 1.5);
+.header-color .navbar-alinear a:hover {
+  color: #0a58ca;
 }
 
-.container-logo {
+.header-color .container-logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -41,11 +39,12 @@ a:hover {
   background-color: white;
 }
 
-.logo {
+.header-color .container-logo .logo {
   width: 20rem;
   margin: auto;
 }
 
+/* Responsive para Mobile-S (320px) y Mobile-M (375px) */
 @media (max-width: 376px) {
   * {
     font-family: 'Montserrat',sans-serif;
@@ -53,30 +52,21 @@ a:hover {
             box-sizing: border-box;
     margin: 0;
   }
+  ul.navbar-nav.navbar-alinear {
+    margin: 0rem;
+  }
+  ul.navbar-nav.navbar-alinear li.nav-item {
+    margin: 0rem;
+  }
+  ul.navbar-nav.navbar-alinear li.nav-item a.navbar-alinear {
+    margin: 0rem;
+  }
   img.logo {
     width: 100%;
   }
-  ul.navbar-nav.navbar-alinear {
-    margin: 0px;
-  }
-  li.nav-item {
-    margin: 0px;
-  }
-  a.navbar-alinear {
-    margin: 0px;
-  }
-  .navbar-alinear {
-    font-size: 1rem;
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
 }
 
+/* Responsive para Mobile-L (425px) */
 @media (min-width: 376px) and (max-width: 426px) {
   * {
     font-family: 'Montserrat',sans-serif;
@@ -84,30 +74,21 @@ a:hover {
             box-sizing: border-box;
     margin: 0;
   }
-  img.logo {
-    width: 100%;
-  }
   ul.navbar-nav.navbar-alinear {
     margin: 0rem;
   }
-  li.nav-item {
+  ul.navbar-nav.navbar-alinear li.nav-item {
     margin: 0rem;
   }
-  a.navbar-alinear {
+  ul.navbar-nav.navbar-alinear li.nav-item a.navbar-alinear {
     margin: 0rem;
   }
-  .navbar-alinear {
-    font-size: 1rem;
+  img.logo {
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
 }
 
+/* Responsive para table (768px)*/
 @media (min-width: 426px) and (max-width: 769px) {
   * {
     font-family: 'Montserrat',sans-serif;
@@ -115,39 +96,27 @@ a:hover {
             box-sizing: border-box;
     margin: 0;
   }
-  img.logo {
-    width: 20rem;
-  }
   ul.navbar-nav.navbar-alinear {
     margin: 0rem;
   }
-  li.nav-item {
+  ul.navbar-nav.navbar-alinear li.nav-item {
     margin: 0rem;
   }
-  a.navbar-alinear {
+  ul.navbar-nav.navbar-alinear li.nav-item a.navbar-alinear {
     margin: 0rem;
   }
-  .navbar-alinear {
-    font-size: 1rem;
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+  img.logo {
+    width: 20rem;
   }
 }
 
+/* Responsive para tablet (1024px) */
 @media (min-width: 769px) and (max-width: 1025px) {
   * {
     font-family: 'Montserrat',sans-serif;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     margin: 0;
-  }
-  img.logo {
-    width: 20rem;
   }
   ul.navbar-nav.navbar-alinear {
     margin: 0rem;
@@ -157,54 +126,14 @@ a:hover {
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
-  li.nav-item {
+  ul.navbar-nav.navbar-alinear li.nav-item {
     margin: 0rem;
   }
-  a.navbar-alinear {
+  ul.navbar-nav.navbar-alinear li.nav-item a.navbar-alinear {
     margin: 0rem;
-  }
-  .navbar-alinear {
-    font-size: 1.25rem;
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-}
-
-@media (min-width: 1439px) and (max-width: 2560px) {
-  * {
-    font-family: 'Montserrat',sans-serif;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    margin: 0;
   }
   img.logo {
     width: 20rem;
-  }
-  ul.navbar-nav.navbar-alinear {
-    margin: 0rem;
-  }
-  li.nav-item {
-    margin: 0rem;
-  }
-  a.navbar-alinear {
-    margin: 0rem;
-  }
-  .navbar-alinear {
-    font-size: 1.5rem;
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    padding-left: 4rem;
-    padding-right: 2rem;
   }
 }
 
@@ -252,9 +181,26 @@ a:hover {
 
 .footer-container .ul_footer a:hover {
   color: #0a58ca;
+  -webkit-transform: scale(1.25, 1.25);
+          transform: scale(1.25, 1.25);
 }
 
-@media (max-width: 376px) {
+@media (max-width: 321px) {
+  .footer-container {
+    margin-top: 0.6rem;
+  }
+  .footer-container ul.ul_footer {
+    margin-left: 0.5rem;
+    margin: 0rem;
+    padding: 0rem;
+  }
+  .footer-container ul.ul_footer li {
+    font-size: 0.5rem;
+    padding: 0.3rem;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 376px) {
   .footer-container {
     margin-top: 0.6rem;
   }
@@ -514,8 +460,9 @@ h1 .titulo {
   -ms-grid-columns: 30% 30% 30%;
       grid-template-columns: 30% 30% 30%;
   justify-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-bottom: 2rem;
 }
 
@@ -525,6 +472,9 @@ h1 .titulo {
   height: 5rem;
 }
 
+/* ------------------------------------------------------------------ */
+/* RESPONSIVE */
+/* Responsive para Mobile S (320px) y Mobile M (375px) */
 @media (max-width: 376px) {
   * {
     font-family: 'Montserrat',sans-serif;
@@ -608,7 +558,7 @@ h1 .titulo {
   }
 }
 
-/* RESPONSIVE PARA MAS DE 376PX HASTA 425PX */
+/* RESPONSIVE PARA MOBILE L (425PX) */
 @media (min-width: 376px) and (max-width: 426px) {
   * {
     font-family: 'Montserrat',sans-serif;
@@ -692,6 +642,7 @@ h1 .titulo {
   }
 }
 
+/* Responsive para TABLET (768px) */
 @media (min-width: 426px) and (max-width: 769px) {
   * {
     font-size: 1rem;
@@ -749,6 +700,7 @@ h1 .titulo {
   }
 }
 
+/* Responsive para Laptop (1024px) */
 @media (min-width: 769px) and (max-width: 1025px) {
   * {
     font-size: 1rem;
@@ -809,6 +761,7 @@ h1 .titulo {
   }
 }
 
+/* Responsive para Laptop-L (1440px) */
 @media (min-width: 1025px) and (max-width: 1440px) {
   * {
     font-size: 1rem;

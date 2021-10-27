@@ -3,15 +3,18 @@
     box-sizing: border-box;
     margin: 0;
 }
+/* Importa header y main */
 @import "header";
 @import "main";
 
+/* Estila imagen principal */
 .img_main{
     display: block;
     width: 50rem;
     margin: auto; 
 }
 
+/* Estila título principal */
 .h1-titulo{
     background-color: rgb(34, 33, 33);
     color: whitesmoke;
@@ -20,33 +23,48 @@
     font-size: 3rem;
 }
 
+/* Estila subtitúlo h2 */
 .h2-subtitulo{
     text-align: center;
     font-size: 1.25rem;
 }
 
-.h3-v2{
+/* Estila subtitulo h3 */
+.h3-subtitulo{
     font-size: 1rem;
     text-align: center;
 }
 
+/* Contenedor promociones bancarias */
 .container-promociones{
+    /* Formato grid */
     display: grid;
+    /* 6 columnas */
     grid-template-columns: 16.66% 16.66% 16.66% 16.66% 16.66% 16.66%;
+    /* 2 filas */
     grid-template-rows: 20% 80%;
+    /* Alineación horizontal */
     justify-items: center;
+    /* Alineación vertical */
     align-items: center;
+    /* Borde contenedor */
     border: 0.05rem solid black;
+    /* Redondeo borde */
     border-radius: 1rem;
+    /* Color de fondo */
     background-color: whitesmoke;
+    /* Márgenes y padding */
     margin-bottom: 1rem;
     margin-left: 5rem;
     margin-right: 5rem;
     margin-top: 0rem;
     padding: 1rem;
     
+    /* Estila subtitulo h4 */
     h4{
+        /* Inicia en columna 1 */
         grid-column-start: 1;
+        /* Finaliza en columna 6 */
         grid-column-end: span 6;
         text-align: center;
         font-size: 1rem;
@@ -54,6 +72,7 @@
         font-weight: bold;
         }
         
+    /* Contenedor individual tarjeta */    
     .promo-tarjeta{
         display: flex;
         flex-direction: column;
@@ -65,6 +84,7 @@
         padding-right: 1rem;
         
         .tarjeta{
+            /* Modifica ancho y alto para adecuar tamaño */
             width: 85%;
             height: 50%;
         }    
@@ -78,6 +98,7 @@
     }
 }
 
+/* Estila sección reserva */
 .reserva{
     text-align: center;
     background-color: #c7ced1;
@@ -87,25 +108,32 @@
     margin-left: 5rem;
     margin-right: 5rem;
     padding: 0.5rem;
-    
+
+    /* Contenedor reserva */
     .container-reserva{
         display: grid;
+        /* 3 columnas */
         grid-template-columns: 1fr 1fr 1fr;
+        /* 1 fila */
         grid-template-rows: 100%;
         justify-content: center;
         align-items: center;
         margin-top: 0.5rem;
 
+        /* Estila seleccionador país */
         .index_pais{
             margin-left: 0.5rem;
             background-color: #e8e8e8;      
         }
 
+        /* Estila seleccionador ciudad */
         .index_ciudad{
             margin-left: 1rem;
             margin-right: 1rem;
             background-color: #e8e8e8;
         }
+
+        /* Estila calendario */
         .index_fecha{
             margin-left: 1.5rem;
             background-color: #e8e8e8;
@@ -116,6 +144,7 @@
     }
 }
 
+/* Estila sección tabla */
 .tabla{
     display: flex;
     justify-content: center;
@@ -123,6 +152,7 @@
     margin-left: 5rem;
     margin-right: 5rem;
 
+    /* Estila linea seleccionada con precios más bajos */
     .linea_selec{
         background-color: #e42121;
         color: whitesmoke;
@@ -130,10 +160,12 @@
     }
 }
 
+/* Importa footer */
 @import "footer";
 
-/* Responsive para 320px */
-
+/* -------------------------------------------------------------------- */
+/* RESPONSIVE */
+/* Responsive para Mobile S (320px) */
 @media (max-width: 321px){
     *{
         font-size: 1rem;
@@ -149,15 +181,18 @@
         font-size: 2rem;
     }
     
+    /* Modifica container promociones para adaptar a Mobile-S */
     .container-promociones{
         margin-left: 0.5rem;
         margin-right: 0.5rem;
         margin-bottom: 1rem;
         display: grid;
+        /* 3 columnas y 3 filas */
         grid-template-columns: 33% 33% 33%;
         grid-template-rows: 20% 40% 40%;
         
         h4{
+            /* Inicia en 1 y finaliza en 3 */
             grid-column-start: 1;
             grid-column-end: span 3;
             padding: 0rem;
@@ -173,7 +208,7 @@
             } 
         }
     }
-    
+
     .reserva{
         display: flex;
         justify-content: center;
@@ -199,6 +234,7 @@
         }  
     }
 
+    /* Modifica formato de tabla convirtiendo filas en columnas y viceversa */
     .tabla{
         display: flex;
         justify-content: center;
@@ -212,7 +248,6 @@
             display: flex;
             justify-content: center;
            
-            
             tbody{
                 display: flex;
                 flex-direction: row;
@@ -221,9 +256,11 @@
                 margin-top: 0.1rem;
                 margin-left: 0rem;
                 margin-right: 0rem;
+                
                 .table-dark{
                     display: flex;
                     flex-direction: column;
+                    
                     th{
                         width: 5rem;
                         font-size: 0.6rem;
@@ -249,39 +286,24 @@
                 } 
 
                 .linea_selec{
-                display: flex;
-                flex-direction: column;
-                
-                td{
-                    width: 4.2rem;
-                    font-size: 0.6rem;
-                    height: 3rem;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                }
-                }      
+                    display: flex; 
+                    flex-direction: column;
+                    
+                    td{
+                        width: 4.2rem;
+                        font-size: 0.6rem;
+                        height: 3rem;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }     
             }
-            
         }
-    }
-
-    .footer-container{
-        margin-top: 0.6rem;
-
-        ul.ul_footer{
-            margin-left: 0.5rem;
-            margin:0rem;
-            padding: 0rem;
-        }
-
-        ul.ul_footer li{
-            font-size: 0.5rem;
-            padding: 0.3rem;
-        }
-    }   
+    }  
 }
 
+/* Responsive para Mobile M (375px) */
 @media (min-width:321px) and (max-width: 376px){
     *{
         font-size: 1rem;
@@ -351,6 +373,7 @@
         justify-content: center;
         margin-left: 0.1rem;
         margin-right: 0.1rem;
+
         .table{ 
             margin-left: 0rem;
             margin-right: 0rem;
@@ -358,7 +381,6 @@
             display: flex;
             justify-content: center;
            
-            
             tbody{
                 display: flex;
                 flex-direction: row;
@@ -367,6 +389,7 @@
                 margin-top: 0.1rem;
                 margin-left: 0rem;
                 margin-right: 0rem;
+
                 .table-dark{
                     display: flex;
                     flex-direction: column;
@@ -379,9 +402,9 @@
                         align-items: center;
                         justify-content: center;
                     }
-                    
-            }
-            .table-light{
+                }
+                
+                .table-light{
                     display: flex;
                     flex-direction: column;
                     
@@ -393,25 +416,27 @@
                         align-items: center;
                         justify-content: center;
                     }
-            } 
-            .linea_selec{
-                display: flex;
-                flex-direction: column;
+                } 
                 
-                td{
-                    width: 5rem;
-                    font-size: 0.7rem;
-                    height: 3rem;
+                .linea_selec{
                     display: flex;
-                    align-items: center;
-                    justify-content: center;
-                }
-            }      
+                    flex-direction: column;
+                    
+                    td{
+                        width: 5rem;
+                        font-size: 0.7rem;
+                        height: 3rem;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }      
+            }
         }
-            
     }
 }
-}
+
+/* Responsive para Mobile L (425px) */
 @media (min-width: 376px) and (max-width: 426px){
     *{
         font-size: 1rem;
@@ -497,10 +522,11 @@
                 margin-top: 0.1rem;
                 margin-left: 0rem;
                 margin-right: 0rem;
+
                 .table-dark{
                     display: flex;
                     flex-direction: column;
-                    
+
                     th{
                         width: 7rem;
                         font-size: 0.8rem;
@@ -511,6 +537,7 @@
                     }
                     
                 }   
+
                 .table-light{
                     display: flex;
                     flex-direction: column;
@@ -524,24 +551,26 @@
                         justify-content: center;
                     }
                 } 
+
                 .linea_selec{
-                display: flex;
-                flex-direction: column;
-                
-                td{
-                    width: 6rem;
-                    font-size: 0.8rem;
-                    height: 3rem;
                     display: flex;
-                    align-items: center;
-                    justify-content: center;
-                }
+                    flex-direction: column;
+                    
+                    td{
+                        width: 6rem;
+                        font-size: 0.8rem;
+                        height: 3rem;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
                 }      
             }
         }
     }
 }
 
+/* Responsive para Tablet (768px) */
 @media (min-width: 426px) and (max-width: 769px){
     *{
         font-size: 1rem;
@@ -557,6 +586,7 @@
         margin-right: 0.5rem;
         margin-bottom: 1rem;
         display: grid;
+        /* 6 columnas y 2 filas */
         grid-template-columns: 16.66% 16.66% 16.66% 16.66% 16.66% 16.66%;
         grid-template-rows: 20% 80%;
         

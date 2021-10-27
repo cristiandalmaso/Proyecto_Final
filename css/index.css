@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   font-family: 'Montserrat',sans-serif;
   -webkit-box-sizing: border-box;
@@ -5,13 +6,14 @@
   margin: 0;
 }
 
+/* Importa header y main */
 .header-color {
   background-color: #e42121;
   padding-top: 0.5rem;
   margin: 0.1rem;
 }
 
-.navbar-alinear {
+.header-color .navbar-alinear {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -26,13 +28,11 @@
   text-decoration: none;
 }
 
-a:hover {
-  color: #c7ced1;
-  -webkit-transform: scale(1.5, 1.5);
-          transform: scale(1.5, 1.5);
+.header-color .navbar-alinear a:hover {
+  color: #0a58ca;
 }
 
-.container-logo {
+.header-color .container-logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -40,11 +40,12 @@ a:hover {
   background-color: white;
 }
 
-.logo {
+.header-color .container-logo .logo {
   width: 20rem;
   margin: auto;
 }
 
+/* Responsive para Mobile-S (320px) y Mobile-M (375px) */
 @media (max-width: 376px) {
   * {
     font-family: 'Montserrat',sans-serif;
@@ -52,30 +53,21 @@ a:hover {
             box-sizing: border-box;
     margin: 0;
   }
+  ul.navbar-nav.navbar-alinear {
+    margin: 0rem;
+  }
+  ul.navbar-nav.navbar-alinear li.nav-item {
+    margin: 0rem;
+  }
+  ul.navbar-nav.navbar-alinear li.nav-item a.navbar-alinear {
+    margin: 0rem;
+  }
   img.logo {
     width: 100%;
   }
-  ul.navbar-nav.navbar-alinear {
-    margin: 0px;
-  }
-  li.nav-item {
-    margin: 0px;
-  }
-  a.navbar-alinear {
-    margin: 0px;
-  }
-  .navbar-alinear {
-    font-size: 1rem;
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
 }
 
+/* Responsive para Mobile-L (425px) */
 @media (min-width: 376px) and (max-width: 426px) {
   * {
     font-family: 'Montserrat',sans-serif;
@@ -83,30 +75,21 @@ a:hover {
             box-sizing: border-box;
     margin: 0;
   }
-  img.logo {
-    width: 100%;
-  }
   ul.navbar-nav.navbar-alinear {
     margin: 0rem;
   }
-  li.nav-item {
+  ul.navbar-nav.navbar-alinear li.nav-item {
     margin: 0rem;
   }
-  a.navbar-alinear {
+  ul.navbar-nav.navbar-alinear li.nav-item a.navbar-alinear {
     margin: 0rem;
   }
-  .navbar-alinear {
-    font-size: 1rem;
+  img.logo {
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
 }
 
+/* Responsive para table (768px)*/
 @media (min-width: 426px) and (max-width: 769px) {
   * {
     font-family: 'Montserrat',sans-serif;
@@ -114,39 +97,27 @@ a:hover {
             box-sizing: border-box;
     margin: 0;
   }
-  img.logo {
-    width: 20rem;
-  }
   ul.navbar-nav.navbar-alinear {
     margin: 0rem;
   }
-  li.nav-item {
+  ul.navbar-nav.navbar-alinear li.nav-item {
     margin: 0rem;
   }
-  a.navbar-alinear {
+  ul.navbar-nav.navbar-alinear li.nav-item a.navbar-alinear {
     margin: 0rem;
   }
-  .navbar-alinear {
-    font-size: 1rem;
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+  img.logo {
+    width: 20rem;
   }
 }
 
+/* Responsive para tablet (1024px) */
 @media (min-width: 769px) and (max-width: 1025px) {
   * {
     font-family: 'Montserrat',sans-serif;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     margin: 0;
-  }
-  img.logo {
-    width: 20rem;
   }
   ul.navbar-nav.navbar-alinear {
     margin: 0rem;
@@ -156,54 +127,14 @@ a:hover {
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
-  li.nav-item {
+  ul.navbar-nav.navbar-alinear li.nav-item {
     margin: 0rem;
   }
-  a.navbar-alinear {
+  ul.navbar-nav.navbar-alinear li.nav-item a.navbar-alinear {
     margin: 0rem;
-  }
-  .navbar-alinear {
-    font-size: 1.25rem;
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-}
-
-@media (min-width: 1439px) and (max-width: 2560px) {
-  * {
-    font-family: 'Montserrat',sans-serif;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    margin: 0;
   }
   img.logo {
     width: 20rem;
-  }
-  ul.navbar-nav.navbar-alinear {
-    margin: 0rem;
-  }
-  li.nav-item {
-    margin: 0rem;
-  }
-  a.navbar-alinear {
-    margin: 0rem;
-  }
-  .navbar-alinear {
-    font-size: 1.5rem;
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    padding-left: 4rem;
-    padding-right: 2rem;
   }
 }
 
@@ -213,12 +144,14 @@ main {
   font-size: 1rem;
 }
 
+/* Estila imagen principal */
 .img_main {
   display: block;
   width: 50rem;
   margin: auto;
 }
 
+/* Estila título principal */
 .h1-titulo {
   background-color: #222121;
   color: whitesmoke;
@@ -227,40 +160,56 @@ main {
   font-size: 3rem;
 }
 
+/* Estila subtitúlo h2 */
 .h2-subtitulo {
   text-align: center;
   font-size: 1.25rem;
 }
 
-.h3-v2 {
+/* Estila subtitulo h3 */
+.h3-subtitulo {
   font-size: 1rem;
   text-align: center;
 }
 
+/* Contenedor promociones bancarias */
 .container-promociones {
+  /* Formato grid */
   display: -ms-grid;
   display: grid;
+  /* 6 columnas */
   -ms-grid-columns: 16.66% 16.66% 16.66% 16.66% 16.66% 16.66%;
       grid-template-columns: 16.66% 16.66% 16.66% 16.66% 16.66% 16.66%;
+  /* 2 filas */
   -ms-grid-rows: 20% 80%;
       grid-template-rows: 20% 80%;
+  /* Alineación horizontal */
   justify-items: center;
+  /* Alineación vertical */
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  /* Borde contenedor */
   border: 0.05rem solid black;
+  /* Redondeo borde */
   border-radius: 1rem;
+  /* Color de fondo */
   background-color: whitesmoke;
+  /* Márgenes y padding */
   margin-bottom: 1rem;
   margin-left: 5rem;
   margin-right: 5rem;
   margin-top: 0rem;
   padding: 1rem;
+  /* Estila subtitulo h4 */
+  /* Contenedor individual tarjeta */
 }
 
 .container-promociones h4 {
+  /* Inicia en columna 1 */
   -ms-grid-column: 1;
       grid-column-start: 1;
+  /* Finaliza en columna 6 */
   -ms-grid-column-span: 6;
       grid-column-end: span 6;
   text-align: center;
@@ -290,6 +239,7 @@ main {
 }
 
 .container-promociones .promo-tarjeta .tarjeta {
+  /* Modifica ancho y alto para adecuar tamaño */
   width: 85%;
   height: 50%;
 }
@@ -301,6 +251,7 @@ main {
   padding-top: 1rem;
 }
 
+/* Estila sección reserva */
 .reserva {
   text-align: center;
   background-color: #c7ced1;
@@ -316,13 +267,16 @@ main {
   margin-left: 5rem;
   margin-right: 5rem;
   padding: 0.5rem;
+  /* Contenedor reserva */
 }
 
 .reserva .container-reserva {
   display: -ms-grid;
   display: grid;
+  /* 3 columnas */
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
+  /* 1 fila */
   -ms-grid-rows: 100%;
       grid-template-rows: 100%;
   -webkit-box-pack: center;
@@ -332,6 +286,9 @@ main {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 0.5rem;
+  /* Estila seleccionador país */
+  /* Estila seleccionador ciudad */
+  /* Estila calendario */
 }
 
 .reserva .container-reserva .index_pais {
@@ -353,6 +310,7 @@ main {
   padding-left: 1rem;
 }
 
+/* Estila sección tabla */
 .tabla {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -363,6 +321,7 @@ main {
   text-align: center;
   margin-left: 5rem;
   margin-right: 5rem;
+  /* Estila linea seleccionada con precios más bajos */
 }
 
 .tabla .linea_selec {
@@ -371,6 +330,7 @@ main {
   font-weight: bold;
 }
 
+/* Importa footer */
 * {
   margin: 0;
 }
@@ -415,9 +375,26 @@ main {
 
 .footer-container .ul_footer a:hover {
   color: #0a58ca;
+  -webkit-transform: scale(1.25, 1.25);
+          transform: scale(1.25, 1.25);
 }
 
-@media (max-width: 376px) {
+@media (max-width: 321px) {
+  .footer-container {
+    margin-top: 0.6rem;
+  }
+  .footer-container ul.ul_footer {
+    margin-left: 0.5rem;
+    margin: 0rem;
+    padding: 0rem;
+  }
+  .footer-container ul.ul_footer li {
+    font-size: 0.5rem;
+    padding: 0.3rem;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 376px) {
   .footer-container {
     margin-top: 0.6rem;
   }
@@ -506,7 +483,9 @@ main {
   }
 }
 
-/* Responsive para 320px */
+/* -------------------------------------------------------------------- */
+/* RESPONSIVE */
+/* Responsive para Mobile S (320px) */
 @media (max-width: 321px) {
   * {
     font-size: 1rem;
@@ -521,18 +500,21 @@ main {
   .h1-titulo {
     font-size: 2rem;
   }
+  /* Modifica container promociones para adaptar a Mobile-S */
   .container-promociones {
     margin-left: 0.5rem;
     margin-right: 0.5rem;
     margin-bottom: 1rem;
     display: -ms-grid;
     display: grid;
+    /* 3 columnas y 3 filas */
     -ms-grid-columns: 33% 33% 33%;
         grid-template-columns: 33% 33% 33%;
     -ms-grid-rows: 20% 40% 40%;
         grid-template-rows: 20% 40% 40%;
   }
   .container-promociones h4 {
+    /* Inicia en 1 y finaliza en 3 */
     -ms-grid-column: 1;
         grid-column-start: 1;
     -ms-grid-column-span: 3;
@@ -577,6 +559,7 @@ main {
   .reserva .container-reserva .index_fecha {
     margin: 0rem;
   }
+  /* Modifica formato de tabla convirtiendo filas en columnas y viceversa */
   .tabla {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -683,20 +666,9 @@ main {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .footer-container {
-    margin-top: 0.6rem;
-  }
-  .footer-container ul.ul_footer {
-    margin-left: 0.5rem;
-    margin: 0rem;
-    padding: 0rem;
-  }
-  .footer-container ul.ul_footer li {
-    font-size: 0.5rem;
-    padding: 0.3rem;
-  }
 }
 
+/* Responsive para Mobile M (375px) */
 @media (min-width: 321px) and (max-width: 376px) {
   * {
     font-size: 1rem;
@@ -874,6 +846,7 @@ main {
   }
 }
 
+/* Responsive para Mobile L (425px) */
 @media (min-width: 376px) and (max-width: 426px) {
   * {
     font-size: 1rem;
@@ -1052,6 +1025,7 @@ main {
   }
 }
 
+/* Responsive para Tablet (768px) */
 @media (min-width: 426px) and (max-width: 769px) {
   * {
     font-size: 1rem;
@@ -1069,6 +1043,7 @@ main {
     margin-bottom: 1rem;
     display: -ms-grid;
     display: grid;
+    /* 6 columnas y 2 filas */
     -ms-grid-columns: 16.66% 16.66% 16.66% 16.66% 16.66% 16.66%;
         grid-template-columns: 16.66% 16.66% 16.66% 16.66% 16.66% 16.66%;
     -ms-grid-rows: 20% 80%;

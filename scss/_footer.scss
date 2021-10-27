@@ -31,12 +31,30 @@
             text-decoration: none;
         }
         a:hover{
-            color: #0a58ca ;
+            color: #0a58ca;
+            transform: scale(1.25,1.25);
         }
     }
 }
 
-@media (max-width: 376px){
+@media (max-width: 321px){
+    .footer-container{
+        margin-top: 0.6rem;
+
+        ul.ul_footer{
+            margin-left: 0.5rem;
+            margin:0rem;
+            padding: 0rem;
+        }
+
+        ul.ul_footer li{
+            font-size: 0.5rem;
+            padding: 0.3rem;
+        }
+    } 
+}
+
+@media (min-width: 321px) and (max-width: 376px){
     .footer-container{
         margin-top: 0.6rem;
 
