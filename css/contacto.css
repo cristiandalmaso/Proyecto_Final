@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   font-family: 'Montserrat',sans-serif;
   -webkit-box-sizing: border-box;
@@ -289,13 +290,16 @@
 }
 
 .body_contacto {
+  /* Define estilo color de fondo */
   background-color: whitesmoke;
+  /* Define tipo de fuente */
   font-family: 'Montserrat',sans-serif;
   font-size: 1rem;
   margin: 0.1rem;
+  /* Estila título contacto */
 }
 
-.header_contacto {
+.body_contacto .header_contacto {
   background-color: #709995;
   color: whitesmoke;
   font-family: 'Montserrat',sans-serif;
@@ -313,18 +317,43 @@
           justify-content: center;
 }
 
-.formulario {
+.body_contacto .formulario_contacto {
+  /* Define márgenes y padding formulario */
   margin-left: 16rem;
   margin-right: 16rem;
   padding: 2rem;
+  /* Define home flotante (oculto para mobile y tablet) */
 }
 
-.espaciado_botones {
+.body_contacto .formulario_contacto .espaciado_botones {
   margin-right: 3rem;
 }
 
-/* MEDIA QUERIES */
-/* Hasta 376px */
+.body_contacto .formulario_contacto .home-flotante {
+  font-size: 2rem;
+  position: -webkit-sticky;
+  position: sticky;
+  left: 92.50%;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  background-color: #212529;
+  color: whitesmoke;
+  border-radius: 100%;
+}
+
+.body_contacto .formulario_contacto .home-flotante i {
+  margin-bottom: 2rem;
+}
+
+.body_contacto .formulario_contacto .home-flotante :hover {
+  color: #0a58ca;
+}
+
+/* -------------------------------------------------------------------- */
+/* RESPONSIVE */
+/* Responsive para Mobile S (320px) y Mobile M (375px) */
 @media (max-width: 376px) {
   * {
     font-family: 'Montserrat',sans-serif;
@@ -335,65 +364,18 @@
   img.logo {
     width: 100%;
   }
-  ul.navbar-nav.navbar-alinear {
-    margin: 0px;
+  .body_contacto .formulario_contacto {
+    /* Define márgenes y padding formulario */
+    margin-left: 0rem;
+    margin-right: 0rem;
+    padding: 2rem;
+    padding-bottom: 0.5rem;
   }
-  li.nav-item {
-    margin: 0px;
+  .body_contacto .formulario_contacto .espaciado_botones {
+    margin-right: 1rem;
   }
-  a.navbar-alinear {
-    margin: 0px;
-  }
-  .navbar-alinear {
-    font-size: 1rem;
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  form.formulario {
-    margin: 0px;
-    padding: 0.3rem;
-  }
-  fieldset {
-    font-size: 1rem;
-  }
-  input.form-control {
-    padding: 0.3px;
-    font-size: 1rem;
-  }
-  div.mb-3 {
-    font-size: 1rem;
-  }
-  div.form-check {
-    margin: 0px;
-    padding-left: 1rem;
-  }
-  input#flexRadioDefault1.form-check-input {
-    margin-left: -1rem;
-    margin-right: 0.3rem;
-  }
-  input#flexRadioDefault2.form-check-input {
-    margin-left: -1rem;
-    margin-right: 0.3rem;
-  }
-  input#flexCheckDefault.form-check-input {
-    margin-left: -1rem;
-    margin-right: 0.3rem;
-  }
-  select.form-select {
-    font-size: 1rem;
-    padding: 0.3rem;
-  }
-  textarea.form-control {
-    font-size: 1rem;
-  }
-  button.btn.btn {
-    font-size: 1rem;
-    margin-right: 0.3rem;
+  .body_contacto .home-flotante {
+    display: none;
   }
 }
 
@@ -405,48 +387,21 @@
             box-sizing: border-box;
     margin: 0;
   }
-  form.formulario {
-    margin: 0rem;
-    padding: 0.3rem;
+  img.logo {
+    width: 100%;
   }
-  fieldset {
-    font-size: 1rem;
-  }
-  input.form-control {
-    padding: 0.3rem;
-    font-size: 1rem;
+  .body_contacto .formulario_contacto {
+    /* Define márgenes y padding formulario */
+    margin-left: 0rem;
+    margin-right: 0rem;
+    padding: 2rem;
     padding-bottom: 0rem;
-    padding-top: 0rem;
   }
-  div.mb-3 {
+  .body_contacto .formulario_contacto .espaciado_botones {
+    margin-right: 3rem;
+  }
+  .body_contacto .formulario_contacto .home-flotante {
     font-size: 1rem;
-  }
-  div.form-check {
-    margin: 0rem;
-    padding-left: 1rem;
-  }
-  input#flexRadioDefault1.form-check-input {
-    margin-left: -1rem;
-    margin-right: 0.3rem;
-  }
-  input#flexRadioDefault2.form-check-input {
-    margin-left: -1rem;
-    margin-right: 0.3rem;
-  }
-  input#flexCheckDefault.form-check-input {
-    margin-left: -1rem;
-    margin-right: 0.3rem;
-  }
-  select.form-select {
-    font-size: 1rem;
-    padding: 0.3rem;
-  }
-  textarea.form-control {
-    font-size: 1rem;
-  }
-  button.btn.btn {
-    font-size: 1rem;
-    margin-right: 0.3rem;
   }
 }
 
@@ -458,76 +413,21 @@
             box-sizing: border-box;
     margin: 0;
   }
-  form.formulario {
-    margin: 0rem;
-    padding: 0.3rem;
+  img.logo {
+    width: 100%;
   }
-  fieldset {
-    font-size: 1rem;
-    padding: 0rem;
-    margin: 0rem;
-  }
-  div.col {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  input.form-control {
-    padding: 0.3rem;
-    font-size: 1rem;
-    padding-bottom: 0rem;
-    padding-top: 0rem;
-    margin-left: 4rem;
-    margin-right: 4rem;
-  }
-  div.mb-3.e-mail {
-    font-size: 1rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-top: 1rem;
-  }
-  div.form-check {
-    margin: 0rem;
-    padding-left: 2rem;
-  }
-  input#flexRadioDefault1.form-check-input {
-    margin-left: 2rem;
-    margin-right: 0.3rem;
-    margin-top: 0rem;
-  }
-  input#flexRadioDefault2.form-check-input {
-    margin-left: 2rem;
-    margin-right: 0.3rem;
-    margin-top: 0rem;
-  }
-  input#flexCheckDefault.form-check-input {
-    margin-left: 2rem;
-    margin-right: 0.3rem;
-  }
-  select.form-select {
-    font-size: 1rem;
-    padding: 0.3rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-left: 4rem;
-    margin-right: 4rem;
-  }
-  div.mb-3.reclamos {
-    margin-left: 4rem;
-    margin-right: 4rem;
-  }
-  textarea.form-control {
-    font-size: 1rem;
-  }
-  button.btn.btn {
-    font-size: 1rem;
+  .body_contacto .formulario_contacto {
+    /* Define márgenes y padding formulario */
+    margin-left: 0rem;
     margin-right: 0rem;
-    margin-left: 4rem;
+    padding: 2rem;
+    padding-bottom: 0rem;
+  }
+  .body_contacto .formulario_contacto .espaciado_botones {
+    margin-right: 3rem;
+  }
+  .body_contacto .formulario_contacto .home-flotante {
+    font-size: 1.5rem;
   }
 }
 
@@ -539,163 +439,52 @@
             box-sizing: border-box;
     margin: 0;
   }
-  form.formulario {
-    margin: 0px;
-    padding: 0.3rem;
+  img.logo {
     width: 100%;
   }
-  fieldset {
-    font-size: 1.25rem;
-    padding: 0rem;
-    margin: 0rem;
-  }
-  div.col {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  input.form-control.dni {
-    margin: 0rem 4rem;
-    width: 87.5%;
-  }
-  input.form-control {
-    padding: 0.3rem;
-    font-size: 1.25rem;
-    padding-bottom: 0rem;
-    padding-top: 0rem;
-    margin-left: 4rem;
-    margin-right: 4rem;
-  }
-  div.mb-3.e-mail {
-    font-size: 1.25rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-top: 1rem;
-  }
-  div.form-check {
-    margin: 0rem;
-    padding-left: 2rem;
-  }
-  input#flexRadioDefault1.form-check-input {
-    margin-left: 2rem;
-    margin-right: 0.3rem;
-    margin-top: 0rem;
-  }
-  input#flexRadioDefault2.form-check-input {
-    margin-left: 2rem;
-    margin-right: 0.3rem;
-    margin-top: 0rem;
-  }
-  input#flexCheckDefault.form-check-input {
-    margin-left: 2rem;
-    margin-right: 0.3rem;
-  }
-  select.form-select {
-    font-size: 1.25rem;
-    padding: 0.3rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-left: 4rem;
-    margin-right: 4rem;
-    width: 90%;
-  }
-  div.mb-3.reclamos {
-    margin-left: 4rem;
-    margin-right: 4rem;
-  }
-  textarea.form-control {
-    font-size: 1.25rem;
-  }
-  button.btn.btn {
-    font-size: 1.25rem;
+  .body_contacto .formulario_contacto {
+    /* Define márgenes y padding formulario */
+    margin-left: 0rem;
     margin-right: 0rem;
-    margin-left: 4rem;
+    padding: 2rem;
+    padding-bottom: 0rem;
+  }
+  .body_contacto .formulario_contacto .espaciado_botones {
+    margin-right: 3rem;
+  }
+  .body_contacto .formulario_contacto .home-flotante {
+    font-size: 2rem;
+  }
+  .home-flotante {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 60%;
   }
 }
 
-/* Desde 1440px */
-@media (min-width: 1439px) and (max-width: 2560px) {
+/* Desde 1025px */
+@media (min-width: 1025px) and (max-width: 1440px) {
   * {
     font-family: 'Montserrat',sans-serif;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     margin: 0;
   }
-  form.formulario {
-    margin: 0px;
-    padding: 0.3rem;
+  img.logo {
+    width: 100%;
   }
-  fieldset {
-    font-size: 1.5rem;
-    padding: 0rem;
-    margin: 0rem;
-  }
-  div.col {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  input.form-control {
-    padding: 0.3rem;
-    font-size: 1.5rem;
-    padding-bottom: 0rem;
-    padding-top: 0rem;
-    margin-left: 4rem;
-    margin-right: 4rem;
-  }
-  input.form-control.dni {
-    margin-right: 0rem 1.5rem;
-  }
-  div.mb-3.e-mail {
-    font-size: 1.5rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-top: 1rem;
-  }
-  div.form-check {
-    margin: 0rem;
-    padding-left: 2rem;
-  }
-  input#flexRadioDefault1.form-check-input {
-    margin-left: 2rem;
-    margin-right: 0.3rem;
-    margin-top: 0rem;
-  }
-  input#flexRadioDefault2.form-check-input {
-    margin-left: 2rem;
-    margin-right: 0.3rem;
-    margin-top: 0rem;
-  }
-  input#flexCheckDefault.form-check-input {
-    margin-left: 2rem;
-    margin-right: 0.3rem;
-  }
-  select.form-select {
-    font-size: 1.5rem;
-    padding: 0.3rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-left: 4rem;
-    margin-right: 4rem;
-  }
-  div.mb-3.reclamos {
-    margin-left: 4rem;
-    margin-right: 4rem;
-  }
-  textarea.form-control {
-    font-size: 1.5rem;
-  }
-  button.btn.btn {
-    font-size: 1.5rem;
+  .body_contacto .formulario_contacto {
+    /* Define márgenes y padding formulario */
+    margin-left: 0rem;
     margin-right: 0rem;
-    margin-left: 4rem;
+    padding: 2rem;
+    padding-bottom: 0rem;
+  }
+  .body_contacto .formulario_contacto .espaciado_botones {
+    margin-right: 3rem;
+  }
+  .body_contacto .formulario_contacto .home-flotante {
+    font-size: 2rem;
   }
 }
 /*# sourceMappingURL=contacto.css.map */

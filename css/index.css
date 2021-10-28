@@ -212,6 +212,7 @@ main {
   /* Finaliza en columna 6 */
   -ms-grid-column-span: 6;
       grid-column-end: span 6;
+  /* Define alineación de texto, tamaño de fuente, estilo de fuente y padding */
   text-align: center;
   font-size: 1rem;
   padding-bottom: 1rem;
@@ -219,21 +220,27 @@ main {
 }
 
 .container-promociones .promo-tarjeta {
+  /* Display flexible */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  /* Dirección columna */
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  /* Alineación horizontal */
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  /* Alinación vertical */
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  /* Define ancho y alto */
   width: 100%;
   height: 100%;
+  /* Define padding */
   padding-left: 1rem;
   padding-right: 1rem;
 }
@@ -245,6 +252,7 @@ main {
 }
 
 .container-promociones .promo-tarjeta .promo-texto {
+  /* Define tamaño de fuente, peso, alineación de texto y padding */
   font-size: 0.6rem;
   font-weight: 600;
   text-align: center;
@@ -279,6 +287,7 @@ main {
   /* 1 fila */
   -ms-grid-rows: 100%;
       grid-template-rows: 100%;
+  /* Alinación horizontal, vertical y margen superior */
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -308,6 +317,12 @@ main {
   width: 100%;
   height: 100%;
   padding-left: 1rem;
+}
+
+/* Ajusta alerta para adecuar al tamaño de la página, caso contrario ocupa el 100% */
+.ajusta-alerta {
+  margin-left: 5rem;
+  margin-right: 5rem;
 }
 
 /* Estila sección tabla */
@@ -529,6 +544,7 @@ main {
     width: 85%;
     height: 50%;
   }
+  /* Modifica sección reserva */
   .reserva {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -558,6 +574,17 @@ main {
   }
   .reserva .container-reserva .index_fecha {
     margin: 0rem;
+  }
+  /* Modifica márgenes de alerta para adecuarlo a mobile */
+  .ajusta-alerta {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    /* Modifica tamaño de fuente */
+    font-size: 0.7rem;
+    /* Modifica tamaño de fuente negrita*/
+  }
+  .ajusta-alerta strong {
+    font-size: 0.7rem;
   }
   /* Modifica formato de tabla convirtiendo filas en columnas y viceversa */
   .tabla {
@@ -592,6 +619,7 @@ main {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    /* Define ancho fijo */
     width: 19rem;
     margin-top: 0.1rem;
     margin-left: 0rem;
@@ -737,6 +765,14 @@ main {
   }
   .reserva .container-reserva .index_fecha {
     margin: 0rem;
+  }
+  .ajusta-alerta {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-size: 0.8rem;
+  }
+  .ajusta-alerta strong {
+    font-size: 0.8rem;
   }
   .tabla {
     display: -webkit-box;
@@ -917,6 +953,14 @@ main {
   .reserva .container-reserva .index_fecha {
     margin: 0rem;
   }
+  .ajusta-alerta {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-size: 0.8rem;
+  }
+  .ajusta-alerta strong {
+    font-size: 0.8rem;
+  }
   .tabla {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1095,6 +1139,10 @@ main {
     margin: 0rem;
     height: 2.2rem;
   }
+  .ajusta-alerta {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
   .tabla {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1105,6 +1153,17 @@ main {
     text-align: center;
     margin-left: 1rem;
     margin-right: 1rem;
+  }
+  .tabla .table tbody .table-dark th {
+    font-size: 0.7rem;
+  }
+  .tabla .table tbody .table-light td {
+    font-size: 0.7rem;
+    height: 3rem;
+  }
+  .tabla .table tbody .linea_selec td {
+    font-size: 0.8rem;
+    height: 3rem;
   }
 }
 /*# sourceMappingURL=index.css.map */
