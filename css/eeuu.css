@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   font-family: 'Montserrat',sans-serif;
   -webkit-box-sizing: border-box;
@@ -294,12 +295,14 @@ main {
   font-size: 1rem;
 }
 
+/* Estila h1 */
 h1 {
   background-image: url(../multimedia/bandera_estadosunidos.svg);
   background-size: cover;
   text-align: center;
   padding: 1rem;
   margin-top: 0.5rem;
+  /* Estila título */
 }
 
 h1 .titulo {
@@ -309,6 +312,7 @@ h1 .titulo {
   font-family: 'Londrina Shadow', cursive;
   font-size: 2rem;
   color: black;
+  /* Alineación vertical, alineación horizontal y márgen inferior */
   vertical-align: middle;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -322,13 +326,15 @@ body {
 }
 
 body .ciudad {
-  border: 0.1rem solid black;
-  margin-left: 0.1rem;
-  margin-right: 0.1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
   margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  /* Estila título ciudad */
 }
 
 body .ciudad .titulo-ciudad {
+  /* Background con gradiente */
   background-image: -webkit-gradient(linear, left top, right top, from(#011384), color-stop(whitesmoke), to(#960000));
   background-image: linear-gradient(to right, #011384, whitesmoke, #960000);
   display: -webkit-box;
@@ -340,6 +346,7 @@ body .ciudad .titulo-ciudad {
 }
 
 body .ciudad .titulo-ciudad h2 {
+  /* Define tipo de fuente, tamaño y margen */
   font-family: 'Londrina Shadow', cursive;
   font-size: 2rem;
   margin: 0.2rem;
@@ -348,9 +355,10 @@ body .ciudad .titulo-ciudad h2 {
 body .ciudad .titulo_atraccion {
   text-align: center;
   font-size: 1rem;
+  /* Define estilo para título atracción con gradiente */
   background-image: -webkit-gradient(linear, left top, left bottom, from(#011384), to(#960000));
   background-image: linear-gradient(#011384, #960000);
-  margin-top: 0.2rem;
+  margin-top: 1rem;
   margin-bottom: 0.2rem;
   color: whitesmoke;
 }
@@ -358,10 +366,16 @@ body .ciudad .titulo_atraccion {
 body .ciudad .container-centralpark {
   display: -ms-grid;
   display: grid;
+  /* 3 columnas de 1 fracción cada una */
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
+  /* 3 filas, 2 de 1 fracción para imágenes y una de 1.5 para video */
   -ms-grid-rows: 1fr 1fr 1.5fr;
       grid-template-rows: 1fr 1fr 1.5fr;
+  border: 0.1rem solid #f8f9fa;
+  border-radius: 0.3rem;
+  margin-bottom: 0.2rem;
+  padding-bottom: 0.2rem;
 }
 
 body .ciudad .container-centralpark .imagen {
@@ -391,6 +405,7 @@ body .ciudad .container-centralpark .cp-parrafo .cp-texto {
 body .ciudad .container-centralpark .cp_video {
   width: 100%;
   height: 100%;
+  /* Define columna y filas de inicio y fin */
   -ms-grid-column: 1;
       grid-column-start: 1;
   -ms-grid-column-span: 3;
@@ -406,13 +421,17 @@ body .ciudad .container-centralpark .cp_video {
 body .ciudad .container-estatua {
   display: -ms-grid;
   display: grid;
+  /* Define 2 columnas de 50% cada una */
   -ms-grid-columns: 50% 50%;
       grid-template-columns: 50% 50%;
+  /* Define una sola fila */
   -ms-grid-row: 100;
   grid-row: 100%;
   padding: 0.2rem;
   width: 100%;
   height: 100%;
+  border: 0.1rem solid #f8f9fa;
+  border-radius: 0.3rem;
 }
 
 body .ciudad .container-estatua .estatua-individual {
@@ -422,10 +441,15 @@ body .ciudad .container-estatua .estatua-individual {
 body .ciudad .container-times {
   display: -ms-grid;
   display: grid;
+  /* Define 4 columnas de 25% cada una */
   -ms-grid-columns: 25% 25% 25% 25%;
       grid-template-columns: 25% 25% 25% 25%;
+  /* Define 2 filas de 50% cada una */
   -ms-grid-rows: 50% 50%;
       grid-template-rows: 50% 50%;
+  /* Estila bordes */
+  border: 0.1rem solid #f8f9fa;
+  border-radius: 0.3rem;
 }
 
 body .ciudad .container-times .container-imagen {
@@ -440,6 +464,7 @@ body .ciudad .container-times .imagen {
 }
 
 body .ciudad .container-times .caja-times {
+  /* Define columnas y filas de inicio y fin para iframe Spotify */
   -ms-grid-column: 2;
       grid-column-start: 2;
   -ms-grid-column-span: 2;
@@ -455,19 +480,19 @@ body .ciudad .container-times .caja-times .container-imagen {
   margin: 0.2rem;
 }
 
-body .ciudad .container-times .caja-times .estatua-individual {
-  padding: 0.2rem;
-}
-
 body .ciudad .container-miami_beach {
   display: -ms-grid;
   display: grid;
+  /* Define 3 columnas */
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
 }
 
 body .ciudad .container-miami_beach .container-imagen {
   margin: 0.2rem;
+  /* Estila bordes */
+  border: 0.1rem solid #f8f9fa;
+  border-radius: 0.3rem;
 }
 
 body .ciudad .container-miami_beach .container-imagen .imagen {
@@ -479,11 +504,16 @@ body .ciudad .container-miami_beach .container-imagen .imagen {
 body .ciudad .container-hollywood {
   display: -ms-grid;
   display: grid;
+  /* Define 2 columnas de 50% cada una */
   -ms-grid-columns: 50% 50%;
       grid-template-columns: 50% 50%;
+  /* Define 2 filas, una de 10% para titulo y otra de 90% para contenido */
   -ms-grid-rows: 10% 90%;
       grid-template-rows: 10% 90%;
   position: relative;
+  /* Estila bordes */
+  border: 0.1rem solid #f8f9fa;
+  border-radius: 0.3rem;
 }
 
 body .ciudad .container-hollywood iframe {
@@ -494,10 +524,13 @@ body .ciudad .container-hollywood .container-hollywood-titulo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  /* Alineación horizontal */
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  /* Estila color de fondo */
   background-color: #011384;
+  /* Estila bordes */
   color: whitesmoke;
   font-weight: bold;
 }
@@ -513,6 +546,8 @@ body .ciudad .container-hollywood-2 {
       grid-template-columns: repeat(5, 1fr);
   -ms-grid-rows: 1fr 0.2fr;
       grid-template-rows: 1fr 0.2fr;
+  border: 0.1rem solid #f8f9fa;
+  border-radius: 0.3rem;
 }
 
 body .ciudad .container-hollywood-2 .container-imagen {
@@ -532,6 +567,9 @@ body .ciudad .container-hollywood-2 .container-descripcion-la {
   font-weight: bold;
 }
 
+/* -------------------------------------------------------- */
+/* RESPONSIVE */
+/* Responsive para Mobile-S (320px) */
 @media (max-width: 321px) {
   body .ciudad .container-centralpark {
     display: -webkit-box;
@@ -546,12 +584,14 @@ body .ciudad .container-hollywood-2 .container-descripcion-la {
     padding: 0.2rem;
     max-width: 100%;
     min-height: 100%;
+    /* Modifica tamaño iframe para adaptarlo a Mobile-S */
   }
   body .ciudad .container-centralpark .imagen iframe {
     height: 5rem;
   }
   body .ciudad .container-centralpark .cp_video {
-    height: 10rem;
+    /* Modifica tamaño iframe para adaptarlo a Mobile-S */
+    height: auto;
   }
   body .ciudad .container-estatua {
     display: -webkit-box;
@@ -561,6 +601,7 @@ body .ciudad .container-hollywood-2 .container-descripcion-la {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    /* Modifica tamaño iframe para adaptarlo a Mobile-S */
   }
   body .ciudad .container-estatua iframe {
     height: auto;
@@ -573,6 +614,7 @@ body .ciudad .container-hollywood-2 .container-descripcion-la {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    /* Modifica tamaño iframe para adaptarlo a Mobile-S */
   }
   body .ciudad .container-times iframe {
     height: 5rem;
@@ -585,6 +627,8 @@ body .ciudad .container-hollywood-2 .container-descripcion-la {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    /* Modifica tamaño iframe para adaptarlo a Mobile-S */
+    /* Modifica tamaño iframe para adaptarlo a Mobile-S */
   }
   body .ciudad .container-miami_beach iframe {
     height: auto;
@@ -595,30 +639,34 @@ body .ciudad .container-hollywood-2 .container-descripcion-la {
   body .ciudad .container-hollywood {
     display: -ms-grid;
     display: grid;
+    /* Modifica grid para adaptarlo a Mobile-S */
+    /* Una sola columna del 100% */
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
+    /* 4 filas */
     -ms-grid-rows: 0.2fr 1fr 0.2fr 1fr;
         grid-template-rows: 0.2fr 1fr 0.2fr 1fr;
+    /* Define inicio y fin de cada item */
   }
   body .ciudad .container-hollywood .item1 {
     -ms-grid-row: 1;
         grid-row-start: 1;
     grid-row-end: 1;
   }
-  body .ciudad .container-hollywood .item3 {
-    -ms-grid-row: 2;
-        grid-row-start: 2;
-    grid-row-end: 2;
-  }
   body .ciudad .container-hollywood .item2 {
     -ms-grid-row: 3;
         grid-row-start: 3;
     grid-row-end: 3;
   }
-  body .ciudad .container-hollywood .item4 {
+  body .ciudad .container-hollywood .item3 {
     -ms-grid-row: 4;
         grid-row-start: 4;
     grid-row-end: 4;
+  }
+  body .ciudad .container-hollywood .item4 {
+    -ms-grid-row: 2;
+        grid-row-start: 2;
+    grid-row-end: 2;
   }
   body .ciudad .container-hollywood iframe {
     width: 100%;
@@ -627,10 +675,14 @@ body .ciudad .container-hollywood-2 .container-descripcion-la {
   body .ciudad .container-hollywood-2 {
     display: -ms-grid;
     display: grid;
+    /* Modifica grid para adaptarlo a Mobile-S */
+    /* Una sola columna de 100% */
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
+    /* 10 filas de dimensiones 18% y 2% */
     -ms-grid-rows: 18% 2% 18% 2% 18% 2% 18% 2% 18% 2%;
         grid-template-rows: 18% 2% 18% 2% 18% 2% 18% 2% 18% 2%;
+    /* Define inicio y fin de cada item */
   }
   body .ciudad .container-hollywood-2 .item2 {
     -ms-grid-row: 2;
@@ -663,6 +715,7 @@ body .ciudad .container-hollywood-2 .container-descripcion-la {
   }
 }
 
+/* Responsive para Mobile-M (325px) */
 @media (min-width: 321px) and (max-width: 376px) {
   body .ciudad .container-centralpark {
     display: -webkit-box;
@@ -672,6 +725,7 @@ body .ciudad .container-hollywood-2 .container-descripcion-la {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    /* Modifica tamaño iframe para adaptar a Mobile-M */
   }
   body .ciudad .container-centralpark .imagen {
     padding: 0.2rem;
@@ -704,6 +758,7 @@ body .ciudad .container-hollywood-2 .container-descripcion-la {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    /* Modifica tamaño iframe para adaptar a Mobile-M */
   }
   body .ciudad .container-times iframe {
     height: 5rem;
@@ -716,6 +771,7 @@ body .ciudad .container-hollywood-2 .container-descripcion-la {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    /* Modifica tamaño iframe para adaptar a Mobile-M */
   }
   body .ciudad .container-miami_beach iframe {
     height: 16rem;
@@ -730,30 +786,32 @@ body .ciudad .container-hollywood-2 .container-descripcion-la {
         grid-template-columns: 100%;
     -ms-grid-rows: 0.2fr 1fr 0.2fr 1fr;
         grid-template-rows: 0.2fr 1fr 0.2fr 1fr;
+    /* Define inicio y fin de cada item */
+    /* Modifica tamaño iframe para adaptar a Mobile-M */
   }
   body .ciudad .container-hollywood .item1 {
     -ms-grid-row: 1;
         grid-row-start: 1;
     grid-row-end: 1;
   }
-  body .ciudad .container-hollywood .item3 {
-    -ms-grid-row: 2;
-        grid-row-start: 2;
-    grid-row-end: 2;
-  }
   body .ciudad .container-hollywood .item2 {
     -ms-grid-row: 3;
         grid-row-start: 3;
     grid-row-end: 3;
   }
-  body .ciudad .container-hollywood .item4 {
+  body .ciudad .container-hollywood .item3 {
     -ms-grid-row: 4;
         grid-row-start: 4;
     grid-row-end: 4;
   }
+  body .ciudad .container-hollywood .item4 {
+    -ms-grid-row: 2;
+        grid-row-start: 2;
+    grid-row-end: 2;
+  }
   body .ciudad .container-hollywood iframe {
     width: 100%;
-    height: 100%;
+    height: 12rem;
   }
   body .ciudad .container-hollywood-2 {
     display: -ms-grid;
@@ -762,6 +820,8 @@ body .ciudad .container-hollywood-2 .container-descripcion-la {
         grid-template-columns: 100%;
     -ms-grid-rows: 18% 2% 18% 2% 18% 2% 18% 2% 18% 2%;
         grid-template-rows: 18% 2% 18% 2% 18% 2% 18% 2% 18% 2%;
+    /* Define inicio y fin de cada item */
+    /* Modifica tamaño imagen para adaptar a Mobile-M */
   }
   body .ciudad .container-hollywood-2 .item2 {
     -ms-grid-row: 2;
@@ -794,6 +854,7 @@ body .ciudad .container-hollywood-2 .container-descripcion-la {
   }
 }
 
+/* Responsive para Mobile-L */
 @media (min-width: 376px) and (max-width: 426px) {
   body .ciudad .container-centralpark {
     display: -webkit-box;
@@ -803,11 +864,13 @@ body .ciudad .container-hollywood-2 .container-descripcion-la {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    /* Modifica tamaño iframe para adaptar a Mobile-L */
   }
   body .ciudad .container-centralpark .imagen {
     padding: 0.2rem;
     max-width: 100%;
     min-height: 100%;
+    /* Modifica tamaño iframe para adaptar a Mobile-L */
   }
   body .ciudad .container-centralpark .imagen iframe {
     height: 5rem;
@@ -835,6 +898,7 @@ body .ciudad .container-hollywood-2 .container-descripcion-la {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    /* Modifica tamaño iframe para adaptar a Mobile-L */
   }
   body .ciudad .container-times iframe {
     height: 5rem;
@@ -847,6 +911,8 @@ body .ciudad .container-hollywood-2 .container-descripcion-la {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    /* Modifica tamaño iframe para adaptar a Mobile-L */
+    /* Modifica tamaño iframe para adaptar a Mobile-L */
   }
   body .ciudad .container-miami_beach iframe {
     height: 18rem;
@@ -861,30 +927,32 @@ body .ciudad .container-hollywood-2 .container-descripcion-la {
         grid-template-columns: 100%;
     -ms-grid-rows: 0.2fr 1fr 0.2fr 1fr;
         grid-template-rows: 0.2fr 1fr 0.2fr 1fr;
+    /* Define inicio y fin de cada item */
+    /* Modifica tamaño iframe para adaptar a Mobile-L */
   }
   body .ciudad .container-hollywood .item1 {
     -ms-grid-row: 1;
         grid-row-start: 1;
     grid-row-end: 1;
   }
-  body .ciudad .container-hollywood .item3 {
-    -ms-grid-row: 2;
-        grid-row-start: 2;
-    grid-row-end: 2;
-  }
   body .ciudad .container-hollywood .item2 {
     -ms-grid-row: 3;
         grid-row-start: 3;
     grid-row-end: 3;
   }
-  body .ciudad .container-hollywood .item4 {
+  body .ciudad .container-hollywood .item3 {
     -ms-grid-row: 4;
         grid-row-start: 4;
     grid-row-end: 4;
   }
+  body .ciudad .container-hollywood .item4 {
+    -ms-grid-row: 2;
+        grid-row-start: 2;
+    grid-row-end: 2;
+  }
   body .ciudad .container-hollywood iframe {
     width: 100%;
-    height: 100%;
+    height: 13.5rem;
   }
   body .ciudad .container-hollywood-2 {
     display: -ms-grid;
@@ -893,6 +961,7 @@ body .ciudad .container-hollywood-2 .container-descripcion-la {
         grid-template-columns: 100%;
     -ms-grid-rows: 18% 2% 18% 2% 18% 2% 18% 2% 18% 2%;
         grid-template-rows: 18% 2% 18% 2% 18% 2% 18% 2% 18% 2%;
+    /* Define inicio y fin de cada item */
   }
   body .ciudad .container-hollywood-2 .item2 {
     -ms-grid-row: 2;
@@ -925,6 +994,7 @@ body .ciudad .container-hollywood-2 .container-descripcion-la {
   }
 }
 
+/* Responsive para Tablet (768px) */
 @media (min-width: 426px) and (max-width: 769px) {
   body .ciudad .container-times {
     display: -webkit-box;
@@ -934,6 +1004,7 @@ body .ciudad .container-hollywood-2 .container-descripcion-la {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    /* Modifica tamaño iframe para adaptar a Tablet */
   }
   body .ciudad .container-times iframe {
     height: 5rem;
@@ -946,6 +1017,7 @@ body .ciudad .container-hollywood-2 .container-descripcion-la {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    /* Modifica tamaño iframe para adaptar a Tablet */
   }
   body .ciudad .container-miami_beach iframe {
     height: 30rem;
@@ -959,32 +1031,33 @@ body .ciudad .container-hollywood-2 .container-descripcion-la {
     display: grid;
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
-    -ms-grid-rows: 0.2fr 1fr 0.2fr 1fr;
-        grid-template-rows: 0.2fr 1fr 0.2fr 1fr;
+    -ms-grid-rows: 0.1fr 1fr 0.1fr 1fr;
+        grid-template-rows: 0.1fr 1fr 0.1fr 1fr;
+    /* Define inicio y fin de cada item */
   }
   body .ciudad .container-hollywood .item1 {
     -ms-grid-row: 1;
         grid-row-start: 1;
     grid-row-end: 1;
   }
-  body .ciudad .container-hollywood .item3 {
-    -ms-grid-row: 2;
-        grid-row-start: 2;
-    grid-row-end: 2;
-  }
   body .ciudad .container-hollywood .item2 {
     -ms-grid-row: 3;
         grid-row-start: 3;
     grid-row-end: 3;
   }
-  body .ciudad .container-hollywood .item4 {
+  body .ciudad .container-hollywood .item3 {
     -ms-grid-row: 4;
         grid-row-start: 4;
     grid-row-end: 4;
   }
+  body .ciudad .container-hollywood .item4 {
+    -ms-grid-row: 2;
+        grid-row-start: 2;
+    grid-row-end: 2;
+  }
   body .ciudad .container-hollywood iframe {
     width: 100%;
-    height: 20rem;
+    height: 26rem;
   }
   body .ciudad .container-hollywood-2 {
     display: -ms-grid;
@@ -993,6 +1066,7 @@ body .ciudad .container-hollywood-2 .container-descripcion-la {
         grid-template-columns: 100%;
     -ms-grid-rows: 18% 2% 18% 2% 18% 2% 18% 2% 18% 2%;
         grid-template-rows: 18% 2% 18% 2% 18% 2% 18% 2% 18% 2%;
+    /* Define inicio y fin de cada item */
   }
   body .ciudad .container-hollywood-2 .item2 {
     -ms-grid-row: 2;

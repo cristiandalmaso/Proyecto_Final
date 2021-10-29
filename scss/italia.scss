@@ -7,6 +7,7 @@
 @import "footer";
 @import "main";
 
+/* Estila h1 */
 h1{
     background-image: url(../multimedia/bandera_italia.jpg);
     background-size: cover;
@@ -14,6 +15,7 @@ h1{
     padding: 1rem;
     margin-top: 0.5rem;
 
+    /* Estila título */
     .titulo{
         display: flex;
         font-family: 'Stick No Bills', sans-serif; 
@@ -26,16 +28,19 @@ h1{
 }
 
 
-
 body{
     background-color: whitesmoke;
 
     .container-ciudad{
         display: flex;
         justify-content: center;
+        /* Estila background con gradientes */
         background-image: linear-gradient(to right, rgb(128, 0, 0), white, rgb(128, 0, 0));
         margin-bottom: 1rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
 
+        /* Estila h2 */
         h2{
             font-family: 'Stick No Bills', sans-serif; 
             font-size: 2rem;
@@ -44,44 +49,50 @@ body{
     }
 
     .ciudad{
+        /* Ajusta márgenes ciudad */
         margin-left: 1rem;
         margin-right: 1rem;
-    
-            .col-md-4{
-                display: flex;
-                align-items: center;
-            }   
 
-            .col-md-8{
-                .card-body{
-                    .card-title{
-                        text-align: center;
-                        font-weight: bold;
-                    }
+        .col-md-4{
+            display: flex;
+            /* Alineación vertical al centro */
+            align-items: center;
+        }   
 
+        .col-md-8{
+            .card-body{
+                .card-title{
+                    /* Centra texto y estila fuente */
+                    text-align: center;
+                    font-weight: bold;
                 }
-                
             }
-        
+        }
     }
 
     .container-gastronomia{
         display: grid;
+        /* 4 columnas */
         grid-template-columns: 25% 25% 25% 25%;
+        /* 2 filas, una de 10% para titulo y el resto para cuerpo */
         grid-template-rows: 10% 90%;
+        /* Estila márgenes y bordes */
         margin-bottom: 1rem;
-        border: 0.1rem solid black;
-        border-radius: 1rem;
-        margin-left: 0.1rem;
-        margin-right: 0.1rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        border: 0.1rem solid #f8f9fa;
+        border-radius: 0.3rem;
 
         .container-gastronomia-titulo{
+            /* Estila inicio y fin de titulo, de columa 1 a 4 */
             grid-column-start: 1;
             grid-column-end: span 4;
             display: flex;
+            /* Alineación horizontal y vertical al centro */
             justify-content: center;
             align-items: center;
-            margin: 1rem;
+            margin-left: 1rem;
+            margin-right: 1rem;
 
             .container-gastronomia-titulo h5{
                 font-size: 1.5rem;
@@ -89,25 +100,26 @@ body{
         }
         
         .container-gastronomia-individual{
-           padding: 1rem;
-           display: flex;
-           justify-content: center;
-           text-align: center;
+            padding: 1rem;
+            display: flex;
+            justify-content: center;
+            text-align: center;
 
-           .gastronomia-parrafo{
-            font-size: 0.7rem;
-        }
+            .gastronomia-parrafo{
+                font-size: 0.7rem;
+            }
         }
     }
 
     .container-atracciones-titulo{
         display: flex;
+        /* Alineación horizontal y vertical */
         justify-content: center;
         align-items: center;
-        border: 0.1rem solid black;
-        border-radius: 1rem;
-        margin-bottom: 1rem;
-        margin-top: 1rem;
+        /* Estila bodes, margenes, padding y alto */
+        border: 0.1rem solid #f8f9fa;
+        border-radius: 0.3rem;
+        margin: 1rem;
         padding: 0rem;
         height: 3rem;
 
@@ -115,103 +127,136 @@ body{
             font-size: 2rem;
         }
     }   
-        .container-marcas{
-            display: grid;
-            grid-template-columns: repeat(5,0.5fr);
-            grid-template-rows: 50% 50%;
-
-            .container-marcas-logo{
-                display: flex;
-                justify-content: space-around;
-
-                .marcas-logo{
-                    width: 80%;
-                    height: 80%;
-                }
-            }
-                 
-        }
-
-        .container-video{
+    
+    .container-marcas{
+        display: grid;
+        /* 5 columnas de 0.5 fracciones */
+        grid-template-columns: repeat(5,0.5fr);
+        /* 2 filas de 50% cada una */
+        grid-template-rows: 50% 50%;
+        border: 0.1rem solid #f8f9fa;
+        border-radius: 0.3rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        padding-top: 2rem;
+        
+        .container-marcas-logo{
             display: flex;
-            justify-content: center;
-            padding-top:2rem;
-            padding-bottom: 2rem;
-        }
+            /* Alineación horizontal */
+            justify-content: space-around;
 
-        .container-atracciones{
-            display: grid;
-            grid-template-columns: 50% 50%;
-            grid-template-rows: 100%;
-
-            .container-atracciones-individual{
-                display: grid;
-                grid-template-columns: 100%;
-                grid-template-rows: 10% 50% 10% 30%;
-                border: 0.1rem solid black;
-                border-radius: 1rem;
-                margin:0.5rem;
-                justify-content: center;
-
-                .container-atracciones-lugar{
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    font-size: 1.5rem;
-                    margin: 0rem;
-                    padding: 0rem;
-                }
-                
-                .container-atracciones-imagen{
-                    margin-left: 1rem;
-                    margin-right: 1rem;
-                    margin-top: 0rem;
-                    margin-bottom: 0rem;
-
-                    .atracciones-imagen{
-                        width: 100%;
-                        height: 100%;
-                    }
-                }  
-                .container-parrafo{
-                    font-size: 0.7rem;
-                    margin-left: 1rem;
-                    margin-right: 1rem;
-                    text-align: center;
-                }           
+            .marcas-logo{
+                /* Define ancho y alto para logos */
+                width: 80%;
+                height: 80%;
             }
-        }        
+        }
+    }
+    
+    .container-video{
+        display: flex;
+        justify-content: center;
+        /* Define padding superior e inferior */
+        padding-top:2rem;
+        padding-bottom: 2rem;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+    
+    .container-atracciones{
+        display: grid;
+        /* Define 2 columnas de 50% cada una */
+        grid-template-columns: 50% 50%;
+        /* Define una sola fila del 100% */
+        grid-template-rows: 100%;
+
+        .container-atracciones-individual{
+            display: grid;
+            /* Define una sola columna para el contenedor individual */
+            grid-template-columns: 100%;
+            /* Define 4 filas */
+            /* Fila 1 para Lugar de la atracción */
+            /* Fila 2 para imagen */
+            /* Fila 3 para nombre de la atracción */
+            /* Fila 4 para descripción de la atracción */
+            grid-template-rows: 10% 50% 10% 30%;
+            /* Define bordes, márgenes y alineación horizontal */
+            border: 0.1rem solid #f8f9fa;
+            border-radius: 0.3rem;
+            margin-left: 1rem;
+            margin-right: 1rem;
+            margin-bottom: 1rem;
+            justify-content: center;
+
+            /* Estila fila 1 */
+            .container-atracciones-lugar{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 1.5rem;
+                margin: 0rem;
+                padding: 0rem;
+            }
+                
+            /* Estila fila 2 */
+            .container-atracciones-imagen{
+                margin-left: 1rem;
+                margin-right: 1rem;
+                margin-top: 0rem;
+                margin-bottom: 0rem;
+
+                /* Define ancho y alto para imagen */
+                .atracciones-imagen{
+                    width: 100%;
+                    height: 100%;
+                }
+            }  
+            
+            /* Estila fila 4 */
+            .container-parrafo{
+                font-size: 0.7rem;
+                margin-left: 1rem;
+                margin-right: 1rem;
+                text-align: center;
+            }           
+        }
+    }        
 }
 
+/* ---------------------------------------------------------------- */
+/* RESPONSIVE */
+/* Responsive para Mobile-S (320px) */
 @media(min-width:1px) and(max-width:321px){
     body{
         .ciudad{
             font-size: 0.7rem;
-        
         }
+
+        /* Estila contenedor gastronomia para adecuar a Mobile-S */
         .container-gastronomia{
             display: flex;
             flex-direction: column;
-           
             margin-bottom: 1rem;
-            border: 0.1rem solid black;
-            border-radius: 1rem;
-            margin-left: 0.1rem;
-            margin-right: 0.1rem;
+            border: none;
+            margin-left: 1rem;
+            margin-right: 1rem;
     
+            /* Modifica titulo en contenedor gastronomia */
             .container-gastronomia-titulo{
                 grid-column-start: 1;
                 grid-column-end: span 4;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                margin: 1rem;
+                margin-top: 1rem;
+                margin-bottom: 0rem;
     
                 .container-gastronomia-titulo h5{
                     font-size: 1.5rem;
                 }
             }
             
+            /* Estila contenedor individual gastronomia */
             .container-gastronomia-individual{
                padding: 1rem;
                display: flex;
@@ -219,15 +264,16 @@ body{
                text-align: center;
     
                .gastronomia-parrafo{
-                font-size: 0.7rem;
-            }
+                   font-size: 0.7rem;
+                }
             }
         }
 
         .container-atracciones-titulo{
-            height:3rem;
+            height:auto;
             display: flex;
             align-items: center;
+            border: none;
             h5{
                 font-size: 1rem;
                 text-align: center;
@@ -235,11 +281,16 @@ body{
             }
         }
 
+        /* Modifica contenedor marcas para adecuar a Mobile-S */
         .container-marcas{
             display: grid;
+            /* 2 columnas de 50% cada una */
             grid-template-columns: 50% 50%;
+            /* 5 filas de 20% cada una */
             grid-template-rows: 20% 20% 20% 20% 20%;
-
+            border: none;
+            padding-top: 0rem;
+            padding-bottom: 0rem;
             .container-marcas-logo{
                 display: flex;
                 justify-content: space-around;
@@ -249,13 +300,14 @@ body{
                     height: 80%;
                 }
             }
-                 
         }
+
+        /* Estila contenedor video para adecuar a Mobile-S */
         .container-video{
             display: flex;
             justify-content: center;
-            padding-top:2rem;
-            padding-bottom: 2rem;
+            padding-top:1rem;
+            padding-bottom: 1rem;
 
             iframe{
                 width: 100%;
@@ -263,27 +315,31 @@ body{
             }
         }
 
+        /* Estila contenedor atracciones para adecuar a Mobile-S */
         .container-atracciones{
             display: grid;
+            /* Una columna del 100% */
             grid-template-columns: 100%;
+            /* 2 filas de 50% cada una */
             grid-template-rows: 50% 50%;
 
+            /* Estila contenedor individual de la atracción para adaptar a Mobile-S */
             .container-atracciones-individual{
                 display: grid;
                 grid-template-columns: 100%;
-                grid-template-rows: 10% 50% 10% 30%;
-                border: 0.1rem solid black;
-                border-radius: 1rem;
-                margin:0.5rem;
+                grid-template-rows: 10% 40% 10% 40%;
+                border: none;
+                margin-left:0.5rem;
+                margin-right: 0.5rem;
                 justify-content: center;
-                height: 32rem;
+                height: auto;
                 
-
+                /* Estila fila 1 */
                 .container-atracciones-lugar{
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    font-size: 1.5rem;
+                    font-size: 1rem;
                     margin: 0rem;
                     padding: 0rem;
 
@@ -292,49 +348,54 @@ body{
                     }
                 }
                 
+                /* Estila fila 2 */
                 .container-atracciones-imagen{
                     margin-left: 1rem;
                     margin-right: 1rem;
                     margin-top: 0rem;
-                    margin-bottom: 0rem;
+                    margin-bottom: 5rem;
 
                     .atracciones-imagen{
                         width: 100%;
-                        height: 14rem;
+                        height: auto;
                     }
                 }  
+                /* Estila fila 4 */
                 .container-parrafo{
                     font-size: 0.7rem;
                     margin-left: 1rem;
                     margin-right: 1rem;
                     text-align: center;
+                    display: flex;
+                    align-items: center;
                 }           
             }
         } 
     }
 }
 
-
+/* Responsive para Mobile-M (375px) */
 @media(min-width:321px) and(max-width:376px){
     body{
         .ciudad{
             font-size: 0.7rem;
-        
         }
         .container-gastronomia{
             display: flex;
             flex-direction: column;
-           
+            /* Define márgenes y bordes */
             margin-bottom: 1rem;
-            border: 0.1rem solid black;
-            border-radius: 1rem;
-            margin-left: 0.1rem;
-            margin-right: 0.1rem;
+            border: 0.1rem solid #f8f9fa;
+            border-radius: 0.3rem;
+            margin-left: 1rem;
+            margin-right: 1rem;
     
             .container-gastronomia-titulo{
+                /* Define inicio y fin de título */
                 grid-column-start: 1;
                 grid-column-end: span 4;
                 display: flex;
+                /* Define alineación horizontal, vertical y márgenes */
                 justify-content: center;
                 align-items: center;
                 margin: 1rem;
@@ -347,16 +408,18 @@ body{
             .container-gastronomia-individual{
                padding: 1rem;
                display: flex;
+               /* Define alinación horizontal y vertical */
                justify-content: center;
                text-align: center;
     
                .gastronomia-parrafo{
-                font-size: 0.7rem;
-            }
+                   font-size: 0.7rem;
+                }
             }
         }
 
         .container-atracciones-titulo{
+            /* Define alto */
             height:3rem;
             display: flex;
             align-items: center;
@@ -369,20 +432,22 @@ body{
 
         .container-marcas{
             display: grid;
+            /* Define 2 columnas de 50% cada una */
             grid-template-columns: 50% 50%;
+            /* Define 5 filas de 20% cada una */
             grid-template-rows: 20% 20% 20% 20% 20%;
 
             .container-marcas-logo{
                 display: flex;
                 justify-content: space-around;
-
+                
                 .marcas-logo{
                     width: 80%;
                     height: 80%;
                 }
             }
-                 
         }
+
         .container-video{
             display: flex;
             justify-content: center;
@@ -397,20 +462,21 @@ body{
 
         .container-atracciones{
             display: grid;
+            /* Define 1 columna de 100% */
             grid-template-columns: 100%;
+            /* Define 2 columnas de 50% cada una */
             grid-template-rows: 50% 50%;
 
             .container-atracciones-individual{
                 display: grid;
                 grid-template-columns: 100%;
                 grid-template-rows: 10% 50% 10% 30%;
-                border: 0.1rem solid black;
-                border-radius: 1rem;
+                border: 0.1rem solid #f8f9fa;
+                border-radius: 0.3rem;
                 margin:0.5rem;
                 justify-content: center;
                 height: 32rem;
                 
-
                 .container-atracciones-lugar{
                     display: flex;
                     justify-content: center;
@@ -425,6 +491,7 @@ body{
                 }
                 
                 .container-atracciones-imagen{
+                    /* Define márgenes */
                     margin-left: 1rem;
                     margin-right: 1rem;
                     margin-top: 0rem;
@@ -446,21 +513,20 @@ body{
     }
 }
 
+/* Responsive para Mobile-L (425px) */
 @media(min-width:376px) and(max-width:426px){
     body{
         .ciudad{
             font-size: 0.7rem;
-        
         }
         .container-gastronomia{
             display: flex;
-            flex-direction: column;
-           
+            flex-direction: column;  
             margin-bottom: 1rem;
-            border: 0.1rem solid black;
-            border-radius: 1rem;
-            margin-left: 0.1rem;
-            margin-right: 0.1rem;
+            border: 0.1rem solid #f8f9fa;
+            border-radius: 0.3rem;
+            margin-left: 1rem;
+            margin-right: 1rem;
     
             .container-gastronomia-titulo{
                 grid-column-start: 1;
@@ -482,8 +548,8 @@ body{
                text-align: center;
     
                .gastronomia-parrafo{
-                font-size: 0.7rem;
-            }
+                   font-size: 0.7rem;
+                }
             }
         }
 
@@ -535,12 +601,13 @@ body{
                 display: grid;
                 grid-template-columns: 100%;
                 grid-template-rows: 10% 50% 10% 30%;
-                border: 0.1rem solid black;
-                border-radius: 1rem;
+                border: 0.1rem solid #f8f9fa;
+                border-radius: 0.3rem;
+                margin-left: 1rem;
+                margin-right: 1rem;
                 margin:0.5rem;
                 justify-content: center;
-                height: 32rem;
-                
+                height: 32rem;         
 
                 .container-atracciones-lugar{
                     display: flex;
@@ -577,7 +644,8 @@ body{
     }
 }
 
-@media(min-width:426px) and(max-width:768px){
+/* Responsive para Tablet (768px) */
+@media (min-width:426px) and(max-width:769px){
     *{
         margin:0;
     }   
@@ -586,10 +654,13 @@ body{
         .card{
             div.row.g-0{
                 display: grid;
+                /* 1 columna de 100% */
                 grid-template-columns: 100%;
+                /* 2 filas */
                 grid-template-rows: auto 50%;
                 .col-md-4{
                     width: 100%;
+                    /* Define ancho y alto de imagen */
                     img{
                         width: 100%;
                         height: auto;
@@ -607,10 +678,10 @@ body{
         display: flex;
         flex-direction: column;
         margin-bottom: 1rem;
-        border: 0.1rem solid black;
-        border-radius: 1rem;
-        margin-left: 0.1rem;
-        margin-right: 0.1rem;
+        border: 0.1rem solid #f8f9fa;
+        border-radius: 0.3rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
 
         .container-gastronomia-individual{
             .card{
@@ -621,11 +692,12 @@ body{
                 }
             }
         }
-    } 
-
-    
-    
-          
+    }  
+    .container-atracciones{
+        .container-parrafo{
+            padding-bottom: 2rem;
+        }
+    }    
 }
 
 

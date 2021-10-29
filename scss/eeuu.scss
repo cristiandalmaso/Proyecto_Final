@@ -8,6 +8,7 @@
 @import "footer";
 @import "main";
 
+/* Estila h1 */
 h1{
     background-image: url(../multimedia/bandera_estadosunidos.svg);
     background-size: cover;
@@ -15,11 +16,13 @@ h1{
     padding: 1rem;
     margin-top: 0.5rem;
 
+    /* Estila título */
     .titulo{
         display: flex;
         font-family: 'Londrina Shadow', cursive;
         font-size: 2rem;
         color: black;
+        /* Alineación vertical, alineación horizontal y márgen inferior */
         vertical-align: middle;
         justify-content: center;
         margin-bottom: 0rem;
@@ -31,18 +34,21 @@ body{
     text-align: center;
 
     .ciudad{
-        border: 0.1rem solid black;
-        margin-left: 0.1rem;
-        margin-right: 0.1rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
         margin-bottom: 1rem;
+        padding-bottom: 1rem;
 
+        /* Estila título ciudad */
         .titulo-ciudad{
+            /* Background con gradiente */
             background-image: linear-gradient(to right,rgb(1, 19, 132), whitesmoke,rgb(150, 0, 0));
             display: flex;
             justify-content: center;
         }
 
         .titulo-ciudad h2{
+            /* Define tipo de fuente, tamaño y margen */
             font-family: 'Londrina Shadow', cursive;
             font-size: 2rem;
             margin: 0.2rem;
@@ -51,21 +57,27 @@ body{
         .titulo_atraccion{
             text-align: center;
             font-size: 1rem;
+            /* Define estilo para título atracción con gradiente */
             background-image: linear-gradient(rgb(1,19,132), rgb(150,0,0));
-            margin-top: 0.2rem;
+            margin-top: 1rem;
             margin-bottom: 0.2rem;
             color: whitesmoke;
         }
 
         .container-centralpark{
             display: grid;
+            /* 3 columnas de 1 fracción cada una */
             grid-template-columns: 1fr 1fr 1fr;
+            /* 3 filas, 2 de 1 fracción para imágenes y una de 1.5 para video */
             grid-template-rows: 1fr 1fr 1.5fr;
-        
+            border: 0.1rem solid #f8f9fa;
+            border-radius: 0.3rem;
+            margin-bottom: 0.2rem;
+            padding-bottom: 0.2rem;
             .imagen{
                 padding: 0.2rem;
                 max-width: 100%;
-                min-height: 100%; 
+                min-height: 100%;    
             }
 
             .cp-parrafo{
@@ -83,6 +95,7 @@ body{
             .cp_video{
                 width: 100%;
                 height: 100%;
+                /* Define columna y filas de inicio y fin */
                 grid-column-start: 1;
                 grid-column-end: span 3;
                 grid-row-start: 3;
@@ -94,11 +107,15 @@ body{
 
         .container-estatua{
             display: grid;
+            /* Define 2 columnas de 50% cada una */
             grid-template-columns: 50% 50%;
+            /* Define una sola fila */
             grid-row: 100%;    
             padding: 0.2rem;
             width: 100%;
             height: 100%;
+            border: 0.1rem solid #f8f9fa;
+            border-radius: 0.3rem;
 
             .estatua-individual{
                 padding: 0.2rem;
@@ -107,8 +124,13 @@ body{
 
         .container-times{
             display:grid;
+            /* Define 4 columnas de 25% cada una */
             grid-template-columns: 25% 25% 25% 25%;
+            /* Define 2 filas de 50% cada una */
             grid-template-rows: 50% 50%;
+            /* Estila bordes */
+            border: 0.1rem solid #f8f9fa;
+            border-radius: 0.3rem;
 
             .container-imagen{
                 margin:0.2rem;
@@ -122,6 +144,7 @@ body{
             }
 
             .caja-times{
+                /* Define columnas y filas de inicio y fin para iframe Spotify */
                 grid-column-start: 2;
                 grid-column-end: span 2;
                 grid-row-start: 1;
@@ -130,22 +153,20 @@ body{
 
                 .container-imagen{
                     margin:0.2rem;
-                }
-
-                .estatua-individual{
-                    padding: 0.2rem;       
-                }
-                
+                }    
             }
-         
         }
 
         .container-miami_beach{
             display: grid;
+            /* Define 3 columnas */
             grid-template-columns: 1fr 1fr 1fr;
 
             .container-imagen{
                 margin:0.2rem;
+                /* Estila bordes */
+                border: 0.1rem solid #f8f9fa;
+                border-radius: 0.3rem;
 
                 .imagen{
                     padding: 0.2rem;
@@ -153,26 +174,31 @@ body{
                     min-height: 100%; 
                 }
             }
-
-            
-
         }
 
         
         .container-hollywood{
             display: grid;
+            /* Define 2 columnas de 50% cada una */
             grid-template-columns: 50% 50%;
+            /* Define 2 filas, una de 10% para titulo y otra de 90% para contenido */
             grid-template-rows: 10% 90%;
             position: relative;
+            /* Estila bordes */
+            border: 0.1rem solid #f8f9fa;
+            border-radius: 0.3rem;
 
             iframe{
-                width: 100%;
+                width: 100%;   
             }
 
             .container-hollywood-titulo{
                 display: flex;
+                /* Alineación horizontal */
                 justify-content: center;
+                /* Estila color de fondo */
                 background-color: rgb(1, 19, 132);
+                /* Estila bordes */
                 color: whitesmoke;
                 font-weight: bold;
             }
@@ -183,404 +209,426 @@ body{
         }
             
         .container-hollywood-2{
-                display: grid;
-                grid-template-columns: repeat(5,1fr);
-                grid-template-rows: 1fr 0.2fr;
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            grid-template-rows: 1fr 0.2fr;
+            border: 0.1rem solid #f8f9fa;
+            border-radius: 0.3rem;
 
-                .container-imagen{
-                    margin:0.2rem;
-    
-                    .imagen{
-                        padding: 0.2rem;
-                        max-width: 100%;
-                        min-height: 100%; 
-                    }
+            .container-imagen{
+                margin:0.2rem;
+                    
+                .imagen{
+                    padding: 0.2rem;
+                    max-width: 100%;
+                    min-height: 100%; 
+                } 
+            }
 
-                   
-                }
-
-                .container-descripcion-la{
-                    text-align: center;
-                    margin: 0.2rem;
-                    font-size: 0.8rem;
-                    font-weight: bold;
-
-                }
-
-                
+            .container-descripcion-la{
+                text-align: center;
+                margin: 0.2rem;
+                font-size: 0.8rem;
+                font-weight: bold;
+            }
         }
     }
 }
 
+/* -------------------------------------------------------- */
+/* RESPONSIVE */
+/* Responsive para Mobile-S (320px) */
 @media (max-width: 321px){
     body{
         .ciudad{
             .container-centralpark{
-            display: flex;
-            flex-direction: column;
+                display: flex;
+                flex-direction: column;
         
-            .imagen{
-                padding: 0.2rem;
-                max-width: 100%;
-                min-height: 100%; 
+                .imagen{
+                    padding: 0.2rem;
+                    max-width: 100%;
+                    min-height: 100%; 
 
+                    /* Modifica tamaño iframe para adaptarlo a Mobile-S */
+                    iframe{
+                        height: 5rem;
+                    }
+                }
+
+                .cp_video{
+                    /* Modifica tamaño iframe para adaptarlo a Mobile-S */
+                    height: auto;
+                }
+            }
+            
+            .container-estatua{
+                display: flex;
+                flex-direction: column;
+            
+                /* Modifica tamaño iframe para adaptarlo a Mobile-S */
+                iframe{
+                    height: auto;
+                }
+            }
+
+            .container-times{
+                display: flex;
+                flex-direction: column;
+
+                /* Modifica tamaño iframe para adaptarlo a Mobile-S */
                 iframe{
                     height: 5rem;
                 }
             }
 
-            .cp_video{
-                height: 10rem;
+            .container-miami_beach{
+                display: flex;
+                flex-direction: column;
+
+                /* Modifica tamaño iframe para adaptarlo a Mobile-S */
+                iframe{
+                    height: auto;  
+                }
+                
+                /* Modifica tamaño iframe para adaptarlo a Mobile-S */
+                .spotify_responsive{
+                    height: 5.5rem;
+                }   
             }
-        }
-        .container-estatua{
-            display: flex;
-            flex-direction: column;
+
+            .container-hollywood{
+                display: grid;
+                /* Modifica grid para adaptarlo a Mobile-S */
+                /* Una sola columna del 100% */
+                grid-template-columns: 100%;
+                /* 4 filas */
+                grid-template-rows: 0.2fr 1fr 0.2fr 1fr;
+
+                /* Define inicio y fin de cada item */
+                .item1{
+                    grid-row-start: 1;
+                    grid-row-end: 1;
+                }
+                .item2{
+                    grid-row-start: 3;
+                    grid-row-end: 3;
+                }
+                .item3{
+                    grid-row-start: 4;
+                    grid-row-end: 4;
+                }
+                .item4{
+                    grid-row-start: 2;
+                    grid-row-end: 2;
+                }
+
+                iframe{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            .container-hollywood-2{
+                display: grid;
+                /* Modifica grid para adaptarlo a Mobile-S */
+                /* Una sola columna de 100% */
+                grid-template-columns: 100%;
+                /* 10 filas de dimensiones 18% y 2% */
+                grid-template-rows: 18% 2% 18% 2% 18% 2% 18% 2% 18% 2%;
             
-            iframe{
-                height: auto;
+                /* Define inicio y fin de cada item */
+                .item2{
+                    grid-row-start: 2;
+                    grid-row-end: 2;
+                }
+
+                .item4{
+                    grid-row-start: 4;
+                    grid-row-end: 4;
+                }
+
+                .item6{
+                    grid-row-start: 6;
+                    grid-row-end: 6;
+                }
+
+                .item8{
+                    grid-row-start: 8;
+                    grid-row-end: 8;
+                }
+
+                .item10{
+                    grid-row-start: 10;
+                    grid-row-end: 10;
+                }
+
+                .imagen{
+                    width: 100%;
+                    height: 100%;
+                }
             }
-        }
-
-        .container-times{
-            display: flex;
-            flex-direction: column;
-
-            iframe{
-                height: 5rem;
-            }
-        }
-
-        .container-miami_beach{
-            display: flex;
-            flex-direction: column;
-
-            iframe{
-                height: auto;  
-                            
-            }
-            .spotify_responsive{
-                height: 5.5rem;
-            }   
-        }
-
-        .container-hollywood{
-            display: grid;
-            grid-template-columns: 100%;
-            grid-template-rows: 0.2fr 1fr 0.2fr 1fr;
-
-            .item1{
-                grid-row-start: 1;
-                grid-row-end: 1;
-            }
-            .item3{
-                grid-row-start: 2;
-                grid-row-end: 2;
-            }
-
-            .item2{
-                grid-row-start: 3;
-                grid-row-end: 3;
-            }
-
-            .item4{
-                grid-row-start: 4;
-                grid-row-end: 4;
-            }
-
-            iframe{
-                width: 100%;
-                height: 100%;
-            }
-        }
-
-        .container-hollywood-2{
-            display: grid;
-            grid-template-columns: 100%;
-            grid-template-rows: 18% 2% 18% 2% 18% 2% 18% 2% 18% 2%;
-            
-            .item2{
-                grid-row-start: 2;
-                grid-row-end: 2;
-            }
-
-            .item4{
-                grid-row-start: 4;
-                grid-row-end: 4;
-            }
-
-            .item6{
-                grid-row-start: 6;
-                grid-row-end: 6;
-            }
-
-            .item8{
-                grid-row-start: 8;
-                grid-row-end: 8;
-            }
-
-            .item10{
-                grid-row-start: 10;
-                grid-row-end: 10;
-            }
-
-            .imagen{
-                width: 100%;
-                height: 100%;
-            }
-
-        }
-
         }
     }       
 }
 
+/* Responsive para Mobile-M (325px) */
 @media (min-width:321px) and (max-width: 376px){
     body{
         .ciudad{
             .container-centralpark{
-            display: flex;
-            flex-direction: column;
+                display: flex;
+                flex-direction: column;
         
-            .imagen{
-                padding: 0.2rem;
-                max-width: 100%;
-                min-height: 100%; 
+                .imagen{
+                    padding: 0.2rem;
+                    max-width: 100%;
+                    min-height: 100%; 
 
+                    iframe{
+                        height: 5rem;
+                    }
+                }
+                /* Modifica tamaño iframe para adaptar a Mobile-M */
+                .cp_video{
+                    height: 13rem;
+                }
+            }
+        
+            .container-estatua{
+                display: flex;
+                flex-direction: column;
+            
+                iframe{
+                    height: auto;
+                }
+            }
+
+            .container-times{
+                display: flex;
+                flex-direction: column;
+
+                /* Modifica tamaño iframe para adaptar a Mobile-M */
                 iframe{
                     height: 5rem;
                 }
             }
 
-            .cp_video{
-                height: 13rem;
+            .container-miami_beach{
+                display: flex;
+                flex-direction: column;
+
+                /* Modifica tamaño iframe para adaptar a Mobile-M */
+                iframe{
+                    height: 16rem;  
+                }
+                .spotify_responsive{
+                    height: 5.5rem;
+                }   
             }
-        }
-        .container-estatua{
-            display: flex;
-            flex-direction: column;
+
+            .container-hollywood{
+                display: grid;
+                grid-template-columns: 100%;
+                grid-template-rows: 0.2fr 1fr 0.2fr 1fr;
+
+                /* Define inicio y fin de cada item */
+                .item1{
+                    grid-row-start: 1;
+                    grid-row-end: 1;
+                }
+                .item2{
+                    grid-row-start: 3;
+                    grid-row-end: 3;
+                }
+                .item3{
+                    grid-row-start: 4;
+                    grid-row-end: 4;
+                }
+                
+                .item4{
+                    grid-row-start: 2;
+                    grid-row-end: 2;
+                }
+
+                /* Modifica tamaño iframe para adaptar a Mobile-M */
+                iframe{
+                    width: 100%;
+                    height: 12rem;
+                }
+            }
+
+            .container-hollywood-2{
+                display: grid;
+                grid-template-columns: 100%;
+                grid-template-rows: 18% 2% 18% 2% 18% 2% 18% 2% 18% 2%;
             
-            iframe{
-                height: auto;
+
+                /* Define inicio y fin de cada item */
+                .item2{
+                    grid-row-start: 2;
+                    grid-row-end: 2;
+                }
+
+                .item4{
+                    grid-row-start: 4;
+                    grid-row-end: 4;
+                }
+
+                .item6{
+                    grid-row-start: 6;
+                    grid-row-end: 6;
+                }
+
+                .item8{
+                    grid-row-start: 8;
+                    grid-row-end: 8;
+                }
+
+                .item10{
+                    grid-row-start: 10;
+                    grid-row-end: 10;
+                }
+
+                /* Modifica tamaño imagen para adaptar a Mobile-M */
+                .imagen{
+                    width: 100%;
+                    height: 18rem;
+                }
             }
-        }
-
-        .container-times{
-            display: flex;
-            flex-direction: column;
-
-            iframe{
-                height: 5rem;
-            }
-        }
-
-        .container-miami_beach{
-            display: flex;
-            flex-direction: column;
-
-            iframe{
-                height: 16rem;  
-            }
-            .spotify_responsive{
-                height: 5.5rem;
-            }   
-        }
-
-        .container-hollywood{
-            display: grid;
-            grid-template-columns: 100%;
-            grid-template-rows: 0.2fr 1fr 0.2fr 1fr;
-
-            .item1{
-                grid-row-start: 1;
-                grid-row-end: 1;
-            }
-            .item3{
-                grid-row-start: 2;
-                grid-row-end: 2;
-            }
-
-            .item2{
-                grid-row-start: 3;
-                grid-row-end: 3;
-            }
-
-            .item4{
-                grid-row-start: 4;
-                grid-row-end: 4;
-            }
-
-            iframe{
-                width: 100%;
-                height: 100%;
-            }
-        }
-
-        .container-hollywood-2{
-            display: grid;
-            grid-template-columns: 100%;
-            grid-template-rows: 18% 2% 18% 2% 18% 2% 18% 2% 18% 2%;
-            
-            .item2{
-                grid-row-start: 2;
-                grid-row-end: 2;
-            }
-
-            .item4{
-                grid-row-start: 4;
-                grid-row-end: 4;
-            }
-
-            .item6{
-                grid-row-start: 6;
-                grid-row-end: 6;
-            }
-
-            .item8{
-                grid-row-start: 8;
-                grid-row-end: 8;
-            }
-
-            .item10{
-                grid-row-start: 10;
-                grid-row-end: 10;
-            }
-
-            .imagen{
-                width: 100%;
-                height: 18rem;
-            }
-
-        }
-
         }
     }       
 }
 
-
+/* Responsive para Mobile-L */
 @media (min-width:376px) and (max-width: 426px){
     body{
         .ciudad{
             .container-centralpark{
-            display: flex;
-            flex-direction: column;
+                display: flex;
+                flex-direction: column;
         
-            .imagen{
-                padding: 0.2rem;
-                max-width: 100%;
-                min-height: 100%; 
+                .imagen{
+                    padding: 0.2rem;
+                    max-width: 100%;
+                    min-height: 100%; 
 
+                    /* Modifica tamaño iframe para adaptar a Mobile-L */
+                    iframe{
+                        height: 5rem;
+                    }
+                }
+                
+                /* Modifica tamaño iframe para adaptar a Mobile-L */
+                .cp_video{
+                    height: 14rem;
+                }
+            }
+            .container-estatua{
+                display: flex;
+                flex-direction: column;
+            
+                iframe{
+                    height: auto;
+                }
+            }
+
+            .container-times{
+                display: flex;
+                flex-direction: column;
+
+                /* Modifica tamaño iframe para adaptar a Mobile-L */
                 iframe{
                     height: 5rem;
                 }
             }
 
-            .cp_video{
-                height: 14rem;
+            .container-miami_beach{
+                display: flex;
+                flex-direction: column;
+
+                /* Modifica tamaño iframe para adaptar a Mobile-L */
+                iframe{
+                    height: 18rem;  
+                }
+                /* Modifica tamaño iframe para adaptar a Mobile-L */
+                .spotify_responsive{
+                    height: 5.5rem;
+                }   
             }
-        }
-        .container-estatua{
-            display: flex;
-            flex-direction: column;
+
+            .container-hollywood{
+                display: grid;
+                grid-template-columns: 100%;
+                grid-template-rows: 0.2fr 1fr 0.2fr 1fr;
+
+                /* Define inicio y fin de cada item */
+                .item1{
+                    grid-row-start: 1;
+                    grid-row-end: 1;
+                }
+                .item2{
+                    grid-row-start: 3;
+                    grid-row-end: 3;
+                }
+                .item3{
+                    grid-row-start: 4;
+                    grid-row-end: 4;
+                }
+                .item4{
+                    grid-row-start: 2;
+                    grid-row-end: 2;
+                }
+
+                /* Modifica tamaño iframe para adaptar a Mobile-L */
+                iframe{
+                    width: 100%;
+                    height: 13.5rem;
+                }
+            }
+
+            .container-hollywood-2{
+                display: grid;
+                grid-template-columns: 100%;
+                grid-template-rows: 18% 2% 18% 2% 18% 2% 18% 2% 18% 2%;
             
-            iframe{
-                height: auto;
+                /* Define inicio y fin de cada item */
+                .item2{
+                    grid-row-start: 2;
+                    grid-row-end: 2;
+                }
+
+                .item4{
+                    grid-row-start: 4;
+                    grid-row-end: 4;
+                }
+
+                .item6{
+                    grid-row-start: 6;
+                    grid-row-end: 6;
+                }
+
+                .item8{
+                    grid-row-start: 8;
+                    grid-row-end: 8;
+                }
+
+                .item10{
+                    grid-row-start: 10;
+                    grid-row-end: 10;
+                }
+
+                .imagen{
+                    width: 100%;
+                    height: 100%;
+                }
+
             }
-        }
-
-        .container-times{
-            display: flex;
-            flex-direction: column;
-
-            iframe{
-                height: 5rem;
-            }
-        }
-
-        .container-miami_beach{
-            display: flex;
-            flex-direction: column;
-
-            iframe{
-                height: 18rem;  
-                            
-            }
-            .spotify_responsive{
-                height: 5.5rem;
-            }   
-        }
-
-        .container-hollywood{
-            display: grid;
-            grid-template-columns: 100%;
-            grid-template-rows: 0.2fr 1fr 0.2fr 1fr;
-
-            .item1{
-                grid-row-start: 1;
-                grid-row-end: 1;
-            }
-            .item3{
-                grid-row-start: 2;
-                grid-row-end: 2;
-            }
-
-            .item2{
-                grid-row-start: 3;
-                grid-row-end: 3;
-            }
-
-            .item4{
-                grid-row-start: 4;
-                grid-row-end: 4;
-            }
-
-            iframe{
-                width: 100%;
-                height: 100%;
-            }
-        }
-
-        .container-hollywood-2{
-            display: grid;
-            grid-template-columns: 100%;
-            grid-template-rows: 18% 2% 18% 2% 18% 2% 18% 2% 18% 2%;
-            
-            .item2{
-                grid-row-start: 2;
-                grid-row-end: 2;
-            }
-
-            .item4{
-                grid-row-start: 4;
-                grid-row-end: 4;
-            }
-
-            .item6{
-                grid-row-start: 6;
-                grid-row-end: 6;
-            }
-
-            .item8{
-                grid-row-start: 8;
-                grid-row-end: 8;
-            }
-
-            .item10{
-                grid-row-start: 10;
-                grid-row-end: 10;
-            }
-
-            .imagen{
-                width: 100%;
-                height: 100%;
-            }
-
-        }
-
         }
     }       
 }
 
+/* Responsive para Tablet (768px) */
 @media (min-width:426px) and (max-width: 769px){
     body{
         .ciudad{
@@ -588,6 +636,7 @@ body{
                 display: flex;
                 flex-direction: column;
     
+                /* Modifica tamaño iframe para adaptar a Tablet */
                 iframe{
                     height: 5rem;
                 }
@@ -597,10 +646,10 @@ body{
                 display: flex;
                 flex-direction: column;
     
+                /* Modifica tamaño iframe para adaptar a Tablet */
                 iframe{
                     height: 30rem;  
-                    width: 100%;
-                                
+                    width: 100%;                     
                 }
                 .spotify_responsive{
                     height: 5.5rem;
@@ -610,30 +659,32 @@ body{
             .container-hollywood{
                 display: grid;
                 grid-template-columns: 100%;
-                grid-template-rows: 0.2fr 1fr 0.2fr 1fr;
+                grid-template-rows: 0.1fr 1fr 0.1fr 1fr;
     
+                /* Define inicio y fin de cada item */
                 .item1{
                     grid-row-start: 1;
                     grid-row-end: 1;
                 }
-                .item3{
-                    grid-row-start: 2;
-                    grid-row-end: 2;
-                }
-    
+
                 .item2{
                     grid-row-start: 3;
                     grid-row-end: 3;
                 }
     
-                .item4{
+                .item3{
                     grid-row-start: 4;
                     grid-row-end: 4;
+                }
+               
+                .item4{
+                    grid-row-start: 2;
+                    grid-row-end: 2;
                 }
     
                 iframe{
                     width: 100%;
-                    height: 20rem;
+                    height: 26rem;
                 }
             }
     
@@ -641,6 +692,8 @@ body{
                 display: grid;
                 grid-template-columns: 100%;
                 grid-template-rows: 18% 2% 18% 2% 18% 2% 18% 2% 18% 2%;
+
+                /* Define inicio y fin de cada item */
                 .item2{
                     grid-row-start: 2;
                     grid-row-end: 2;
@@ -686,8 +739,8 @@ body{
                     height: 100%;
                 }
             }
-            }
-        }     
+        }
+    }     
 }
 
 

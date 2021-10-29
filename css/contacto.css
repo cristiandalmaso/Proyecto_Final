@@ -462,7 +462,7 @@
   }
 }
 
-/* Desde 1025px */
+/* Desde 1025px hasta 1440px */
 @media (min-width: 1025px) and (max-width: 1440px) {
   * {
     font-family: 'Montserrat',sans-serif;

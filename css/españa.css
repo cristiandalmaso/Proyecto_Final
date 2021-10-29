@@ -442,6 +442,8 @@ h1 .titulo {
 
 .container_playlist {
   margin-top: 0.5rem;
+  margin-left: 0.2rem;
+  margin-right: 0.8rem;
   border: 0.5rem solid #d30000;
   background-color: #000072;
 }
