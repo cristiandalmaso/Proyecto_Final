@@ -237,7 +237,8 @@ body{
             display: flex;
             flex-direction: column;
             margin-bottom: 1rem;
-            border: none;
+            border: 0.1rem solid #f8f9fa;
+            border-radius: 0.3rem;
             margin-left: 1rem;
             margin-right: 1rem;
     
